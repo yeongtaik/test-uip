@@ -1,0 +1,33 @@
+{
+  "name" : "컴포넌트 정보 제공",
+  "target" : "https://uip.webida.net/",
+  "modified" : 1403058151072,
+  "timeout" : 10,
+  "prerequisites" : [ "palette-view/WTC-2262.selenese" ],
+  "commands" : [ {
+    "uuid" : "a9394ff6ac15653401798da4-1336751358",
+    "title" : "Search jqxButton tooltiptext",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "jqxButton", "css=li[data-name=\"jqx.jqxButton\"]@tooltiptext" ]
+  }, {
+    "uuid" : "acc5656dac156534001b054a-106546268",
+    "title" : "Validation jqxButton text",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "$(jqxButton)", "The jqxButton represents a jQuery button widget that allows you to display a button on the Web page." ]
+  }, {
+    "uuid" : "acc71e53ac156534010b9d6b1546366683",
+    "title" : "Search jqxInput tooltiptext",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "jqxInput", "css=li[data-name=\"jqx.jqxInput\"]@tooltiptext" ]
+  }, {
+    "uuid" : "acc7c38cac15653400a45fe4334117818",
+    "title" : "Validation jqxInput text",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "$(jqxInput)", "The jqxInput represents an Input widget with auto-complete capabilities." ]
+  } ],
+  "cleanUp" : [ ]
+}
