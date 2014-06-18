@@ -1,0 +1,27 @@
+{
+  "name" : "로그아웃",
+  "target" : "https://uip.webida.net/",
+  "modified" : 1403075462262,
+  "timeout" : 10,
+  "prerequisites" : [ "template/logintest.selenese" ],
+  "commands" : [ {
+    "uuid" : "adbff35fac15653401ba9b981413662388",
+    "title" : "Click username",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.userinfo-email" ]
+  }, {
+    "uuid" : "adb6cbe8ac15653401078266361472168",
+    "title" : "Click Sign-out button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.sign-out" ]
+  }, {
+    "uuid" : "adcf183aac1565340017eb88-1872185108",
+    "title" : "Validation logout",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.not-logged-in[style=\"display: block;\"]", "10" ]
+  } ],
+  "cleanUp" : [ ]
+}

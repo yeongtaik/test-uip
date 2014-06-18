@@ -1,0 +1,51 @@
+{
+  "name" : "화면 배치",
+  "target" : "https://uip.webida.net/",
+  "modified" : 1403071565430,
+  "timeout" : 10,
+  "prerequisites" : [ "template/logintest.selenese" ],
+  "commands" : [ {
+    "uuid" : "ad8e92b6ac1565340188e018304851966",
+    "title" : "Search Workbench",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-workbench", "5" ]
+  }, {
+    "uuid" : "ad8f0d57ac156534017d3a1e-1881536921",
+    "title" : "Search Menubar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-workbench-menubar", "5" ]
+  }, {
+    "uuid" : "ad908966ac156534004e0ad1-1276675485",
+    "title" : "Search Toolbar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-workbench-toolbar", "5" ]
+  }, {
+    "uuid" : "ad90b408ac1565340057c39d-1601024932",
+    "title" : "Search Workspace-view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=workspace-view", "5" ]
+  }, {
+    "uuid" : "ad91bbb8ac15653400057a8d-1906188067",
+    "title" : "Search Palette-view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=palette-view", "5" ]
+  }, {
+    "uuid" : "ad926f95ac15653401c8d019-1129628231",
+    "title" : "Search Properties-view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=properties-view", "5" ]
+  }, {
+    "uuid" : "ad9371e5ac156534015981f7-634049932",
+    "title" : "Search Event-view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=event-view", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
