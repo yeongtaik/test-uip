@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "https://uip.webida.net/",
-  "modified" : 1402984926129,
+  "modified" : 1402997554418,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -72,10 +72,22 @@
     "arguments" : [ "uipwindow" ]
   }, {
     "uuid" : "a8661dc8ac15653400348157-771301334",
-    "title" : "Check login",
-    "keyword" : "waitForVisibility",
+    "title" : "Search userinfo information",
+    "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "id=app-workbench-top-content", "20" ]
+    "arguments" : [ "userinfo", "css=.userinfo-email" ]
+  }, {
+    "uuid" : "a924a2f4ac15653400c4c7a01238480341",
+    "title" : "Validation userinfo",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "$(userinfo)", "uiptest@webida.org" ]
+  }, {
+    "uuid" : "a92b7e73ac156534013ebfbe-912842004",
+    "title" : "waiting",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
   } ],
   "cleanUp" : [ ]
 }
