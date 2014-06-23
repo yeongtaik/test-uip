@@ -1,0 +1,33 @@
+{
+  "name" : "메뉴 사용해 기능 실행",
+  "target" : "https://uip.webida.net/",
+  "modified" : 1403512037553,
+  "timeout" : 10,
+  "prerequisites" : [ "template/logintest.selenese" ],
+  "commands" : [ {
+    "uuid" : "c75fe82aac15653400503930-550736318",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div" ]
+  }, {
+    "uuid" : "c760e31fac1565340134d15d431709061",
+    "title" : "Click create theme",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitMenuPopup .dijitMenuItem" ]
+  }, {
+    "uuid" : "c7d4d93bac156534013728a71886610236",
+    "title" : "Find themeDialog",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "themeValue", "css=.dijitDialogTitle" ]
+  }, {
+    "uuid" : "c7d5b0c9ac1565340175486b-1142784790",
+    "title" : "Validation themeDialog",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "$(themeValue)", "New Theme" ]
+  } ],
+  "cleanUp" : [ ]
+}
