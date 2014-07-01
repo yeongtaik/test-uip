@@ -1,7 +1,7 @@
 {
   "name" : "로그아웃",
   "target" : "https://uip.webida.net/",
-  "modified" : 1403075462262,
+  "modified" : 1404204648597,
   "timeout" : 10,
   "prerequisites" : [ "template/logintest.selenese" ],
   "commands" : [ {
