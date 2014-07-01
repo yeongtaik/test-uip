@@ -1,7 +1,7 @@
 {
   "name" : "메뉴 사용해 기능 실행",
   "target" : "https://uip.webida.net/",
-  "modified" : 1403512037553,
+  "modified" : 1404204401882,
   "timeout" : 10,
   "prerequisites" : [ "template/logintest.selenese" ],
   "commands" : [ {
@@ -21,7 +21,7 @@
     "title" : "Find themeDialog",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "themeValue", "css=.dijitDialogTitle" ]
+    "arguments" : [ "themeValue", "css=#dijit_Dialog_1_title.dijitDialogTitle" ]
   }, {
     "uuid" : "c7d5b0c9ac1565340175486b-1142784790",
     "title" : "Validation themeDialog",

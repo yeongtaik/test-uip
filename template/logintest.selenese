@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "https://uip.webida.net/",
-  "modified" : 1403074619691,
+  "modified" : 1404110822816,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -71,6 +71,12 @@
     "commands" : [ ],
     "arguments" : [ "uipwindow" ]
   }, {
+    "uuid" : "eb7e6c86ac1565444a15d5f5-1320150511",
+    "title" : "wait until loading screen disappear",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+  }, {
     "uuid" : "a8661dc8ac15653400348157-771301334",
     "title" : "Search userinfo information",
     "keyword" : "store",
@@ -82,12 +88,6 @@
     "keyword" : "equals",
     "commands" : [ ],
     "arguments" : [ "$(userinfo)", "uiptest@webida.org" ]
-  }, {
-    "uuid" : "a92b7e73ac156534013ebfbe-912842004",
-    "title" : "waiting",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "10000" ]
   } ],
   "cleanUp" : [ ]
 }
