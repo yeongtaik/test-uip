@@ -1,0 +1,123 @@
+{
+  "name" : "view minimize test",
+  "target" : "https://uipsite.webida.net",
+  "modified" : 1409034154172,
+  "timeout" : 10,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "0fe1bfad7f0001010bd66a302050776810",
+    "title" : "leftView minimize",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_0_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconOpen" ]
+  }, {
+    "uuid" : "1015aaec7f0001015983b76c1400740096",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "101134a67f0001010ae3e57f1307447322",
+    "title" : "check leftView minimize",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "5" ]
+  }, {
+    "uuid" : "10164fc47f0001015cbdcaf1-442251515",
+    "title" : "bottomView minimize",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_3_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconOpen" ]
+  }, {
+    "uuid" : "101767bc7f000101306d7a36-1201644790",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1017c1ac7f0001016a0b07c4-1264513461",
+    "title" : "check bottomView minimize",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_3", "5" ]
+  }, {
+    "uuid" : "101b4a1b7f0001017d8aa25f1466213048",
+    "title" : "rightView minimize",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_2_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconOpen" ]
+  }, {
+    "uuid" : "10e9ee487f0001010e66c705-628578169",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "10ea1c477f000101163629591110449246",
+    "title" : "check rightView minimize",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_2", "5" ]
+  }, {
+    "uuid" : "10f04eae7f0001016c6a8398-1911037216",
+    "title" : "leftView restore",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_0_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconClosed" ]
+  }, {
+    "uuid" : "10f069fd7f0001011fa3056e457364825",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "10f06be47f0001016c9348811534351897",
+    "title" : "bottomView restore",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_3_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconClosed" ]
+  }, {
+    "uuid" : "10f334b37f000101612c2306311901404",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "10f3731f7f0001011106ecf7-439857745",
+    "title" : "rightView restore",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dijit_layout_ContentPane_2_splitter>.dijitSplitterThumb.dojoxToggleSplitterIcon.dojoxToggleSplitterIconClosed" ]
+  }, {
+    "uuid" : "10f3d4677f0001013ff521d11345456545",
+    "title" : "wait operation",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "10f53eab7f0001013f3c2be9-460484627",
+    "title" : "check restore left",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "2" ]
+  }, {
+    "uuid" : "10f60c947f00010172b98106-90771421",
+    "title" : "check restore bottom",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_3", "5" ]
+  }, {
+    "uuid" : "10f65d1c7f00010121b3546b400321723",
+    "title" : "check restore right",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_2", "5" ]
+  }, {
+    "uuid" : "10faaf487f000101222edcc3-1297569226",
+    "title" : "wait close",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}
