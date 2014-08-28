@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409121010032,
+  "modified" : 1409212395754,
   "timeout" : 10,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -69,7 +69,7 @@
     "title" : "open context menu",
     "keyword" : "contextClick",
     "commands" : [ ],
-    "arguments" : [ "xpath= //span[.=\"previewtest.html\"]/../.." ]
+    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest.html\"]/../.." ]
   }, {
     "uuid" : "15af90cd7f00010104c9eb48101892530",
     "title" : "wait",
@@ -105,7 +105,7 @@
     "title" : "open preview test file in editor",
     "keyword" : "doubleclick",
     "commands" : [ ],
-    "arguments" : [ "xpath= //span[.=\"previewtest.html\"]/../.." ]
+    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest.html\"]/../.." ]
   }, {
     "uuid" : "15396f617f0001010feb0d19-1463403506",
     "title" : "wait",
