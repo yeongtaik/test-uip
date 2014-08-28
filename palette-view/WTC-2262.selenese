@@ -1,15 +1,15 @@
 {
   "name" : "컴포넌트 목록 표시",
   "target" : "https://uip.webida.net/",
-  "modified" : 1404203245343,
+  "modified" : 1409028504335,
   "timeout" : 10,
-  "prerequisites" : [ "template/logintest.selenese" ],
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "f108e98fac1565443741da421011562699",
     "title" : "Click palette-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[widgetid=\"dijit_layout_TabContainer_0_tablist_paletteView\"]" ]
+    "arguments" : [ "css=span[name*=paletteView]" ]
   }, {
     "uuid" : "a8a552d4ac156534010e5ead-1206711403",
     "title" : "Check palette-view",
