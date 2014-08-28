@@ -1,0 +1,45 @@
+{
+  "name" : "UI Prototyping Tool 실행",
+  "target" : "",
+  "modified" : 1409212198638,
+  "timeout" : 10,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "0cb28b22ac15653401885ad8-514230527",
+    "title" : "clickUIPProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]" ]
+  }, {
+    "uuid" : "0cd846d9ac15653400d5a799-1832103093",
+    "title" : "pause 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "0cd1a93cac15653401d6010d-873225612",
+    "title" : "waitUIPWindow",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekQYk8liye/uip-sample" ]
+  }, {
+    "uuid" : "0cd5fdb2ac15653401bdeb05-1012407907",
+    "title" : "switchUIPWindow",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow" ]
+  }, {
+    "uuid" : "10a89debac15653400deb59b-957162101",
+    "title" : "waitForLoadingScreen",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "5" ]
+  }, {
+    "uuid" : "0cdbcf97ac15653401ba274d-1869612275",
+    "title" : "waitForEndingOfLoad",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+  } ],
+  "cleanUp" : [ ]
+}

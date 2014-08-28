@@ -1,0 +1,45 @@
+{
+  "name" : "test resource 파일을 이용한 프로젝트 생성",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1409212085737,
+  "timeout" : 10,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "0c99def3ac15653400de1ab91069883315",
+    "title" : "openNewProjectDlg",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.pannel-newroject" ]
+  }, {
+    "uuid" : "0c9bd45aac15653400818e4b651298631",
+    "title" : "clickSCMSupportBtn",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=scm-support-chk" ]
+  }, {
+    "uuid" : "0c9cc9d4ac1565340185e16f-1982936471",
+    "title" : "typeProjectName",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=scm-proj-name", "uip-sample" ]
+  }, {
+    "uuid" : "0c9dc63cac156534010db86c1643773516",
+    "title" : "typeCloneURL",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=scm-url", "https://github.com/yoonhyung/uip-sample" ]
+  }, {
+    "uuid" : "0ca64f00ac1565340077e1f0-634902855",
+    "title" : "clickCreateProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=newproj-btn" ]
+  }, {
+    "uuid" : "0c9f2dd1ac1565340085a22f-1610042530",
+    "title" : "waitForCreatedProject",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]", "15" ]
+  } ],
+  "cleanUp" : [ ]
+}

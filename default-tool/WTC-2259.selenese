@@ -1,9 +1,9 @@
 {
   "name" : "화면 배치",
   "target" : "https://uip.webida.net/",
-  "modified" : 1404201874718,
+  "modified" : 1409029711839,
   "timeout" : 10,
-  "prerequisites" : [ "template/logintest.selenese" ],
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "ad8e92b6ac1565340188e018304851966",
     "title" : "Search Workbench",
@@ -27,7 +27,7 @@
     "title" : "Click Workspace-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[widgetid=\"dijit_layout_TabContainer_0_tablist_workspaceView\"]" ]
+    "arguments" : [ "css=span[name*=workspaceView]" ]
   }, {
     "uuid" : "ad90b408ac1565340057c39d-1601024932",
     "title" : "Search Workspace-view",
@@ -39,7 +39,7 @@
     "title" : "Click Palette-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[widgetid=\"dijit_layout_TabContainer_0_tablist_paletteView\"]" ]
+    "arguments" : [ "css=span[name*=paletteView]" ]
   }, {
     "uuid" : "ad91bbb8ac15653400057a8d-1906188067",
     "title" : "Search Palette-view",
@@ -51,7 +51,7 @@
     "title" : "Click Properties-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[widgetid=\"dijit_layout_TabContainer_5_tablist_propertiesView\"]" ]
+    "arguments" : [ "css=span[name*=propertiesView]" ]
   }, {
     "uuid" : "ad926f95ac15653401c8d019-1129628231",
     "title" : "Search Properties-view",
@@ -63,7 +63,7 @@
     "title" : "Click Eventview",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[widgetid=\"dijit_layout_TabContainer_5_tablist_eventView\"]" ]
+    "arguments" : [ "css=span[name*=eventView]" ]
   }, {
     "uuid" : "ad9371e5ac156534015981f7-634049932",
     "title" : "Search Event-view",
