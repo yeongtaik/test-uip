@@ -1,22 +1,10 @@
 {
-  "name" : "",
+  "name" : "컴포넌트 정보 제공",
   "target" : "",
-  "modified" : 1409221758192,
+  "modified" : 1409223048145,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
-    "uuid" : "1bfef160ac15653401be600f-437890343",
-    "title" : "Click PaletteView",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=span[name*=paletteView]" ]
-  }, {
-    "uuid" : "1bff4c6eac15653401ed0ae9206696817",
-    "title" : "Check Palette-view",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=palette-view", "5" ]
-  }, {
     "uuid" : "1bffc454ac15653400d93ee7724602739",
     "title" : "Click button component",
     "keyword" : "click",
