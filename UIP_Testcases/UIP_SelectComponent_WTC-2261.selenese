@@ -1,0 +1,27 @@
+{
+  "name" : "컴포넌트 선택",
+  "target" : "",
+  "modified" : 1409292278675,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
+  "commands" : [ {
+    "uuid" : "2059116aac1565340008858b458948617",
+    "title" : "Click button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.button\"]" ]
+  }, {
+    "uuid" : "2059e062ac15653401640803120482020",
+    "title" : "Click Image",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.img\"]" ]
+  }, {
+    "uuid" : "205a9a2aac15653400fa688f-1073495054",
+    "title" : "Click Label",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.label\"]" ]
+  } ],
+  "cleanUp" : [ ]
+}
