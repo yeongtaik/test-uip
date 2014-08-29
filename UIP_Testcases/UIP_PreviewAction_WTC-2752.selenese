@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409209143408,
+  "modified" : 1409272164977,
   "timeout" : 10,
   "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
@@ -29,8 +29,32 @@
     "commands" : [ ],
     "arguments" : [ "2000" ]
   }, {
+    "uuid" : "1f26dc2d7f00010110b11d0c1712617560",
+    "title" : "click select alert action button",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var bt1 = $('.uipPreviewActionTable').find('button')[1];\n\nif (!bt1) {\n\tthrow new Error('event action select button not exist');\n}\n\nbt1.click();" ]
+  }, {
+    "uuid" : "1f281d1b7f0001011bfdd04a823435077",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f292e017f0001010649834c-867956418",
+    "title" : "check alert dialog",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "alert=yes" ]
+  }, {
+    "uuid" : "1f28eeca7f0001010f1a63eb-1844440988",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
     "uuid" : "1a52c6937f00010105ba1919-434589660",
-    "title" : "click  first run button",
+    "title" : "click  select page move action button",
     "keyword" : "executeScript",
     "commands" : [ ],
     "arguments" : [ "var bt1 = $('.uipPreviewActionTable').find('button')[0];\n\nif (!bt1) {\n\tthrow new Error('event action select button not exist');\n}\n\nbt1.click();" ]
