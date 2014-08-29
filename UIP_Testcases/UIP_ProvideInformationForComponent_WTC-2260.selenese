@@ -1,0 +1,21 @@
+{
+  "name" : "컴포넌트 정보 제공",
+  "target" : "",
+  "modified" : 1409223048145,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
+  "commands" : [ {
+    "uuid" : "1bffc454ac15653400d93ee7724602739",
+    "title" : "Click button component",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.button\"]" ]
+  }, {
+    "uuid" : "1c1dfa96ac156534010bc6e4-2124775781",
+    "title" : "Validtaion check",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[contains(@class, \"dijitTooltipBelow\") and @style]", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
