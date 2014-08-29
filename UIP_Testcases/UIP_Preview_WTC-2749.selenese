@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409212395754,
+  "modified" : 1409272763789,
   "timeout" : 10,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -95,7 +95,43 @@
     "commands" : [ ],
     "arguments" : [ "id=CTX/Run &Preview" ]
   }, {
+    "uuid" : "1f2f77107f0001010931f994-911977893",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f2eb96f7f000101278eb611-675139668",
+    "title" : "check preview opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+  }, {
+    "uuid" : "1f30b5c17f00010104e71de41499319370",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f30d8267f00010163b965d0-915399652",
+    "title" : "close preview",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screenover-center-pane-close-button" ]
+  }, {
     "uuid" : "160119997f000101121ca0d7705796302",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f31fa957f00010167a878ab370399365",
+    "title" : "check close preview",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+  }, {
+    "uuid" : "1f32611e7f00010174eb251b2145637873",
     "title" : "wait",
     "keyword" : "pause",
     "commands" : [ ],
@@ -111,7 +147,7 @@
     "title" : "wait",
     "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ "2000" ]
+    "arguments" : [ "5000" ]
   }, {
     "uuid" : "160a29d57f000101371678d2642558688",
     "title" : "check editor opened",
