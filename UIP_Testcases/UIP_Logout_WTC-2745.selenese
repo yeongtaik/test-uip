@@ -1,0 +1,27 @@
+{
+  "name" : "UIP_Logout",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1409282915589,
+  "timeout" : 10,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "1fc51275ac1564123281e93f-674475374",
+    "title" : "clickUserInfo",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#dropDownUserinfo > span > span" ]
+  }, {
+    "uuid" : "1fc5a976ac1564121c32ae3e1504224382",
+    "title" : "clickLogout",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@aria-label=\"Sign out \"]" ]
+  }, {
+    "uuid" : "1fc9e434ac15641262ff2e08-991310634",
+    "title" : "checkLogInStatus",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.login", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
