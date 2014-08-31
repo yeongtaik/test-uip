@@ -1,0 +1,57 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409475814006,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusWorkspaceView.selenese" ],
+  "commands" : [ {
+    "uuid" : "2b33cf5ea9fe39550143716a627439559",
+    "title" : "close all editors",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "2b33db9ea9fe39550025d40e1879838673",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "2b1934c8a9fe395500e48599-97599535",
+    "title" : "open testpage.html",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='testpage.html']/../.." ]
+  }, {
+    "uuid" : "2b4ab50ba9fe395500bca7ec1936377359",
+    "title" : "wait",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='tab' and .='testpage.html']", "5" ]
+  }, {
+    "uuid" : "2b1a38e5a9fe395500c83c421233235964",
+    "title" : "open testpage2.html",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='testpage2.html']/../.." ]
+  }, {
+    "uuid" : "2b1a7af5a9fe395500390e6f-1510475554",
+    "title" : "wait",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='tab' and .='testpage2.html']", "5" ]
+  }, {
+    "uuid" : "2b4da229a9fe395500f9409a260430513",
+    "title" : "wait iframe loaded",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "2b1a9caca9fe39550019a408-1326870953",
+    "title" : "check testpage2 opened",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var designer = document.querySelector('div.dijitVisible iframe');\r\nif (!designer) {\r\n\tthrow new Error('designer not find');\r\n}\r\n\r\nvar doc = designer.contentDocument;\r\n\r\nvar heading = doc.querySelector('h1');\r\n\r\nif (!heading || heading.innerText !== 'testpage2') {\r\n  throw new Error('not a expected target page');\r\n}" ]
+  } ],
+  "cleanUp" : [ ]
+}
