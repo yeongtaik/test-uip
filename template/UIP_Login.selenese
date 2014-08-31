@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409027652481,
+  "modified" : 1409475394418,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -45,7 +45,7 @@
     "title" : "waitForLogginedPage",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=project", "5" ]
+    "arguments" : [ "id=project", "10" ]
   } ],
   "cleanUp" : [ ]
 }
