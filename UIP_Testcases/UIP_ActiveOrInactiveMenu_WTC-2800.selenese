@@ -1,0 +1,165 @@
+{
+  "name" : "Check Active or Inactive Menu",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1409461219380,
+  "timeout" : 20,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "2a20eef9ac15641258486032169424088",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "2a6ee069ac1564125d5d6f811572401698",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "2a2161d6ac15641200210588-123570375",
+    "title" : "click first directory in workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='wv-tree']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[2]" ]
+  }, {
+    "uuid" : "2a217ee4ac1564120438e5c91787802834",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "2a21b534ac156412355800652083952525",
+    "title" : "click File from Menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File" ]
+  }, {
+    "uuid" : "2a21fd34ac1564120eca30fb-1396523163",
+    "title" : "wait for Save list from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&Save", "5" ]
+  }, {
+    "uuid" : "2a22a3daac1564122973515a77512678",
+    "title" : "check that New is enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/&New' and @class='dijitReset dijitMenuItem']", "10" ]
+  }, {
+    "uuid" : "2a249daeac156412328530d41465552245",
+    "title" : "check that Save is disabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/&Save' and @class='dijitReset dijitMenuItem dijitMenuItemDisabled dijitDisabled']", "10" ]
+  }, {
+    "uuid" : "2a267829ac156412791542c21871655531",
+    "title" : "check that Save Status is enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/Save Status' and @class='dijitReset dijitMenuItem']", "10" ]
+  }, {
+    "uuid" : "2a27066cac1564123b7fd6de720564",
+    "title" : "check that Rename is enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/Ren&ame' and @class='dijitReset dijitMenuItem']", "9" ]
+  }, {
+    "uuid" : "2a2701acac1564123deaf099451672313",
+    "title" : "check that  Switch workspace is enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/Switc&h Workspace' and @class='dijitReset dijitMenuItem']", "10" ]
+  }, {
+    "uuid" : "2a2783d6ac156412340b369e830379239",
+    "title" : "check that  Quit is enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/&Quit' and @class='dijitReset dijitMenuItem']", "9" ]
+  }, {
+    "uuid" : "2a249bd7ac156412044c8d6f869736311",
+    "title" : "check that Save All is disabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@id='/&File/Sav&e All' and @class='dijitReset dijitMenuItem dijitMenuItemDisabled dijitDisabled']", "9" ]
+  }, {
+    "uuid" : "2a32b0f1ac1564126a6332fa971205132",
+    "title" : "wait for new list from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New", "9" ]
+  }, {
+    "uuid" : "2a32cddeac1564126f272767-1353485839",
+    "title" : "click new from File menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New" ]
+  }, {
+    "uuid" : "2a3305a7ac15641204fdb155347131426",
+    "title" : "wait for new page from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page", "5" ]
+  }, {
+    "uuid" : "2a333ba2ac1564121672645e1625744383",
+    "title" : "click page for new page",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page" ]
+  }, {
+    "uuid" : "2a335f14ac1564120ee9fce9130645399",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "9000" ]
+  }, {
+    "uuid" : "2a339631ac1564126e9b501c1673898017",
+    "title" : "Check that a pop-up dialog is the dialog of \"New Page\"",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Page']", "13" ]
+  }, {
+    "uuid" : "2a35b09bac1564122261b2f1-952707406",
+    "title" : "Type Page Name",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=template-name", "NewTestPage" ]
+  }, {
+    "uuid" : "2a52b21dac1564122eb29243629544864",
+    "title" : "click location button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=template-location-button" ]
+  }, {
+    "uuid" : "2a53a92cac1564121ebee2d4-378886719",
+    "title" : "wait for dialog of \"Choose location for a page or template\"",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Choose location for a page or template']", "5" ]
+  }, {
+    "uuid" : "2a59b2b5ac156412461ccac7507038235",
+    "title" : "click workspace to select workspace as location for new page",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/span[@data-dojo-attach-point='contentNode']/span[.='uip-test']" ]
+  }, {
+    "uuid" : "2a3d89afac156412683c3a241664470361",
+    "title" : "Ok button after selecting location",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='dijitReset dijitInline dijitButtonText' and .='OK']" ]
+  }, {
+    "uuid" : "2a6810beac15641269184939709170110",
+    "title" : "click finish",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=" ]
+  }, {
+    "uuid" : "2a6f33c7ac1564125ca15100-1097809499",
+    "title" : "Palett선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  } ],
+  "cleanUp" : [ ]
+}
