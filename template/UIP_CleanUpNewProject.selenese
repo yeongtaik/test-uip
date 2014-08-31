@@ -1,15 +1,15 @@
 {
   "name" : "Test resource 디렉터리 Cleanup",
   "target" : "",
-  "modified" : 1409027713830,
+  "modified" : 1409288209703,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese" ],
+  "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "0cb28b22ac15653401885ad8-514230527",
     "title" : "clickTestProject",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=div[data-project=uip-test]" ]
+    "arguments" : [ "css=div[data-project=uip-sample]" ]
   }, {
     "uuid" : "0cb47387ac15653401d8ba1f1993204724",
     "title" : "mouseMoveToSetting",
@@ -22,6 +22,12 @@
     "keyword" : "click",
     "commands" : [ ],
     "arguments" : [ "css=ul.project-setting-wrapper>#proj-delete" ]
+  }, {
+    "uuid" : "201a4226ac156534005d20c2-81339158",
+    "title" : "Click alert yes",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "alert=yes" ]
   } ],
   "cleanUp" : [ ]
 }
