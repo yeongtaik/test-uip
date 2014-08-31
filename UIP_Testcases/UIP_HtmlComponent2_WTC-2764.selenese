@@ -1,0 +1,75 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409295794316,
+  "timeout" : 10,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "209337fdac15653d008896761182904606",
+    "title" : "Click Palette view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_TabContainer_0_tablist_paletteView" ]
+  }, {
+    "uuid" : "1a686db0ac15653d0146688d-739422469",
+    "title" : "Search Check Box component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.checkbox\"]", "10" ]
+  }, {
+    "uuid" : "20682accac15653d01e5ed552004717943",
+    "title" : "Search Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.input\"]", "10" ]
+  }, {
+    "uuid" : "20682a16ac15653d01540fcb2063779878",
+    "title" : "Search Date Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.dateinput\"]", "10" ]
+  }, {
+    "uuid" : "2068294bac15653d0060a20f-1318210603",
+    "title" : "Search Month Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.monthinput\"]", "10" ]
+  }, {
+    "uuid" : "2068288aac15653d01e3fe95-1723144406",
+    "title" : "Search Week Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.weekinput\"]", "10" ]
+  }, {
+    "uuid" : "206827b7ac15653d013abd03847948598",
+    "title" : "Search Time Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.timeinput\"]", "10" ]
+  }, {
+    "uuid" : "206826e6ac15653d006dc489-1987164106",
+    "title" : "Search Number Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.numberinput\"]", "10" ]
+  }, {
+    "uuid" : "206825f7ac15653d014dfcbb-778521887",
+    "title" : "Search Range Input component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.rangeinput\"]", "10" ]
+  }, {
+    "uuid" : "20682510ac15653d00159a07-911276712",
+    "title" : "Search Radio Button component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.radiobutton\"]", "10" ]
+  }, {
+    "uuid" : "20681d73ac15653d011a9847-401038133",
+    "title" : "Search Text Area component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.textarea\"]", "10" ]
+  } ],
+  "cleanUp" : [ ]
+}
