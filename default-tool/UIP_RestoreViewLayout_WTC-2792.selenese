@@ -1,0 +1,99 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409537996606,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_LeftSplitterClose.selenese", "template/UIP_LogOut.selenese" ],
+  "commands" : [ {
+    "uuid" : "2060df307f0001010060209f-1417467066",
+    "title" : "openUipWindow",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "http://uipsite.webida.net", "css=.login-bar" ]
+  }, {
+    "uuid" : "204b0ab27f00010100dbec1f-549243355",
+    "title" : "clickLogInBar",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.login" ]
+  }, {
+    "uuid" : "204c322f7f000101017a10b31352617296",
+    "title" : "waitForLogInBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "5" ]
+  }, {
+    "uuid" : "204ce5fb7f000101004fcdc3-479723925",
+    "title" : "typeEmailForID",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "uiptest@webida.org" ]
+  }, {
+    "uuid" : "204d4e097f00010101becf0b1215181621",
+    "title" : "typePasswdForPwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "uipuip" ]
+  }, {
+    "uuid" : "204d8b437f00010100e0a405396040431",
+    "title" : "clickLoginButton",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "204dcb7f7f000101001edc2f-2003479254",
+    "title" : "waitForLogginedPage",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=project", "5" ]
+  }, {
+    "uuid" : "204e2b907f000101015dc00e-397796935",
+    "title" : "clickUIPProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]" ]
+  }, {
+    "uuid" : "2efda4217f000101014655521424119656",
+    "title" : "pause 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "2ec3f8a47f000101001c1011-1628418262",
+    "title" : "waitUIPWindow",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=ekQYk8liye/uip-sample" ]
+  }, {
+    "uuid" : "2ef746327f000101003649f31348044260",
+    "title" : "switchUIPWindow",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPTestWindow" ]
+  }, {
+    "uuid" : "2ef90f917f000101005c8391-632538532",
+    "title" : "waitForEndingOfLoad",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+  }, {
+    "uuid" : "20504a607f00010100ef75b8-133162526",
+    "title" : "Check Left Splitter Close",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "5" ]
+  }, {
+    "uuid" : "2efa01127f0001010158909a-71939710",
+    "title" : "Click Left Splitter Open",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed" ]
+  }, {
+    "uuid" : "2efb03047f00010101f23ddf963198469",
+    "title" : "Check Open Left Splitter",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
