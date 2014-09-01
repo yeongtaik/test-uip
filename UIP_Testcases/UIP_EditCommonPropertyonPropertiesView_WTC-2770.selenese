@@ -1,0 +1,45 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409561187778,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_FocusPropertiesView.selenese" ],
+  "commands" : [ {
+    "uuid" : "2095f826ac1565350d428b62983838586",
+    "title" : "위젯 2개 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var getElem = function(id) {\r\n return document.querySelector('.uib_design_editor_iframe').contentDocument.getElementById(id);\r\n}\r\n\r\nvar getIframe = function() {\r\n return document.querySelector('.uib_design_editor_iframe');\r\n}\r\n\r\nvar fireEvent = function(event) {\r\n document.querySelector('.uib_design_editor_layer_event').dispatchEvent(event);\r\n}\r\n\r\n\r\nvar selectWidget = function(id, bAppend) {\r\n var x, y;\r\n var elem = getElem(id);\r\n if (!elem) {\r\n  return;\r\n }\r\n \r\n var widgetBound = getElem(id).getBoundingClientRect(); \r\n var frameBound = getIframe().getBoundingClientRect();\r\n var x = widgetBound.left + (widgetBound.width / 2) + frameBound.left\r\n var y = widgetBound.top + (widgetBound.height / 2) + frameBound.top\r\n var ctrl = false;\r\n if (bAppend) {\r\n  ctrl = true;\r\n }\r\n var downEvent = document.createEvent(\"MouseEvents\");\r\n     downEvent .initMouseEvent(\"mousedown\", true, true, window, 0, \r\n x, y, x, y, \r\n ctrl, false, false, false, 0, null);\r\n var upEvent = document.createEvent(\"MouseEvents\");\r\n     upEvent.initMouseEvent(\"mouseup\", true, true, window, 0, \r\n x, y, x, y, \r\n ctrl, false, false, false, 0, null);\r\n fireEvent(downEvent);\r\n fireEvent(upEvent);  \r\n}\r\nselectWidget('id2');\r\nselectWidget('id3', true);" ]
+  }, {
+    "uuid" : "211cb89fac1565354de84ab51641483306",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "209f8e00ac1565351fc4f22c-1225709670",
+    "title" : "변경할 텍스트 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "css=.property-string-input", "A New Page 2" ]
+  }, {
+    "uuid" : "20ae8380ac1565353f1fe497623067753",
+    "title" : "포커스 아웃을 위한 라벨 클릭",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.property-string-label" ]
+  }, {
+    "uuid" : "20a05497ac1565357f237233159014563",
+    "title" : "대기 2초",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "20a11807ac1565351328d05f382095635",
+    "title" : "변경된 텍스트 확인",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var getElem = function(id) {\r\n return document.querySelector('.uib_design_editor_iframe').contentDocument.getElementById(id);\r\n};\r\n\r\nif (getElem('id2').textContent !== 'A New Page 2' || getElem('id3').textContent !== 'A New Page 2') {\r\n  throw new Error();\r\n}" ]
+  } ],
+  "cleanUp" : [ ]
+}
