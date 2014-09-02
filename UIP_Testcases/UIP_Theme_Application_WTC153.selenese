@@ -1,0 +1,93 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409569747524,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "30d6b046ac156549008c36fa1804569897",
+    "title" : "select workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_TabContainer_0_tablist_workspaceView" ]
+  }, {
+    "uuid" : "30d744e5ac1565490168fa5f-573230126",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "30d7718dac156549005d07d1-1680935271",
+    "title" : "check workspace opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=workspace-view", "5" ]
+  }, {
+    "uuid" : "30d7e19cac1565490117146d2049185951",
+    "title" : "collapseAll",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#wv-toolbar>.wvIconCollapseAll" ]
+  }, {
+    "uuid" : "30d86174ac15654901ece2cb-991132337",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "30d8b674ac1565490045f2471264950760",
+    "title" : "open root folder",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitTreeContainer" ]
+  }, {
+    "uuid" : "30d9a234ac1565490025f7ae-660314218",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "30d9f514ac15654901c27b561896631198",
+    "title" : "open sample folder",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"sample\"]" ]
+  }, {
+    "uuid" : "30da8b5bac156549019dd7e5348462627",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "30d4d43eac15654900a1240b1782955090",
+    "title" : "open page",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"test_page_for_theme.html\"]" ]
+  }, {
+    "uuid" : "30dbfecaac15654900aabdbe-909270133",
+    "title" : "click properties view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=span[name*=propertiesView]" ]
+  }, {
+    "uuid" : "30dea102ac1565490000de51-402712443",
+    "title" : "click select box",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=select.prop-theme" ]
+  }, {
+    "uuid" : "30dfb522ac1565490195328b1328212455",
+    "title" : "click theme",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//option[text()=\"sample1_css\"]" ]
+  }, {
+    "uuid" : "30d51e16ac15654900a0ee121831938995",
+    "title" : "confirm applied theme",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}
