@@ -1,0 +1,147 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409626802704,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "31520071ac156549018bcbe2-789207590",
+    "title" : "select workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=dijit_layout_TabContainer_0_tablist_workspaceView" ]
+  }, {
+    "uuid" : "3152ab2aac15654900b5fb55445013557",
+    "title" : "check workspace opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=workspace-view", "5" ]
+  }, {
+    "uuid" : "3153b1f5ac1565490022d357-1321015177",
+    "title" : "collapseAll",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#wv-toolbar>.wvIconCollapseAll" ]
+  }, {
+    "uuid" : "3154189cac15654901a0bd23-2074612775",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "31544fa0ac15654900c2b8fb-1438658506",
+    "title" : "open root folder",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitTreeContainer" ]
+  }, {
+    "uuid" : "315589a2ac156549009b6572-1417994129",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "3154c52aac1565490148226f-139716154",
+    "title" : "select sample",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"sample\"]" ]
+  }, {
+    "uuid" : "34086894ac15654900bed794-864180760",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "31447a6eac15654900ab6ce41260813751",
+    "title" : "Click Insert shortcut menu",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=uip-body", "+INSERT" ]
+  }, {
+    "uuid" : "33f7d90dac156549018b61c3-1077088732",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "33f80045ac1565490059a25e-1602046891",
+    "title" : "input page name",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "css=#template-name", "test_page" ]
+  }, {
+    "uuid" : "33f99f71ac15654901bba3fc2002279980",
+    "title" : "input description",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=template-newdescription", "test description" ]
+  }, {
+    "uuid" : "344a76d1ac15654900200d4e-1252052912",
+    "title" : "click location button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=template-location-button" ]
+  }, {
+    "uuid" : "344b6c8fac1565490012e2fc-169189106",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "344b90b1ac1565490151c88f1464080161",
+    "title" : "click dialog",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"Choose location for a page or template\"]" ]
+  }, {
+    "uuid" : "344c00cdac15654901e352e3-872409476",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "344c54fcac15654901969be3-1672166177",
+    "title" : "select path to save",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialogFocused .dijitTreeIsRoot>.dijitTreeRow" ]
+  }, {
+    "uuid" : "344d6421ac156549006ba3f2-1812999242",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "344d970eac156549019395d9273189400",
+    "title" : "click ok",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"OK\"]" ]
+  }, {
+    "uuid" : "344df16fac156549007ae2d21223397134",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "33fa84a5ac1565490104e9cb1204525295",
+    "title" : "click Finish button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=shortcutsDlgCloseButton_label" ]
+  }, {
+    "uuid" : "3403ffbdac15654900b8f5d2345665224",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "33ff6e1cac156549017c4ac91459012729",
+    "title" : "Confirm opened editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"test_page.html\"]", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}

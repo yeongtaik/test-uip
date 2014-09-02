@@ -1,0 +1,105 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409626508701,
+  "timeout" : 10,
+  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "31330052ac15654901640093749791555",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div + div" ]
+  }, {
+    "uuid" : "313edcc4ac156549008db4ee-1299446603",
+    "title" : "wait theme menu enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Create &Template\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "5" ]
+  }, {
+    "uuid" : "3133aae9ac1565490195c81f-89882799",
+    "title" : "Click create template",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&Admin/Create &Template" ]
+  }, {
+    "uuid" : "3400810dac156549017fba40-867926964",
+    "title" : "input page name",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=template-name", "test_template" ]
+  }, {
+    "uuid" : "34010d89ac1565490154c3a31825921197",
+    "title" : "input description",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=template-newdescription", "new template" ]
+  }, {
+    "uuid" : "340d3d24ac15654901c1a6891430891884",
+    "title" : "click location button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=template-location-button" ]
+  }, {
+    "uuid" : "34164065ac1565490175ef94848265378",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "342fef7bac15654901d73a002113442738",
+    "title" : "click dialog",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"Choose location for a page or template\"]" ]
+  }, {
+    "uuid" : "3432c489ac156549012dbe30-1277135751",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "340e1f9dac1565490016b0d51752343606",
+    "title" : "select path to save",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialogFocused .dijitTreeIsRoot>.dijitTreeRow" ]
+  }, {
+    "uuid" : "342572ffac1565490190dc0e626512056",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "34131a19ac1565490128573f279866471",
+    "title" : "click ok",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"OK\"]" ]
+  }, {
+    "uuid" : "34135bdbac1565490096a6411358461908",
+    "title" : "wait ",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "3402c860ac156549017c8b041600153376",
+    "title" : "click Finish button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=shortcutsDlgCloseButton_label" ]
+  }, {
+    "uuid" : "3403cd66ac15654900591cd0-1208611053",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3403247fac15654901659c87-992206178",
+    "title" : "Confirm opened editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"test_template.html\"]", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
