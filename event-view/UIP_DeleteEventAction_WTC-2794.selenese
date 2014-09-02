@@ -1,0 +1,39 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409542632014,
+  "timeout" : 10,
+  "prerequisites" : [ "event-view/UIP_AddEventAction_WTC-2795.selenese" ],
+  "commands" : [ {
+    "uuid" : "2f3c27c37f000101009f3d0a-1388384316",
+    "title" : "select page event",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dgrid-row-table td" ]
+  }, {
+    "uuid" : "2f3e8c997f00010101ac0a3d-1816363890",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "2f3ecb2f7f00010101ddd02e-1102000392",
+    "title" : "click event delete button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=event-action-delete" ]
+  }, {
+    "uuid" : "2f3f87737f0001010136a034-388772945",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "2f3ff2d37f000101012f6b94-518054773",
+    "title" : "check event delete",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dgrid-row-table td", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
