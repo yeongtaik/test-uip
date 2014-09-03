@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409569747524,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "30d6b046ac156549008c36fa1804569897",
     "title" : "select workspace",

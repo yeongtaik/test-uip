@@ -3,7 +3,7 @@
   "target" : "https://uip.webida.net/",
   "modified" : 1408965935204,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "c75fe82aac15653400503930-550736318",
     "title" : "Click Admin menu",

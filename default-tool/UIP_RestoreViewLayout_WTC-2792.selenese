@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409537996606,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_LeftSplitterClose.selenese", "template/UIP_LogOut.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LogOut.selenese" ],
   "commands" : [ {
     "uuid" : "2060df307f0001010060209f-1417467066",
     "title" : "openUipWindow",

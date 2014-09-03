@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409293206743,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "206808a3ac1565340096fd21-128457148",
     "title" : "Click close leftPanel",

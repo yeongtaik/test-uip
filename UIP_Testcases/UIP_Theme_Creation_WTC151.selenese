@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409576079759,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "2feafdeeac1565490160c70e1761443730",
     "title" : "wait 3s",

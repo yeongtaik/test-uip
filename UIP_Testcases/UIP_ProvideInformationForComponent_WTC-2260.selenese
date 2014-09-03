@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409223048145,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
     "uuid" : "1bffc454ac15653400d93ee7724602739",
     "title" : "Click button component",

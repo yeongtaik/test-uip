@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409536906681,
   "timeout" : 10,
-  "prerequisites" : [ "test-uip-master/UIP_Testcases/UIP_Login_WTC-2743.selenese", "test-uip-master/template/UIP_OpenTestpage.selenese" ],
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese", "common/UIP_OpenTestpage.selenese" ],
   "commands" : [ {
     "uuid" : "2a114d0aac15653701628ed8-968864169",
     "title" : "createWidget",

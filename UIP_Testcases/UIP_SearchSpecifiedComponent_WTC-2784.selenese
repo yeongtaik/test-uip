@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409291545351,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
     "uuid" : "1c594962ac1565340009528c-1749604983",
     "title" : "Type filter",
