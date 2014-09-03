@@ -1,0 +1,21 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409731900000,
+  "timeout" : 10,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "3a9083e2ac1565370065462e21805155",
+    "title" : "load design editor test plugin",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['./plugins/design-editor-test-util/plugin.js'], function () {});" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}
