@@ -1,0 +1,123 @@
+{
+  "name" : "LogInAndOut",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1409762055591,
+  "timeout" : 10,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "fbe78585ac15641223521591443304572",
+    "title" : "open UIPSite main page",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "", "css=.login-bar" ]
+  }, {
+    "uuid" : "fbe79241ac156412106a5019-68271290",
+    "title" : "click Log-in button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.login" ]
+  }, {
+    "uuid" : "fbe79bd8ac1564124ef02e3f168010422",
+    "title" : "wait For auth page",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "5" ]
+  }, {
+    "uuid" : "fbe7a3ceac1564124876945a1760469371",
+    "title" : "type valid ID value",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
+  }, {
+    "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
+    "title" : "type valid Passwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "uipuip" ]
+  }, {
+    "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
+    "title" : "click Login Button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "fbe7d34eac1564121f1131aa579415395",
+    "title" : "wait for logged-in page",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=project", "10" ]
+  }, {
+    "uuid" : "fbe8769cac1564122efad4c6-967296551",
+    "title" : "select workspace and start UIP",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]" ]
+  }, {
+    "uuid" : "0fcdc2f9ac15641252f106e71228686933",
+    "title" : "wait until new window is opend",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "6000" ]
+  }, {
+    "uuid" : "0d5b70d2ac15641254b983ad-2031959118",
+    "title" : "give name to New window",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/Project1" ]
+  }, {
+    "uuid" : "0d5d8d82ac156412248241bf1844418440",
+    "title" : "switch to new Window",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow" ]
+  }, {
+    "uuid" : "0fc5db59ac15641274ea5db2-41312117",
+    "title" : "wait untile the loading screen is disapear",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+  }, {
+    "uuid" : "fbe95fd9ac1564120ec821b32146649699",
+    "title" : "click UserInfo - email address above",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "5" ]
+  }, {
+    "uuid" : "3c53a6caac1e01155dca9fd82091385510",
+    "title" : "click workspace view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=span[name*=workspaceView]" ]
+  }, {
+    "uuid" : "3c543f29ac1e01150c8d09e41151681864",
+    "title" : "wait for workspace-view visibility ",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=workspace-view", "5" ]
+  }, {
+    "uuid" : "3c55b5a9ac1e0115580882fb948566285",
+    "title" : "open design editor test page",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role = \"treeitem\" and .=\\\"DesignEditorTestSample.html\\\"]/../.." ]
+  }, {
+    "uuid" : "3c56a177ac1e011546bb0567-579122855",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "3c5c59caac1e01151efc6a801722328893",
+    "title" : "load test plugin",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['./plugins/design-editor-test-util/plugin.js'], function(){});" ]
+  }, {
+    "uuid" : "3c5dabf1ac1e0115772f022b1414729814",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  } ],
+  "cleanUp" : [ ]
+}
