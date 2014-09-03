@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409554413273,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_LeftSplitterOpen.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_FocusEventVIew.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_LeftSplitterOpen.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_FocusEventVIew.selenese" ],
   "commands" : [ {
     "uuid" : "2f08ab847f00010101404fba84746699",
     "title" : "select widget",

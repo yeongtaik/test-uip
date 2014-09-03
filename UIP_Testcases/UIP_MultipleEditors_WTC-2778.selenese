@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409475814006,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusWorkspaceView.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
     "uuid" : "2b33cf5ea9fe39550143716a627439559",
     "title" : "close all editors",

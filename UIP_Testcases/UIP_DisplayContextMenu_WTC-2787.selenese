@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409290704752,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusWorkspaceView.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
     "uuid" : "202d7b60ac15653401955d9b1673807627",
     "title" : "contextClick page",

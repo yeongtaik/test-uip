@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409561187778,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_FocusPropertiesView.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_FocusPropertiesView.selenese" ],
   "commands" : [ {
     "uuid" : "2095f826ac1565350d428b62983838586",
     "title" : "위젯 2개 선택",

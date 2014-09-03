@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409626508701,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "31330052ac15654901640093749791555",
     "title" : "Click Admin menu",
