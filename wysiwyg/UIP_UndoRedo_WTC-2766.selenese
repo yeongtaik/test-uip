@@ -3,7 +3,7 @@
   "target" : "",
   "modified" : 1409660247296,
   "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese" ],
   "commands" : [ {
     "uuid" : "3617c30bac15653d0017a685-163290254",
     "title" : "Create component",
