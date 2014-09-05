@@ -1,0 +1,69 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409877376501,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "3c6dfa20ac1e01156d0d8da1-1020034703",
+    "title" : "select widget 'id2'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id2');" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "433460c7ac1565370197d4a3584107904",
+    "title" : "run direct edit",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+f2" ]
+  }, {
+    "uuid" : "4334a07eac156537015f6d05-2110020221",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "4334ac45ac156537011a25bd-1856803046",
+    "title" : "type to textarea 'testpage'",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=directedit", "testpage" ]
+  }, {
+    "uuid" : "433532a5ac15653701e426e8-1002900147",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "43354626ac156537015e2d9d-1235610054",
+    "title" : "end direct edit",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+tab" ]
+  }, {
+    "uuid" : "4336512dac15653700e19d98-1562904192",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c67df92ac1e011530f71b301824125929",
+    "title" : "check title value = 'testpage'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id2').getModel().getPropertyValue('text') !== 'testpage') {\r\n\tthrow new Error('direct edit action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}
