@@ -1,0 +1,51 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409818424788,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "3c6dfa20ac1e01156d0d8da1-1020034703",
+    "title" : "select widget 'id3'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3')" ]
+  }, {
+    "uuid" : "3fb7057dac1565370118ba8b1399618249",
+    "title" : "[copy]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+c" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3fb747b4ac15653701a7195c-177559859",
+    "title" : "[paste]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+v" ]
+  }, {
+    "uuid" : "3fb9f44aac15653700e8dce6970187513",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c67df92ac1e011530f71b301824125929",
+    "title" : "check count of child('id1') = 6",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 6)\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

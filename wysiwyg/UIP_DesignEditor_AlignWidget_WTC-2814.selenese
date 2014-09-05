@@ -1,0 +1,159 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409817102635,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "3dd6c8b3ac1565370134fedc-1441120234",
+    "title" : "select widget (id3, id13, id21)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3')\r\ntesterAdaptor.selectWidgetById('id13', true);\r\ntesterAdaptor.selectWidgetById('id21', true);" ]
+  }, {
+    "uuid" : "3dd77040ac15653700bfebdf1403626314",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3dd78a6dac15653701073adb1352043286",
+    "title" : "[align-left]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+left" ]
+  }, {
+    "uuid" : "3dd8434dac15653701c1b276-526913325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3dd859a5ac156537015a959b367440507",
+    "title" : "check widget bound (left)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif ((firstBound.left === secondBound.left) && (firstBound.left === thirdBound.left)) {\r\n} else  {\r\n\t\tthrow new Error('align left action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3ddb8debac15653700faf5f0-2126969764",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "3ddba06cac1565370041350b-1815018040",
+    "title" : "undo",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3ddd6872ac156537002a55ec861103992",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3ddc6f54ac15653700b2a1e92022989370",
+    "title" : "[align-top]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "alt+up" ]
+  }, {
+    "uuid" : "3ddca7abac15653701cf0d89-211840658",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3ddcb263ac1565370154765f672610202",
+    "title" : "check widget bound (top)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif ((firstBound.top === secondBound.top) && (firstBound.top === thirdBound.top)) {\r\n} else  {\r\n\t\tthrow new Error('align top action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3ddd3b83ac15653701160487-957686861",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "3ddd5f3bac156537012268ab-1230595252",
+    "title" : "undo",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3ddd7622ac1565370145dbc71882551872",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3ddff75aac1565370039b131886860743",
+    "title" : "[align-right]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "alt+right" ]
+  }, {
+    "uuid" : "3de000c2ac15653701f864ac-2105388036",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3dde0f0bac15653700a47d29-1838969273",
+    "title" : "check widget bound (right)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif (((firstBound.left+firstBound.width) === (secondBound.left+secondBound.width)) && ((firstBound.left+firstBound.width) === (thirdBound.left+thirdBound.width))) {\r\n} else  {\r\n\t\tthrow new Error('align right action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3ddf3922ac15653700f8f705-482663656",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "3ddf3e92ac15653700547d291619435695",
+    "title" : "undo",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3ddf4b82ac156537011b0cc71683952253",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3de05459ac15653700296c9f658345257",
+    "title" : "[align-bottom]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+down" ]
+  }, {
+    "uuid" : "3de08531ac1565370008e775-1791507539",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "3de08ef9ac15653701e485661224041483",
+    "title" : "check widget bound (bottom)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif (((firstBound.top+firstBound.height) === (secondBound.top+secondBound.height)) && ((firstBound.top+firstBound.height) === (thirdBound.top+thirdBound.height))) {\r\n} else  {\r\n\t\tthrow new Error('align bottom action is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3de180b1ac1565370148e42a-30715451",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409762055591,
+  "modified" : 1409790845469,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -111,7 +111,7 @@
     "title" : "load test plugin",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/design-editor-test-util/plugin.js'], function(){});" ]
+    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function(){});" ]
   }, {
     "uuid" : "3c5dabf1ac1e0115772f022b1414729814",
     "title" : "wait 2s",

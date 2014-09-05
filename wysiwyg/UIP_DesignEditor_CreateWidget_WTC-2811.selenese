@@ -1,0 +1,33 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409814395853,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "3c6ddffcac1e01151269cebf-958178679",
+    "title" : "create 2 button widget on 'id1' div ",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.createWidgetByRelativePoint('html.button', 'id1', 100, 100);\r\ntesterAdaptor.createWidgetByRelativePoint('html.button', 'id1', 150, 150);" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c67df92ac1e011530f71b301824125929",
+    "title" : "check count of child('id1') = 7",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 7) {\r\n\tthrow new Error('create widget is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

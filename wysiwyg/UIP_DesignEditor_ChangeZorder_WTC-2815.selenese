@@ -1,0 +1,135 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1409817683666,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "3de2b868ac15653701b6cf91404848334",
+    "title" : "select widget (id13, defult index = 2 )",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id13');" ]
+  }, {
+    "uuid" : "3de32e90ac15653701b0bf4c-660875607",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3de3c5a8ac1565370191baac-439825454",
+    "title" : "[Zorder-forward]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+shift+left" ]
+  }, {
+    "uuid" : "3dee8eaaac1565370018e022-934706042",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3debda84ac156537010af9c4116588048",
+    "title" : "check index = 3",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elem = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id13').getElement();\r\nif (elem.parentNode.childNodes.item(3) !== elem) {\r\n\tthrow new Error('zorder-forward action is fail');\r\n}" ]
+  }, {
+    "uuid" : "3dee7613ac15653701a5d36a1883940994",
+    "title" : "[undo]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3deec3aaac15653700262ff9-190292079",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3de49697ac156537012c14e9-158291561",
+    "title" : "[Zorder-backward]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+shift+right" ]
+  }, {
+    "uuid" : "3deed302ac1565370183346c-540235115",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3deef2c3ac156537012f4961-357845601",
+    "title" : "check index = 1",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elem = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id13').getElement();\r\nif (elem.parentNode.childNodes.item(1) !== elem) {\r\n\tthrow new Error('zorder-forward action is fail');\r\n}" ]
+  }, {
+    "uuid" : "3def1242ac15653701ee7a14-157554268",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3def1a53ac1565370013e87d-1635817442",
+    "title" : "[undo]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3de4d8a7ac15653700e659b4-864259444",
+    "title" : "[Zorder-front]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+shift+up" ]
+  }, {
+    "uuid" : "3def28f3ac15653701b2e70a575927336",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3def3aebac15653700112ef1-372844700",
+    "title" : "check index = 4",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elem = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id13').getElement();\r\nif (elem.parentNode.childNodes.item(4) !== elem) {\r\n\tthrow new Error('zorder-forward action is fail');\r\n}" ]
+  }, {
+    "uuid" : "3e04cf39ac15653701786a7a-1607684401",
+    "title" : "[undo]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+control+z" ]
+  }, {
+    "uuid" : "3e04d540ac15653701806c1a1629438512",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3de577e7ac15653700c5e7eb1396019852",
+    "title" : "[Zorder-back]",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+shift+down" ]
+  }, {
+    "uuid" : "3de3d2e7ac15653700b48d76-1771380004",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3e04e918ac1565370187619e-452508220",
+    "title" : "check index = 0",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elem = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id13').getElement();\r\nif (elem.parentNode.childNodes.item(0) !== elem) {\r\n\tthrow new Error('zorder-forward action is fail');\r\n}" ]
+  }, {
+    "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  } ],
+  "cleanUp" : [ ]
+}
