@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409015469488,
+  "modified" : 1409901414294,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -45,7 +45,7 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest@webida.org" ]
+    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
@@ -69,7 +69,7 @@
     "title" : "select workspace and start UIP",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-test\"]" ]
+    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]" ]
   }, {
     "uuid" : "0fcdc2f9ac15641252f106e71228686933",
     "title" : "wait until new window is opend",
@@ -81,7 +81,7 @@
     "title" : "give name to New window",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekQYk8liye/uip-test" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/Project1" ]
   }, {
     "uuid" : "0d5d8d82ac156412248241bf1844418440",
     "title" : "switch to new Window",
@@ -93,7 +93,7 @@
     "title" : "wait untile the loading screen is disapear",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+    "arguments" : [ "id=app-loadingscreen-elem", "45" ]
   }, {
     "uuid" : "fbe95fd9ac1564120ec821b32146649699",
     "title" : "click UserInfo - email address above",
