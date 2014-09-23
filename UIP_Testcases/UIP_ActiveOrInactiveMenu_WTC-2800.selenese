@@ -1,7 +1,7 @@
 {
   "name" : "Check Active or Inactive Menu",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1410751938935,
+  "modified" : 1411460512453,
   "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -81,31 +81,31 @@
     "title" : "wait for new page from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New/Template", "100" ]
+    "arguments" : [ "id=/&File/&New/Page_text", "100" ]
   }, {
     "uuid" : "2a333ba2ac1564121672645e1625744383",
     "title" : "click page for new page",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New/Template" ]
+    "arguments" : [ "id=/&File/&New/Page_text" ]
   }, {
     "uuid" : "2a339631ac1564126e9b501c1673898017",
-    "title" : "Check that a pop-up dialog is the dialog of \"New Page\"",
+    "title" : "Check that a pop-up dialog is the dialog of \"Page Wizard\"",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Page']", "100" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
   }, {
     "uuid" : "2a35b09bac1564122261b2f1-952707406",
     "title" : "Type Page Name",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=template-name", "NewTestPage" ]
+    "arguments" : [ "id=tmplName", "NewTestPage" ]
   }, {
     "uuid" : "2a52b21dac1564122eb29243629544864",
     "title" : "click location button",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=template-location-button" ]
+    "arguments" : [ "id=tmplLocBtn_label" ]
   }, {
     "uuid" : "2a53a92cac1564121ebee2d4-378886719",
     "title" : "wait for dialog of \"Choose location for a page or template\"",
@@ -123,25 +123,7 @@
     "title" : "Ok button after selecting location",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()='OK']" ]
-  }, {
-    "uuid" : "775ba2deac1564120229cc761952661366",
-    "title" : "pause",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "2a6810beac15641269184939709170110",
-    "title" : "click finish",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "id=shortcutsDlgCloseButton_label" ]
-  }, {
-    "uuid" : "775dffa4ac1564120018406e-540336016",
-    "title" : "Pase",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
+    "arguments" : [ "xpath=//span[text()='Create']" ]
   }, {
     "uuid" : "76e3a7e8ac15641201009a4a238836756",
     "title" : "confirm opend editor",
@@ -150,11 +132,23 @@
     "arguments" : [ "xpath=//span[text()='NewTestPage.html']", "100" ]
   } ],
   "cleanUp" : [ {
+    "uuid" : "a10bd26eac1564122c0b29cf-1531255768",
+    "title" : "contextClick",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='NewTestPage.html']" ]
+  }, {
+    "uuid" : "a18ac382ac156412091fe93a-1242855859",
+    "title" : "wait for delete in context menu",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]", "100" ]
+  }, {
     "uuid" : "769e1deeac1564127768ffae-1474599953",
     "title" : "deletePage",
-    "keyword" : "type",
+    "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()='NewTestPage.html']", "+DELETE" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]" ]
   }, {
     "uuid" : "769e28ccac1564126aa27145-913734418",
     "title" : "wait for delete dialog",

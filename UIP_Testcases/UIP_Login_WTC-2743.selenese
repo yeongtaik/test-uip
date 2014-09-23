@@ -1,8 +1,8 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409901414294,
-  "timeout" : 10,
+  "modified" : 1411447528082,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "fbe78585ac15641223521591443304572",
@@ -21,7 +21,7 @@
     "title" : "wait For auth page",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=email", "5" ]
+    "arguments" : [ "id=email", "100" ]
   }, {
     "uuid" : "0fa256d9ac1564124ab1693b-719323021",
     "title" : "type wrong ID value",
@@ -39,7 +39,7 @@
     "title" : "check invalid message",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.login_label", "9" ]
+    "arguments" : [ "css=.login_label", "100" ]
   }, {
     "uuid" : "fbe7a3ceac1564124876945a1760469371",
     "title" : "type valid ID value",
@@ -63,7 +63,7 @@
     "title" : "wait for logged-in page",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=project", "10" ]
+    "arguments" : [ "id=project", "100" ]
   }, {
     "uuid" : "fbe8769cac1564122efad4c6-967296551",
     "title" : "select workspace and start UIP",
@@ -93,13 +93,13 @@
     "title" : "wait untile the loading screen is disapear",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-loadingscreen-elem", "45" ]
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
   }, {
     "uuid" : "fbe95fd9ac1564120ec821b32146649699",
     "title" : "click UserInfo - email address above",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "5" ]
+    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }
