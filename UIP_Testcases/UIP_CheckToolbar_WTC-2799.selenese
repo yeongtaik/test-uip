@@ -1,15 +1,15 @@
 {
   "name" : "CheckToolbar",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409453493636,
-  "timeout" : 10,
+  "modified" : 1411447355298,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
     "uuid" : "1fd75174ac15641244beb6a9136990438",
     "title" : "CheckToolbarExist",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-workbench-toolbar", "5" ]
+    "arguments" : [ "id=app-workbench-toolbar", "100" ]
   } ],
   "cleanUp" : [ ]
 }

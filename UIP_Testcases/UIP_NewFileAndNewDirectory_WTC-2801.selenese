@@ -1,8 +1,8 @@
 {
   "name" : "NewFileAndNewDirectory",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409453125048,
-  "timeout" : 20,
+  "modified" : 1411456133993,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
     "uuid" : "29915d59ac15641235737e55498712554",
@@ -27,13 +27,13 @@
     "title" : "click File from Menu",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=/&File_text" ]
+    "arguments" : [ "id=/&File" ]
   }, {
     "uuid" : "2052cc7aac156412245b6b85625009421",
     "title" : "wait for new list from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New", "5" ]
+    "arguments" : [ "id=/&File/&New", "100" ]
   }, {
     "uuid" : "2053e660ac1564125279a1ca1365677512",
     "title" : "click new from File menu",
@@ -45,13 +45,13 @@
     "title" : "wait for new page from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New/Page", "5" ]
+    "arguments" : [ "id=/&File/&New/Page_text", "100" ]
   }, {
     "uuid" : "2056b0e6ac156412703b25382038682416",
     "title" : "click page for new page",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New/Page" ]
+    "arguments" : [ "id=/&File/&New/Page_text" ]
   }, {
     "uuid" : "20f37a96ac15641239e79726-2082421168",
     "title" : "Pause",
@@ -60,10 +60,10 @@
     "arguments" : [ "9000" ]
   }, {
     "uuid" : "20e1a41fac1564122984edab-1395812287",
-    "title" : "Check that a pop-up dialog is the dialog of \"New Page\"",
+    "title" : "Check that a pop-up dialog is the dialog of \"Page Wizard\"",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Page']", "13" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
   }, {
     "uuid" : "204f96efac1564121bf18ca8-1665388300",
     "title" : "Pause",
@@ -72,16 +72,16 @@
     "arguments" : [ "8000" ]
   }, {
     "uuid" : "29dd697eac1564124f3b4b9e2107340381",
-    "title" : "close \"New Page\" dialog",
+    "title" : "close \"Page Wizard\" dialog",
     "keyword" : "click",
     "commands" : [ ],
     "arguments" : [ "xpath=//div[@role='dialog']/div/span[@title='Cancel']" ]
   }, {
     "uuid" : "29dfde1eac1564120a4822d01211303910",
-    "title" : "Check that \"New Page\" dialog is disapeared",
+    "title" : "Check that \"Page Wizard\" dialog is disapeared",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Page']", "5" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
   }, {
     "uuid" : "29f39038ac1564120d9b83251219943286",
     "title" : "Pause",
@@ -99,7 +99,7 @@
     "title" : "wait for new list from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New", "5" ]
+    "arguments" : [ "id=/&File/&New", "100" ]
   }, {
     "uuid" : "29e18388ac15641273e802be-7069968",
     "title" : "click new from File menu",
@@ -111,7 +111,7 @@
     "title" : "wait for new directory from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=/&File/&New/&Directory", "5" ]
+    "arguments" : [ "id=/&File/&New/&Directory", "100" ]
   }, {
     "uuid" : "29e3ad26ac1564127e194d88823015887",
     "title" : "click new directory",
@@ -123,7 +123,7 @@
     "title" : "Check that a pop-up dialog is the dialog of \"New Directory\"",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "13" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "100" ]
   }, {
     "uuid" : "29e540baac1564124398e224-2091767433",
     "title" : "Pause",
@@ -141,7 +141,7 @@
     "title" : "Check that \"New Directory\" dialog is disapeared",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "5" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "100" ]
   }, {
     "uuid" : "29e8ecfaac156412546debe2-696751873",
     "title" : "Pause",

@@ -1,8 +1,8 @@
 {
   "name" : "UIP_Logout",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409282915589,
-  "timeout" : 10,
+  "modified" : 1411447540818,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
     "uuid" : "1fc51275ac1564123281e93f-674475374",
@@ -21,7 +21,7 @@
     "title" : "checkLogInStatus",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.login", "5" ]
+    "arguments" : [ "css=.login", "100" ]
   } ],
   "cleanUp" : [ ]
 }
