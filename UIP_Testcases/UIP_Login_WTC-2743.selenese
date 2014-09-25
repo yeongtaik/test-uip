@@ -1,7 +1,7 @@
 {
-  "name" : "LogInAndOut",
+  "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411447528082,
+  "modified" : 1411544022180,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
