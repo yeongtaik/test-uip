@@ -1,7 +1,7 @@
 {
   "name" : "화면 배치",
   "target" : "https://uip.webida.net/",
-  "modified" : 1409029711839,
+  "modified" : 1411892051379,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -57,7 +57,7 @@
     "title" : "Search Properties-view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=properties-view", "5" ]
+    "arguments" : [ "css=.properties-view", "5" ]
   }, {
     "uuid" : "f0e9fc58ac1565442db9a8e91158084575",
     "title" : "Click Eventview",
@@ -69,7 +69,7 @@
     "title" : "Search Event-view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=event-view", "5" ]
+    "arguments" : [ "css=.event-view", "5" ]
   } ],
   "cleanUp" : [ ]
 }

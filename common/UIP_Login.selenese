@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409475394418,
+  "modified" : 1411887307191,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "typeEmailForID",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest@webida.org" ]
+    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "typePasswdForPwd",

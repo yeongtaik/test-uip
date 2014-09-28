@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409537996606,
+  "modified" : 1411893934301,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LogOut.selenese" ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "typeEmailForID",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest@webida.org" ]
+    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
   }, {
     "uuid" : "204d4e097f00010101becf0b1215181621",
     "title" : "typePasswdForPwd",
@@ -63,7 +63,7 @@
     "title" : "waitUIPWindow",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=ekQYk8liye/uip-sample" ]
+    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/uip-sample" ]
   }, {
     "uuid" : "2ef746327f000101003649f31348044260",
     "title" : "switchUIPWindow",

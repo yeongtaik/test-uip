@@ -1,7 +1,7 @@
 {
   "name" : "Logout",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409027662732,
+  "modified" : 1411893706182,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -15,7 +15,7 @@
     "title" : "clickLogout",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=dijit_MenuItem_16_text" ]
+    "arguments" : [ "id=dijit_MenuItem_15_text" ]
   }, {
     "uuid" : "fbec0419ac15641272109dac1441452019",
     "title" : "checkLogInStatus",
