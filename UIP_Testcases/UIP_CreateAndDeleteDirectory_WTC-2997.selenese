@@ -1,0 +1,9 @@
+{
+  "name" : "Create and Delete Directory",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411969305385,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese", "common/UIP_CreateNewDirectory.selenese", "common/UIP_DeleteNewDirectory.selenese" ],
+  "commands" : [ ],
+  "cleanUp" : [ ]
+}

@@ -1,0 +1,57 @@
+{
+  "name" : "DeleteNewDirectory - Directory명(NewDirectory)",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411971817467,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c0141575ac1564127322fbb31700440286",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "bfe50df3ac15641228b11473-222474506",
+    "title" : "check that the directory exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewDirectory']", "100" ]
+  }, {
+    "uuid" : "bfe5e29eac156412538f2df7-475782780",
+    "title" : "contextClick",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='NewDirectory']" ]
+  }, {
+    "uuid" : "bfe63636ac15641272690306-197022745",
+    "title" : "wait for delete in context menu",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']", "5" ]
+  }, {
+    "uuid" : "bfe6b1b8ac15641271c17e17-767857473",
+    "title" : "deleteDirectory",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']" ]
+  }, {
+    "uuid" : "bfe71adfac1564121f01adad-1450247139",
+    "title" : "wait for delete dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-dojo-attach-point='titleBar']/span[@data-dojo-attach-point='titleNode' and .='Delete']", "5" ]
+  }, {
+    "uuid" : "bfe7ed71ac15641202bc1cc4323166709",
+    "title" : "Yes Delete",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='dijitReset dijitInline dijitButtonText' and .='Yes']" ]
+  }, {
+    "uuid" : "bfe85446ac156412065b25821934691539",
+    "title" : "check that the directory is gone",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewDirectory']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
