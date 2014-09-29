@@ -1,0 +1,9 @@
+{
+  "name" : "Rename directory to NewDirectoryForRename",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411975972764,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese", "common/UIP_CreateNewDirectory.selenese", "common/UIP_RenameDirectory.selenese", "common/UIP_RenameDirectoryBackToOriginal.selenese", "common/UIP_DeleteNewDirectory.selenese" ],
+  "commands" : [ ],
+  "cleanUp" : [ ]
+}
