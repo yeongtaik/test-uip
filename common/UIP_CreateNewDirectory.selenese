@@ -1,0 +1,99 @@
+{
+  "name" : "Create Directory- Directory명(NewDirectory)",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411971808995,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c013cc54ac156412397fbcb3679411616",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "bf837a21ac1564120fb6db571175638786",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "bf790c88ac15641213fb5ee8-1284671961",
+    "title" : "click first directory in workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='wv-tree']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[2]" ]
+  }, {
+    "uuid" : "bf83b876ac1564124ebc6100375339763",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "bf7922b8ac1564125287e829-1641048520",
+    "title" : "click File from Menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File" ]
+  }, {
+    "uuid" : "bf8d2593ac1564125d42e1e0332122421",
+    "title" : "wait for new from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New", "100" ]
+  }, {
+    "uuid" : "bf7945deac1564123f42ed38-1053076653",
+    "title" : "click New from File menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New" ]
+  }, {
+    "uuid" : "bf7d4d3cac156412645eb65b1886131967",
+    "title" : "wait for new directory from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/&Directory", "100" ]
+  }, {
+    "uuid" : "bf7d6b18ac15641219d9dadd718486220",
+    "title" : "click new directory",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/&Directory" ]
+  }, {
+    "uuid" : "bf7d8c3dac15641270f916e2786511420",
+    "title" : "Check that a pop-up dialog is the dialog of \"New Directory\"",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "100" ]
+  }, {
+    "uuid" : "bf7da102ac1564121423475a610386909",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "bf7ef156ac1564121a0fa757974084270",
+    "title" : "type Name of Directory",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=nnNameInput", "NewDirectory" ]
+  }, {
+    "uuid" : "bf7dc7abac1564120f6cd44b-2060521682",
+    "title" : "close \"New Directory\" dialog",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=nnCreateBtn_label" ]
+  }, {
+    "uuid" : "bf7de24fac156412285bc8b2-1103657518",
+    "title" : "Check that \"New Directory\" dialog is disapeared",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='New Directory']", "100" ]
+  }, {
+    "uuid" : "bf7debe5ac1564126f2ae69f1470016450",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  } ],
+  "cleanUp" : [ ]
+}
