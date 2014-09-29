@@ -1,0 +1,69 @@
+{
+  "name" : "Rename NewDirectory to RenameNewDirectory by ContextMenu",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411975533991,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c022cdfeac1564125b9d615d-2013935299",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "9000" ]
+  }, {
+    "uuid" : "c022f877ac156412129961f6-984361291",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c023691dac15641214901bf4354405041",
+    "title" : "check that the renamed directory exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewDirectory']", "100" ]
+  }, {
+    "uuid" : "c023e7f3ac1564127b7be91a-212622085",
+    "title" : "contextClick",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='NewDirectory']" ]
+  }, {
+    "uuid" : "c0255059ac1564127df1d6fa1869840457",
+    "title" : "wait for delete in context menu",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']", "5" ]
+  }, {
+    "uuid" : "c026f48eac1564125911a225-1053425965",
+    "title" : "renameDirectory",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']" ]
+  }, {
+    "uuid" : "c04a5471ac15641244ae3a8b-1687942139",
+    "title" : "waitFor RenameBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "100" ]
+  }, {
+    "uuid" : "c02aa7d6ac15641267f85b3a1647245994",
+    "title" : "type Rename to make RenameNewDirectory",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "RenameNewDirectory" ]
+  }, {
+    "uuid" : "c0343626ac1564121fa85652-1383712066",
+    "title" : "Enter",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "+ENTER" ]
+  }, {
+    "uuid" : "c034a823ac1564123148d6e71066674326",
+    "title" : "check that the directory exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='RenameNewDirectory']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

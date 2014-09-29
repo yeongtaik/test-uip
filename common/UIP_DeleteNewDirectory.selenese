@@ -1,7 +1,7 @@
 {
   "name" : "DeleteNewDirectory - Directory명(NewDirectory)",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411971817467,
+  "modified" : 1411972809845,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -10,6 +10,12 @@
     "keyword" : "pause",
     "commands" : [ ],
     "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "c0234137ac156412545bbfb51557621744",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
   }, {
     "uuid" : "bfe50df3ac15641228b11473-222474506",
     "title" : "check that the directory exist",
