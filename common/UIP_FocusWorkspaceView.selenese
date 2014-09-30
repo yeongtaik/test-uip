@@ -1,21 +1,21 @@
 {
   "name" : "Workspace view로 전환",
-  "target" : "",
-  "modified" : 1409223973523,
-  "timeout" : 10,
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1412041291559,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "1c46c57bac15653401467517-1145591137",
     "title" : "Click Workspace-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=span[name*=workspaceView]" ]
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
   }, {
     "uuid" : "1c470072ac156534001ccb75773415278",
     "title" : "Check workspace-view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "5" ]
+    "arguments" : [ "id=workspace-view", "100" ]
   } ],
   "cleanUp" : [ ]
 }

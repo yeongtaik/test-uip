@@ -1,33 +1,33 @@
 {
   "name" : "컴포넌트 목록 표시",
   "target" : "https://uip.webida.net/",
-  "modified" : 1409028504335,
-  "timeout" : 10,
+  "modified" : 1412040999057,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "f108e98fac1565443741da421011562699",
     "title" : "Click palette-view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=span[name*=paletteView]" ]
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
   }, {
     "uuid" : "a8a552d4ac156534010e5ead-1206711403",
     "title" : "Check palette-view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=palette-view", "5" ]
+    "arguments" : [ "id=paletteView", "100" ]
   }, {
     "uuid" : "a92fe991ac15653400116e51-342022329",
     "title" : "Check pv-header",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=pv-header", "5" ]
+    "arguments" : [ "id=pv-header", "100" ]
   }, {
     "uuid" : "a93073b1ac1565340099dcc2948347391",
     "title" : "Check pv-content",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=pv-content", "5" ]
+    "arguments" : [ "id=pv-content", "100" ]
   } ],
   "cleanUp" : [ ]
 }

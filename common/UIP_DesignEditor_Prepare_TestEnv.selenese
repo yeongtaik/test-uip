@@ -1,8 +1,8 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409790845469,
-  "timeout" : 10,
+  "modified" : 1412041336838,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "fbe78585ac15641223521591443304572",
@@ -45,7 +45,7 @@
     "title" : "wait for logged-in page",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=project", "10" ]
+    "arguments" : [ "id=project", "100" ]
   }, {
     "uuid" : "fbe8769cac1564122efad4c6-967296551",
     "title" : "select workspace and start UIP",
@@ -75,25 +75,25 @@
     "title" : "wait untile the loading screen is disapear",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
   }, {
     "uuid" : "fbe95fd9ac1564120ec821b32146649699",
     "title" : "click UserInfo - email address above",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "5" ]
+    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "100" ]
   }, {
     "uuid" : "3c53a6caac1e01155dca9fd82091385510",
     "title" : "click workspace view",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=span[name*=workspaceView]" ]
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
   }, {
     "uuid" : "3c543f29ac1e01150c8d09e41151681864",
     "title" : "wait for workspace-view visibility ",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "5" ]
+    "arguments" : [ "id=workspace-view", "100" ]
   }, {
     "uuid" : "3c55b5a9ac1e0115580882fb948566285",
     "title" : "open design editor test page",
