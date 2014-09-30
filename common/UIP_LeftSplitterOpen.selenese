@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409554245945,
+  "modified" : 1412050735885,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -10,6 +10,12 @@
     "keyword" : "executeScript",
     "commands" : [ ],
     "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+  }, {
+    "uuid" : "c4c61450ac1564120ed974d0-1904314590",
+    "title" : "check that left splitter is opend",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=wv-tree", "100" ]
   } ],
   "cleanUp" : [ ]
 }

@@ -1,9 +1,9 @@
 {
-  "name" : "",
+  "name" : "Add Event Action",
   "target" : "",
-  "modified" : 1409554413273,
+  "modified" : 1412052454523,
   "timeout" : 10,
-  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_LeftSplitterOpen.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_FocusEventVIew.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_FocusEventVIew.selenese" ],
   "commands" : [ {
     "uuid" : "2f08ab847f00010101404fba84746699",
     "title" : "select widget",
@@ -33,7 +33,7 @@
     "title" : "add page move event",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=event-view-popup-ok_label" ]
+    "arguments" : [ "id=eventActionPopupOk_label" ]
   }, {
     "uuid" : "2f0e0b2e7f00010100b4189c886507735",
     "title" : "pause 2s",
@@ -45,7 +45,7 @@
     "title" : "check page move event",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dgrid-row-table td", "5" ]
+    "arguments" : [ "css=.dgrid-row-table td", "100" ]
   } ],
   "cleanUp" : [ ]
 }
