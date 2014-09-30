@@ -1,0 +1,69 @@
+{
+  "name" : "Rename NewPage to RenameNewDirectory by ContextMenu",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411983374701,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c0b7b519ac15641227f3b5ba-387355032",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "9000" ]
+  }, {
+    "uuid" : "c0b82484ac1564126f6cf7d5-523351862",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c0b82e84ac15641270c371e9-141484329",
+    "title" : "check that the renamed page exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewPage.html']", "100" ]
+  }, {
+    "uuid" : "c0b886bbac1564121f731c3a-674838398",
+    "title" : "contextClick",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='NewPage.html']" ]
+  }, {
+    "uuid" : "c0b8fc0cac1564124d2a2d2c-1349756456",
+    "title" : "wait for delete in context menu",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']", "5" ]
+  }, {
+    "uuid" : "c0b912c7ac1564127773054a-226182728",
+    "title" : "renamePage",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']" ]
+  }, {
+    "uuid" : "c0b91f9eac1564120d66534c-103084404",
+    "title" : "waitFor RenameBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "100" ]
+  }, {
+    "uuid" : "c0b98967ac1564123ac731b51920477241",
+    "title" : "type Rename to make RenameNewPage",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "RenameNewPage.html" ]
+  }, {
+    "uuid" : "c0b9cc34ac1564127d700d35-1564690948",
+    "title" : "Enter",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "+ENTER" ]
+  }, {
+    "uuid" : "c0b9d6b9ac1564126288fc60-367384769",
+    "title" : "check that the pageexist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='RenameNewPage.html']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

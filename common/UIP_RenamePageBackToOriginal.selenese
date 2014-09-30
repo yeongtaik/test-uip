@@ -1,0 +1,57 @@
+{
+  "name" : "Rename RenameNewPage to NewPage by Shortcut",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411984981130,
+  "timeout" : 10,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c0bb22d3ac156412457f64e21063308050",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "9000" ]
+  }, {
+    "uuid" : "c0bb2bf2ac1564121aa161322106114774",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c0bb3771ac15641245066bc9-1105959380",
+    "title" : "check that the renamed page exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='RenameNewPage.html']", "100" ]
+  }, {
+    "uuid" : "c0bb86a3ac156412352850de239353996",
+    "title" : "F2 to rename",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='RenameNewPage.html']", "+F2" ]
+  }, {
+    "uuid" : "c0bbbef6ac1564127af48227-2104653592",
+    "title" : "waitFor RenameBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "100" ]
+  }, {
+    "uuid" : "c0bbd2dfac15641239c501201413511567",
+    "title" : "type Rename to make RenameNewPage",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "NewPage.html" ]
+  }, {
+    "uuid" : "c0bbf7bdac15641246602fc266246215",
+    "title" : "Enter",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "+ENTER" ]
+  }, {
+    "uuid" : "c0bc10aaac156412062dc2c6-948157223",
+    "title" : "check that the page exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewPage.html']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
