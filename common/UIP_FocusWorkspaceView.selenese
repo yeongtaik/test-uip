@@ -1,9 +1,9 @@
 {
   "name" : "Workspace view로 전환",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412041291559,
+  "modified" : 1412052736473,
   "timeout" : 100,
-  "prerequisites" : [ ],
+  "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
     "uuid" : "1c46c57bac15653401467517-1145591137",
     "title" : "Click Workspace-view",

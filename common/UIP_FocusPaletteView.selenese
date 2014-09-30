@@ -1,9 +1,9 @@
 {
   "name" : "Palette View로 전환",
   "target" : "",
-  "modified" : 1412040588331,
+  "modified" : 1412052666265,
   "timeout" : 100,
-  "prerequisites" : [ ],
+  "prerequisites" : [ "common/UIP_RightSplitterOpen.selenese", "common/UIP_LeftSplitterOpen.selenese" ],
   "commands" : [ {
     "uuid" : "1c3b4e98ac15653400adef97-1601634936",
     "title" : "Click PaletteView",

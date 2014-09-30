@@ -1,7 +1,7 @@
 {
   "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411544022180,
+  "modified" : 1412053426535,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -100,6 +100,36 @@
     "keyword" : "waitForVisibility",
     "commands" : [ ],
     "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "100" ]
+  }, {
+    "uuid" : "c4f0ee9dac1564120c6546921203599907",
+    "title" : "open left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+  }, {
+    "uuid" : "c4f10c32ac15641205439ee01000476119",
+    "title" : "check that left splitter is opend",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=wv-tree", "100" ]
+  }, {
+    "uuid" : "c4f122bbac1564126dafac6e826091834",
+    "title" : "open right splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+  }, {
+    "uuid" : "c4f136a9ac156412251e4f641781051464",
+    "title" : "check that event-view is visible.",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  }, {
+    "uuid" : "c4f15143ac15641205f7a96f-1739883614",
+    "title" : "check that property is visible",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
   } ],
   "cleanUp" : [ ]
 }

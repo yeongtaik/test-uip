@@ -1,8 +1,8 @@
 {
   "name" : "Logout",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411893706182,
-  "timeout" : 10,
+  "modified" : 1412048688709,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "fbe95fd9ac1564120ec821b32146649699",
@@ -21,7 +21,7 @@
     "title" : "checkLogInStatus",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.login", "5" ]
+    "arguments" : [ "css=.login", "100" ]
   } ],
   "cleanUp" : [ ]
 }

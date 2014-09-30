@@ -1,0 +1,27 @@
+{
+  "name" : "close right splitter",
+  "target" : "",
+  "modified" : 1412051601373,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c4cfb9b6ac15641257f708ef-729927805",
+    "title" : "close left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+  }, {
+    "uuid" : "c4d108e8ac156412619f24c2-1100038251",
+    "title" : "check that event-view is visible.",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  }, {
+    "uuid" : "c4d11b23ac156412431fc271-1796668013",
+    "title" : "check that property is visible",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
