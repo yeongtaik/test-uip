@@ -1,0 +1,9 @@
+{
+  "name" : "Create, Rename, Move, Delete Page",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411982996150,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese", "common/UIP_CreateNewPage.selenese", "common/UIP_RenameNewPage.selenese", "common/UIP_RenamePageBackToOriginal.selenese", "common/UIP_DeleteNewPage.selenese" ],
+  "commands" : [ ],
+  "cleanUp" : [ ]
+}

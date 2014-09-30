@@ -1,7 +1,7 @@
 {
   "name" : "Rename RenameNewDirectory to NewDirectory by Shortcut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411975927843,
+  "modified" : 1412035140871,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "F2 to rename",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()='RenameNewDirectory']", "+F2" ]
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='RenameNewDirectory']", "+F2" ]
   }, {
     "uuid" : "c0523a18ac15641270cfbadd-1112188520",
     "title" : "waitFor RenameBox",

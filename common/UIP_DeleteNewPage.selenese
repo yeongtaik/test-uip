@@ -1,0 +1,69 @@
+{
+  "name" : "Delete NewPage",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1412035232245,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c0b24d04ac1564123c88b82b1802057219",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "c0b2c9cdac1564126f21aa2b1159781919",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c0b28176ac1564127047970c2131465171",
+    "title" : "contextClick",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='NewPage.html']" ]
+  }, {
+    "uuid" : "c0b2e040ac15641236c559e0-1536408602",
+    "title" : "wait for delete in context menu",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']", "100" ]
+  }, {
+    "uuid" : "c0b2f9b2ac15641265fa1b8f-1726000021",
+    "title" : "deletePage",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]" ]
+  }, {
+    "uuid" : "c0b3167fac156412616fb2761607104274",
+    "title" : "wait for delete dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-dojo-attach-point='titleBar']/span[@data-dojo-attach-point='titleNode' and .='Delete']", "100" ]
+  }, {
+    "uuid" : "c0b3276fac156412379e66392106278354",
+    "title" : "Yes Delete",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='dijitReset dijitInline dijitButtonText' and .='Yes']" ]
+  }, {
+    "uuid" : "c3dac405ac156412668ffdcc-2005441611",
+    "title" : "wait close tab dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='dijitDialogTitle' and .='Close \"NewPage.html\"?']", "100" ]
+  }, {
+    "uuid" : "c3da332bac15641249f2d835161813477",
+    "title" : "Click Yes",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@data-dojo-attach-point='containerNode' and .='Yes']" ]
+  }, {
+    "uuid" : "c0b69b70ac1564120bddfcff1727375140",
+    "title" : "check that the page is gone",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewPage.html']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

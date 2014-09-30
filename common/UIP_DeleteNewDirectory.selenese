@@ -1,7 +1,7 @@
 {
   "name" : "DeleteNewDirectory - Directory명(NewDirectory)",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411972809845,
+  "modified" : 1411982290176,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -33,7 +33,7 @@
     "title" : "wait for delete in context menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']", "100" ]
   }, {
     "uuid" : "bfe6b1b8ac15641271c17e17-767857473",
     "title" : "deleteDirectory",

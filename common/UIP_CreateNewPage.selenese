@@ -1,0 +1,105 @@
+{
+  "name" : "create NewPage",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1411982107008,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c0ad6be5ac15641268dc8f7f1222126232",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "c0ad740dac1564126726245e-1554867185",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c0ad7f05ac1564124de621e3-1730250131",
+    "title" : "click first directory in workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='wv-tree']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[2]" ]
+  }, {
+    "uuid" : "c0ada4ddac156412144aaab11200673122",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "c0adaf21ac15641270095341-80429556",
+    "title" : "click File from Menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File" ]
+  }, {
+    "uuid" : "c0adc16fac1564122200d281-1531280338",
+    "title" : "wait for new from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New", "100" ]
+  }, {
+    "uuid" : "c0ade734ac15641213d19273565840943",
+    "title" : "click New from File menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New" ]
+  }, {
+    "uuid" : "c0ae85a9ac1564123fa875831512589956",
+    "title" : "wait for new page from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page_text", "100" ]
+  }, {
+    "uuid" : "c0ae94b5ac1564121cf5a1a71280356438",
+    "title" : "click page for new page",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page_text" ]
+  }, {
+    "uuid" : "c0aeac8cac1564122e0884521426850019",
+    "title" : "Check that a pop-up dialog is the dialog of \"Page Wizard\"",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
+  }, {
+    "uuid" : "c0afe57cac1564126d2197f71203514127",
+    "title" : "type Name of Page",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=tmplName", "NewPage" ]
+  }, {
+    "uuid" : "c0b0a41bac1564121e2cf7f91229356546",
+    "title" : "click location button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=tmplLocBtn_label" ]
+  }, {
+    "uuid" : "c0b0b367ac15641247cd8d7c924389814",
+    "title" : "wait for dialog of \"Choose location for a page or template\"",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Choose location for a page or template']", "100" ]
+  }, {
+    "uuid" : "c0b0c58dac1564125ac26d56-972341306",
+    "title" : "click workspace to select workspace as location for new page",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialogFocused .dijitTreeIsRoot>.dijitTreeRow", "+ENTER" ]
+  }, {
+    "uuid" : "c0b0e041ac15641230417948-104629030",
+    "title" : "Ok button after selecting location",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='Create']" ]
+  }, {
+    "uuid" : "c0b0ff1aac1564125caf0976-689307967",
+    "title" : "confirm opend editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewPage.html']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
