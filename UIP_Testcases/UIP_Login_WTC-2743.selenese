@@ -1,7 +1,7 @@
 {
   "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412053426535,
+  "modified" : 1412138793436,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -64,6 +64,12 @@
     "keyword" : "waitForVisibility",
     "commands" : [ ],
     "arguments" : [ "id=project", "100" ]
+  }, {
+    "uuid" : "ca077f15ac15641260230df2384214735",
+    "title" : "wait untile Project1 is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]", "100" ]
   }, {
     "uuid" : "fbe8769cac1564122efad4c6-967296551",
     "title" : "select workspace and start UIP",
