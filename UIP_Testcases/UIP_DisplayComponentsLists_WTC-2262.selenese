@@ -1,8 +1,8 @@
 {
   "name" : "컴포넌트 목록 표시",
   "target" : "",
-  "modified" : 1409223483567,
-  "timeout" : 10,
+  "modified" : 1412123825161,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
     "uuid" : "1c3d981dac156534017a9a4b-1741266298",
@@ -15,13 +15,13 @@
     "title" : "Check Tile Style",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.pv-tilestyle.pv-tileselected", "5" ]
+    "arguments" : [ "css=.pv-tilestyle.pv-tileselected", "100" ]
   }, {
     "uuid" : "1c3fe10dac156534005ab398-1707151422",
     "title" : "DoubleCheck Tile Style",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=li.pv-type.pv-typetile", "5" ]
+    "arguments" : [ "css=li.pv-type.pv-typetile", "100" ]
   }, {
     "uuid" : "1c403e46ac156534004902b6-1325565323",
     "title" : "Click List Style",
@@ -33,13 +33,13 @@
     "title" : "Check List Style",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.pv-liststyle.pv-listselected", "5" ]
+    "arguments" : [ "css=.pv-liststyle.pv-listselected", "100" ]
   }, {
     "uuid" : "1c417985ac15653400963c91-1991755375",
     "title" : "DoubleCheck List Style",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=li.pv-type.pv-typelist", "5" ]
+    "arguments" : [ "css=li.pv-type.pv-typelist", "100" ]
   } ],
   "cleanUp" : [ ]
 }

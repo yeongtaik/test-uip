@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409553471540,
-  "timeout" : 10,
+  "modified" : 1412123486513,
+  "timeout" : 100,
   "prerequisites" : [ "event-view/UIP_ModifyEventAction_WTC-2793.selenese" ],
   "commands" : [ ],
   "cleanUp" : [ ]

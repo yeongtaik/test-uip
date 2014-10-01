@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409290704752,
-  "timeout" : 10,
+  "modified" : 1412123874204,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
     "uuid" : "202d7b60ac15653401955d9b1673807627",
@@ -15,25 +15,25 @@
     "title" : "Check display delete menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@widgetid=\"CTX/&Delete\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@widgetid=\"CTX/&Delete\"]", "100" ]
   }, {
     "uuid" : "203cbd82ac156534008ffffa584301933",
     "title" : "Check display rename menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Ren&ame\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Ren&ame\"]", "100" ]
   }, {
     "uuid" : "203de721ac156534003f1f6f-22644679",
     "title" : "Check display Run preview menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Run &Preview\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Run &Preview\"]", "100" ]
   }, {
     "uuid" : "2040d868ac156534003d3da31059204354",
     "title" : "Check display Download as PPTX",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Download as PPTX\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Download as PPTX\"]", "100" ]
   }, {
     "uuid" : "2041c996ac15653400f8b1631894271471",
     "title" : "contextClick direcotry",
@@ -45,31 +45,31 @@
     "title" : "Check display new menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/New\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/New\"]", "100" ]
   }, {
     "uuid" : "20438fd8ac156534016da844-983242586",
     "title" : "Check display delete menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@widgetid=\"CTX/&Delete\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@widgetid=\"CTX/&Delete\"]", "100" ]
   }, {
     "uuid" : "2043b3c9ac15653401c17ff51128859592",
     "title" : "Check display rename menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Ren&ame\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Ren&ame\"]", "100" ]
   }, {
     "uuid" : "204402bbac15653400e1909a-1624442405",
     "title" : "Check nodisplay Run preview menu",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Run &Preview\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Run &Preview\"]", "100" ]
   }, {
     "uuid" : "20445d55ac156534004e8eb41801916609",
     "title" : "Check nodisplay Download as PPTX",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Download as PPTX\"]", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/*/tr[@widgetid=\"CTX/Download as PPTX\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }

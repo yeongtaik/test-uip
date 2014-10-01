@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409554428198,
-  "timeout" : 10,
+  "modified" : 1412123569163,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_LeftSplitterOpen.selenese", "common/UIP_OpenTestpage.selenese" ],
   "commands" : [ {
     "uuid" : "2f64260b7f00010100da5049747512857",
@@ -33,7 +33,7 @@
     "title" : "check context menu opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "5" ]
+    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "100" ]
   }, {
     "uuid" : "2f5c4f667f000101015be31d1643766978",
     "title" : "pause 2s",
@@ -57,7 +57,7 @@
     "title" : "check run storyboard",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=story-board", "5" ]
+    "arguments" : [ "id=story-board", "100" ]
   } ],
   "cleanUp" : [ ]
 }

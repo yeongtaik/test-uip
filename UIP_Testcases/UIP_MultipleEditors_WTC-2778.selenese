@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409475814006,
-  "timeout" : 10,
+  "modified" : 1412123927771,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
     "uuid" : "2b33cf5ea9fe39550143716a627439559",
@@ -27,7 +27,7 @@
     "title" : "wait",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role='tab' and .='testpage.html']", "5" ]
+    "arguments" : [ "xpath=//span[@role='tab' and .='testpage.html']", "100" ]
   }, {
     "uuid" : "2b1a38e5a9fe395500c83c421233235964",
     "title" : "open testpage2.html",
@@ -39,7 +39,7 @@
     "title" : "wait",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role='tab' and .='testpage2.html']", "5" ]
+    "arguments" : [ "xpath=//span[@role='tab' and .='testpage2.html']", "100" ]
   }, {
     "uuid" : "2b4da229a9fe395500f9409a260430513",
     "title" : "wait iframe loaded",

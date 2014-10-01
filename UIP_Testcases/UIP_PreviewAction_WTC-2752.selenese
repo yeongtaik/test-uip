@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409272164977,
-  "timeout" : 10,
+  "modified" : 1412124075951,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
     "uuid" : "1a2e3e637f00010152f4d0f8625253156",
@@ -21,7 +21,7 @@
     "title" : "check event select dialog open",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.uipPreviewActionTable", "5" ]
+    "arguments" : [ "css=.uipPreviewActionTable", "100" ]
   }, {
     "uuid" : "1a527eda7f000101363084b5-1243277070",
     "title" : "wait",
@@ -81,7 +81,7 @@
     "title" : "check event select dialog close",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.uip-screenover-popup-pane-content", "5" ]
+    "arguments" : [ "css=.uip-screenover-popup-pane-content", "100" ]
   }, {
     "uuid" : "1a596ec77f00010156a0641e570058311",
     "title" : "wait",

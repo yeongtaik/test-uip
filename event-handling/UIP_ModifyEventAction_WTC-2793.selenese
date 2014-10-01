@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409551621612,
-  "timeout" : 10,
+  "modified" : 1412123496675,
+  "timeout" : 100,
   "prerequisites" : [ "event-view/UIP_AddEventAction_WTC-2795.selenese" ],
   "commands" : [ {
     "uuid" : "2f4a43e57f000101009a7970-737570491",

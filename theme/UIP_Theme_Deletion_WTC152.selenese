@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409569956982,
-  "timeout" : 10,
+  "modified" : 1412123750609,
+  "timeout" : 100,
   "prerequisites" : [ "theme/theme_application.selenese" ],
   "commands" : [ {
     "uuid" : "30116f0dac15654901b1382a-1905003667",
@@ -21,7 +21,7 @@
     "title" : "check workspace opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "5" ]
+    "arguments" : [ "id=workspace-view", "100" ]
   }, {
     "uuid" : "3029f6c1ac156549010d241561598502",
     "title" : "collapseAll",
@@ -87,7 +87,7 @@
     "title" : "check context menu opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "5" ]
+    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "100" ]
   }, {
     "uuid" : "3034c6b2ac156549011bb0ef590400051",
     "title" : "wait",
@@ -111,7 +111,7 @@
     "title" : "check dialog opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dijitDialog", "5" ]
+    "arguments" : [ "css=.dijitDialog", "100" ]
   }, {
     "uuid" : "3017a512ac156549009045731374102389",
     "title" : "click yes",
@@ -123,7 +123,7 @@
     "title" : "check deletion",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role = \"treeitem\" and .=\"sample_css.css\"]", "5" ]
+    "arguments" : [ "xpath=//span[@role = \"treeitem\" and .=\"sample_css.css\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }

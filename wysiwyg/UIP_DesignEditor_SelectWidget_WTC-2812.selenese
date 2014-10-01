@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409810265070,
-  "timeout" : 10,
+  "modified" : 1412124510371,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
     "uuid" : "2a114d0aac15653701628ed8-968864169",

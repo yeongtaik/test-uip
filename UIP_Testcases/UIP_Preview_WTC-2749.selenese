@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409272763789,
-  "timeout" : 10,
+  "modified" : 1412124051444,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
     "uuid" : "14fefaa37f0001010c863dfd-1613889018",
@@ -21,7 +21,7 @@
     "title" : "check workspace opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "5" ]
+    "arguments" : [ "id=workspace-view", "100" ]
   }, {
     "uuid" : "15030e1a7f00010117d866ca-1593844153",
     "title" : "wait",
@@ -81,7 +81,7 @@
     "title" : "check context menu opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "5" ]
+    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "100" ]
   }, {
     "uuid" : "16001f9a7f0001014cbcf6f9695011132",
     "title" : "wait",
@@ -105,7 +105,7 @@
     "title" : "check preview opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
   }, {
     "uuid" : "1f30b5c17f00010104e71de41499319370",
     "title" : "wait",
@@ -129,7 +129,7 @@
     "title" : "check close preview",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
   }, {
     "uuid" : "1f32611e7f00010174eb251b2145637873",
     "title" : "wait",
@@ -153,7 +153,7 @@
     "title" : "check editor opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=div[role=\"tablist\"]", "5" ]
+    "arguments" : [ "css=div[role=\"tablist\"]", "100" ]
   }, {
     "uuid" : "160adb9c7f00010161781606-2035449691",
     "title" : "wait",
@@ -177,7 +177,7 @@
     "title" : "check context menu opened in editor",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=CTX/Preview", "5" ]
+    "arguments" : [ "id=CTX/Preview", "100" ]
   }, {
     "uuid" : "161189bc7f0001012b379be3-327799171",
     "title" : "wait",
@@ -201,7 +201,7 @@
     "title" : "check preview opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
   } ],
   "cleanUp" : [ ]
 }

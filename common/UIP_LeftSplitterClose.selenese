@@ -1,8 +1,8 @@
 {
-  "name" : "",
+  "name" : "Left Splitter Close",
   "target" : "",
-  "modified" : 1412050748394,
-  "timeout" : 10,
+  "modified" : 1412123226762,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "2fd31da37f00010101f3eb751430186622",

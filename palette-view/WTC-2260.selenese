@@ -1,8 +1,8 @@
 {
   "name" : "컴포넌트 정보 제공",
   "target" : "https://uip.webida.net/",
-  "modified" : 1409029574930,
-  "timeout" : 10,
+  "modified" : 1412123521694,
+  "timeout" : 100,
   "prerequisites" : [ "palette-view/WTC-2262.selenese" ],
   "commands" : [ {
     "uuid" : "a9394ff6ac15653401798da4-1336751358",

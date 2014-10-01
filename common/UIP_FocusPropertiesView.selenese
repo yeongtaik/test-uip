@@ -1,10 +1,16 @@
 {
   "name" : "Properties view로 전환",
   "target" : "",
-  "modified" : 1412052711544,
-  "timeout" : 10,
+  "modified" : 1412123202772,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
+    "uuid" : "c52397ecac1564123dd96fb3444140791",
+    "title" : "check property view is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
+  }, {
     "uuid" : "1c491af1ac1565340059aca3-370472708",
     "title" : "Click Properties-view",
     "keyword" : "click",

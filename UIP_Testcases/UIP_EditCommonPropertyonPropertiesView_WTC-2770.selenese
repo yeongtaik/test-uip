@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409561187778,
-  "timeout" : 10,
+  "modified" : 1412123885923,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_FocusPropertiesView.selenese" ],
   "commands" : [ {
     "uuid" : "2095f826ac1565350d428b62983838586",

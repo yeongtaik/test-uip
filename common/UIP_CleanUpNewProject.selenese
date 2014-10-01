@@ -1,8 +1,8 @@
 {
   "name" : "Test resource 디렉터리 Cleanup",
   "target" : "",
-  "modified" : 1409288209703,
-  "timeout" : 10,
+  "modified" : 1412123109700,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "0cb28b22ac15653401885ad8-514230527",

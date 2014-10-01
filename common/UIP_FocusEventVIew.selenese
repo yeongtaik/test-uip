@@ -1,10 +1,16 @@
 {
   "name" : "Event View로 전환",
   "target" : "",
-  "modified" : 1412052629363,
+  "modified" : 1412056826575,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
+    "uuid" : "c524d053ac15641274dfe9c7679693644",
+    "title" : "check Event view is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  }, {
     "uuid" : "1c49f199ac1565340012dc04-265356548",
     "title" : "Click Event-view",
     "keyword" : "click",
