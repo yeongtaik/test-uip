@@ -1,8 +1,8 @@
 {
   "name" : "메뉴 사용해 기능 실행",
   "target" : "https://uip.webida.net/",
-  "modified" : 1411887353216,
-  "timeout" : 10,
+  "modified" : 1412123425401,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "c75fe82aac15653400503930-550736318",

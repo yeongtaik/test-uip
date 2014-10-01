@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409127791658,
-  "timeout" : 10,
+  "modified" : 1412124106498,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
     "uuid" : "1657224d7f0001017644104a-320038918",

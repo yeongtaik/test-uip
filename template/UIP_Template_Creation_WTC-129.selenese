@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409626508701,
-  "timeout" : 10,
+  "modified" : 1412123597479,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "31330052ac15654901640093749791555",
@@ -15,7 +15,7 @@
     "title" : "wait theme menu enabled",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Create &Template\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "5" ]
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Create &Template\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "100" ]
   }, {
     "uuid" : "3133aae9ac1565490195c81f-89882799",
     "title" : "Click create template",
@@ -99,7 +99,7 @@
     "title" : "Confirm opened editor",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"test_template.html\"]", "5" ]
+    "arguments" : [ "xpath=//span[text()=\"test_template.html\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }

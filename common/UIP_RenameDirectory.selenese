@@ -1,7 +1,7 @@
 {
   "name" : "Rename NewDirectory to RenameNewDirectory by ContextMenu",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411975533991,
+  "modified" : 1412123291904,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -33,7 +33,7 @@
     "title" : "wait for delete in context menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']", "5" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Rename ']", "100" ]
   }, {
     "uuid" : "c026f48eac1564125911a225-1053425965",
     "title" : "renameDirectory",

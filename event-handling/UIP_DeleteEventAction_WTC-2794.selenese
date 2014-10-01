@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409542632014,
-  "timeout" : 10,
+  "modified" : 1412123481500,
+  "timeout" : 100,
   "prerequisites" : [ "event-view/UIP_AddEventAction_WTC-2795.selenese" ],
   "commands" : [ {
     "uuid" : "2f3c27c37f000101009f3d0a-1388384316",
@@ -33,7 +33,7 @@
     "title" : "check event delete",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "css=.dgrid-row-table td", "5" ]
+    "arguments" : [ "css=.dgrid-row-table td", "100" ]
   } ],
   "cleanUp" : [ ]
 }

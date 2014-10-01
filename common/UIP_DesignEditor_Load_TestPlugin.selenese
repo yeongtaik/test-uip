@@ -1,8 +1,8 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409790825815,
-  "timeout" : 10,
+  "modified" : 1412123140344,
+  "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "3c5c59caac1e01151efc6a801722328893",

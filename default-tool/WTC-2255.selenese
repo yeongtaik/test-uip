@@ -1,15 +1,15 @@
 {
   "name" : "툴바 표시",
   "target" : "https://uip.webida.net/",
-  "modified" : 1408966024453,
-  "timeout" : 10,
+  "modified" : 1412123435614,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "ad9c012aac156534013cb81c-1481462881",
     "title" : "Search Toolbar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-workbench-toolbar", "5" ]
+    "arguments" : [ "id=app-workbench-toolbar", "100" ]
   }, {
     "uuid" : "ad9ef0d9ac156534014b192e-1217931280",
     "title" : "Search New File",

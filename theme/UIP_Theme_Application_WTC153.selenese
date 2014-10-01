@@ -1,8 +1,8 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409569747524,
-  "timeout" : 10,
+  "modified" : 1412123646787,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "30d6b046ac156549008c36fa1804569897",
@@ -21,7 +21,7 @@
     "title" : "check workspace opened",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "5" ]
+    "arguments" : [ "id=workspace-view", "100" ]
   }, {
     "uuid" : "30d7e19cac1565490117146d2049185951",
     "title" : "collapseAll",

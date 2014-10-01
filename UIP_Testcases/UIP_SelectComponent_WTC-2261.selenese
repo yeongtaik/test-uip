@@ -1,8 +1,8 @@
 {
   "name" : "컴포넌트 선택",
   "target" : "",
-  "modified" : 1409292278675,
-  "timeout" : 10,
+  "modified" : 1412124191561,
+  "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
     "uuid" : "2059116aac1565340008858b458948617",
