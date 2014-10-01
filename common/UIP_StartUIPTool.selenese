@@ -1,10 +1,16 @@
 {
   "name" : "UI Prototyping Tool 실행 - uip-sample",
   "target" : "",
-  "modified" : 1412053364147,
+  "modified" : 1412138617670,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
+    "uuid" : "ca049b16ac156412056aeb5c253922340",
+    "title" : "wait until UIProject is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]", "100" ]
+  }, {
     "uuid" : "0cb28b22ac15653401885ad8-514230527",
     "title" : "clickUIPProject",
     "keyword" : "click",
