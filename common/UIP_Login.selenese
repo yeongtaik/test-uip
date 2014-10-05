@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412048669605,
+  "modified" : 1412552689593,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -33,7 +33,7 @@
     "title" : "typePasswdForPwd",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=password", "uipuip" ]
+    "arguments" : [ "id=password", "passWord" ]
   }, {
     "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
     "title" : "clickLoginButton",
