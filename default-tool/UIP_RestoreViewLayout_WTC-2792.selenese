@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412581515480,
+  "modified" : 1412582036317,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LogOut.selenese" ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "typeEmailForID",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
+    "arguments" : [ "id=email", "uip_admin" ]
   }, {
     "uuid" : "204d4e097f00010101becf0b1215181621",
     "title" : "typePasswdForPwd",
