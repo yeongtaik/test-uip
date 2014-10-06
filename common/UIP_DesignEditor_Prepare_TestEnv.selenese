@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412123162083,
+  "modified" : 1412581385790,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
+    "arguments" : [ "id=email", "uip_admin" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
@@ -63,7 +63,7 @@
     "title" : "give name to New window",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/Project1" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/Project1" ]
   }, {
     "uuid" : "0d5d8d82ac156412248241bf1844418440",
     "title" : "switch to new Window",

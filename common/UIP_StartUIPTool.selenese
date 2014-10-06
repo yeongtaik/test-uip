@@ -1,7 +1,7 @@
 {
   "name" : "UI Prototyping Tool 실행 - uip-sample",
   "target" : "",
-  "modified" : 1412138617670,
+  "modified" : 1412581484273,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "waitUIPWindow",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/uip-sample" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/uip-sample" ]
   }, {
     "uuid" : "0cd5fdb2ac15653401bdeb05-1012407907",
     "title" : "switchUIPWindow",

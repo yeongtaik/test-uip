@@ -1,7 +1,7 @@
 {
   "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412552615235,
+  "modified" : 1412581446505,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -45,13 +45,13 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest-admin@webida.org" ]
+    "arguments" : [ "id=email", "uip_admin" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=password", "passWord" ]
+    "arguments" : [ "id=password", "uipuip" ]
   }, {
     "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
     "title" : "click Login Button",
@@ -87,7 +87,7 @@
     "title" : "give name to New window",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/Project1" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/Project1" ]
   }, {
     "uuid" : "0d5d8d82ac156412248241bf1844418440",
     "title" : "switch to new Window",

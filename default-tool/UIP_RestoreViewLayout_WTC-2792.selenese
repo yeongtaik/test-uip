@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412123401011,
+  "modified" : 1412581515480,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LogOut.selenese" ],
   "commands" : [ {
@@ -63,7 +63,7 @@
     "title" : "waitUIPWindow",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/uip-sample" ]
+    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/uip-sample" ]
   }, {
     "uuid" : "2ef746327f000101003649f31348044260",
     "title" : "switchUIPWindow",
