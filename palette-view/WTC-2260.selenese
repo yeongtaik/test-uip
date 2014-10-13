@@ -1,7 +1,7 @@
 {
   "name" : "컴포넌트 정보 제공",
   "target" : "https://uip.webida.net/",
-  "modified" : 1412123521694,
+  "modified" : 1413181248490,
   "timeout" : 100,
   "prerequisites" : [ "palette-view/WTC-2262.selenese" ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "Search jqxButton tooltiptext",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "jqxButton", "css=li[data-name=jqx.jqxButton]@tooltiptext" ]
+    "arguments" : [ "jqxButton", "css=li[data-name=\"jqx.jqxButton\"]@tooltiptext" ]
   }, {
     "uuid" : "acc5656dac156534001b054a-106546268",
     "title" : "Validation jqxButton text",
@@ -21,13 +21,13 @@
     "title" : "Search jqxInput tooltiptext",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "jqxInput", "css=li[data-name=jqx.jqxInput]@tooltiptext" ]
+    "arguments" : [ "jqxInput", "css=li[data-name=\"jqx.jqxInput\"]@tooltiptext" ]
   }, {
     "uuid" : "acc7c38cac15653400a45fe4334117818",
     "title" : "Validation jqxInput text",
     "keyword" : "equals",
     "commands" : [ ],
-    "arguments" : [ "$(jqxInput)", "The jqxInput represents an Input widget with auto-complete capabilities." ]
+    "arguments" : [ "$(jqxInput)", "The jqxInput represents an input widget with auto-complete capabilities." ]
   } ],
   "cleanUp" : [ ]
 }
