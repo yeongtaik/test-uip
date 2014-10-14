@@ -1,7 +1,7 @@
 {
   "name" : "툴바 표시",
   "target" : "https://uip.webida.net/",
-  "modified" : 1412123435614,
+  "modified" : 1413179643590,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -11,23 +11,11 @@
     "commands" : [ ],
     "arguments" : [ "id=app-workbench-toolbar", "100" ]
   }, {
-    "uuid" : "ad9ef0d9ac156534014b192e-1217931280",
-    "title" : "Search New File",
-    "keyword" : "store",
-    "commands" : [ ],
-    "arguments" : [ "newFile", "css=#dijit_form_Button_0@title" ]
-  }, {
-    "uuid" : "ada125afac156534015c7e14-54382408",
-    "title" : "Validation New File",
-    "keyword" : "equals",
-    "commands" : [ ],
-    "arguments" : [ "$(newFile)", "New File" ]
-  }, {
     "uuid" : "ad9f26e9ac15653401a8c53e-446853777",
     "title" : "Search Save File",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "saveFile", "css=#dijit_form_Button_1@title" ]
+    "arguments" : [ "saveFile", "css=#dijit_form_Button_0@title" ]
   }, {
     "uuid" : "ada19cafac15653400465782-1572684847",
     "title" : "Validation Save File",
@@ -39,7 +27,7 @@
     "title" : "Search Save All File",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "saveAll", "css=#dijit_form_Button_2@title" ]
+    "arguments" : [ "saveAll", "css=#dijit_form_Button_1@title" ]
   }, {
     "uuid" : "ada22727ac15653400a3ab851409442722",
     "title" : "Validation Save All File",
