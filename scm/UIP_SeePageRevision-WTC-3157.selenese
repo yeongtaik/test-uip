@@ -1,0 +1,39 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413448410007,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "17f54b30ac15653401e21f5f-718999639",
+    "title" : "Select testpage",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.treeItemExpand('/uip-sample/functional-test/testpage.html');" ]
+  }, {
+    "uuid" : "180cdeedac1565340005fc7f-403693016",
+    "title" : "pause 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "180d14ddac156534003df1cb-1645597728",
+    "title" : "Click revision menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div" ]
+  }, {
+    "uuid" : "180eedc4ac15653400d9cd1c52128531",
+    "title" : "Click see a page revision menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitMenuPopup .dijitMenuItem + .dijitMenuItem+ .dijitMenuItem" ]
+  }, {
+    "uuid" : "1815227aac156534002af666532057640",
+    "title" : "validation dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialogFocused", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
