@@ -1,0 +1,45 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413437910395,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "17681c8c7f000101019a5b111543813490",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17684d2b7f0001010078ce321622297386",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div + div" ]
+  }, {
+    "uuid" : "176905327f0001010037be45-982832029",
+    "title" : "wait componentsmanager menu enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Components Manager\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "5" ]
+  }, {
+    "uuid" : "176ad2a07f00010100ac4a91-54719242",
+    "title" : "Click",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&Admin/Components Manager" ]
+  }, {
+    "uuid" : "176b6a017f000101009830212068824954",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "176bd7047f00010100abcbe41466247849",
+    "title" : "check components dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=components-dialog-content", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
