@@ -1,7 +1,7 @@
 {
   "name" : "UI Prototyping Tool 실행 - uip-sample",
   "target" : "",
-  "modified" : 1413438287289,
+  "modified" : 1413447107273,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -58,6 +58,12 @@
     "keyword" : "executeScript",
     "commands" : [ ],
     "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function(){});" ]
+  }, {
+    "uuid" : "18027736a9fe395500fcea241637853868",
+    "title" : "wait 3s until test plugin load",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
   }, {
     "uuid" : "c4efbf99ac156412478f7762-1987766031",
     "title" : "open left splitter",
