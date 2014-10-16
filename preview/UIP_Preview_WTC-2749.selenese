@@ -1,0 +1,195 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413274266140,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "0cf3ba047f000101036ec0c31872379580",
+    "title" : "Load test util",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function () {});" ]
+  }, {
+    "uuid" : "0cf3c30b7f00010138ce2f12-391177487",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "0c3f2da37f00010159d82e17-737885442",
+    "title" : "Tree all collapse",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.treeAllCollapse();" ]
+  }, {
+    "uuid" : "150267e97f0001016d6ba823230293920",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "161c129d7f000101183c95d2-514953114",
+    "title" : "close previous editor tabs",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "0c0e6b927f00010143d82869-875090308",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "0c1d5cd57f0001012f14c63e826797327",
+    "title" : "select previewtest.html",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.treeItemExpand('/Project1/previewtest2.html');" ]
+  }, {
+    "uuid" : "0c1e247a7f00010111073921-1183820542",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "15aed23e7f0001013e5392c51388794450",
+    "title" : "open context menu",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest2.html\"]/../.." ]
+  }, {
+    "uuid" : "15af90cd7f00010104c9eb48101892530",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "15ffa3447f0001017344a9ad793554451",
+    "title" : "check context menu opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "100" ]
+  }, {
+    "uuid" : "16001f9a7f0001014cbcf6f9695011132",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "160075db7f0001012d6a8bbc-346577341",
+    "title" : "open preview using page file",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('tr.dijitMenuItem[aria-label=\"Run Preview \"]').click();" ]
+  }, {
+    "uuid" : "1f2f77107f0001010931f994-911977893",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f2eb96f7f000101278eb611-675139668",
+    "title" : "check preview opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
+  }, {
+    "uuid" : "1f30b5c17f00010104e71de41499319370",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f30d8267f00010163b965d0-915399652",
+    "title" : "close preview",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screenover-close-button" ]
+  }, {
+    "uuid" : "160119997f000101121ca0d7705796302",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1f31fa957f00010167a878ab370399365",
+    "title" : "check close preview",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
+  }, {
+    "uuid" : "1f32611e7f00010174eb251b2145637873",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "153873c97f000101799a061c-1025768340",
+    "title" : "open preview test file in editor",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest2.html\"]/../.." ]
+  }, {
+    "uuid" : "15396f617f0001010feb0d19-1463403506",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "160a29d57f000101371678d2642558688",
+    "title" : "check editor opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[role=\"tablist\"]", "100" ]
+  }, {
+    "uuid" : "160adb9c7f00010161781606-2035449691",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "160b2f167f00010110adbbb21419858157",
+    "title" : "open context menu in editor",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_design_editor_editor" ]
+  }, {
+    "uuid" : "160f400b7f00010162c01229-1005285557",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "161115227f00010128633c471403956103",
+    "title" : "check context menu opened in editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitPopup.dijitMenuPopup", "100" ]
+  }, {
+    "uuid" : "161189bc7f0001012b379be3-327799171",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1611ca097f0001017d6bd187-79635527",
+    "title" : "open preview using editors context menu",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('tr.dijitMenuItem[aria-label=\"Preview \"]').click();" ]
+  }, {
+    "uuid" : "161341d97f00010168dbcfe4-1115936047",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "161540717f000101769f5c84-1126709128",
+    "title" : "check preview opened",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

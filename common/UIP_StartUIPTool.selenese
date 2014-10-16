@@ -1,0 +1,87 @@
+{
+  "name" : "UI Prototyping Tool 실행 - uip-sample",
+  "target" : "",
+  "modified" : 1412581484273,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "ca049b16ac156412056aeb5c253922340",
+    "title" : "wait until UIProject is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]", "100" ]
+  }, {
+    "uuid" : "0cb28b22ac15653401885ad8-514230527",
+    "title" : "clickUIPProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]" ]
+  }, {
+    "uuid" : "0cd846d9ac15653400d5a799-1832103093",
+    "title" : "pause 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "0cd1a93cac15653401d6010d-873225612",
+    "title" : "waitUIPWindow",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/uip-sample" ]
+  }, {
+    "uuid" : "0cd5fdb2ac15653401bdeb05-1012407907",
+    "title" : "switchUIPWindow",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow" ]
+  }, {
+    "uuid" : "10a89debac15653400deb59b-957162101",
+    "title" : "waitForLoadingScreen",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
+  }, {
+    "uuid" : "0cdbcf97ac15653401ba274d-1869612275",
+    "title" : "waitForEndingOfLoad",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
+  }, {
+    "uuid" : "c4eeaa5aac156412272c9357-1394263667",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "c4efbf99ac156412478f7762-1987766031",
+    "title" : "open left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+  }, {
+    "uuid" : "c4efe7f1ac15641274d19f361862724751",
+    "title" : "check that left splitter is opend",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=wv-tree", "100" ]
+  }, {
+    "uuid" : "c4f00b4aac1564122c8e756f177171094",
+    "title" : "open right splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+  }, {
+    "uuid" : "c4f024a2ac156412505f1346358241118",
+    "title" : "check that event-view is visible.",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  }, {
+    "uuid" : "c4f06b31ac1564124d067701991930007",
+    "title" : "check that property is visible",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

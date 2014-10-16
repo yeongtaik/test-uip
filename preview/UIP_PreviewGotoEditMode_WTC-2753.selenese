@@ -1,0 +1,39 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1412124096306,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
+  "commands" : [ {
+    "uuid" : "1695b6787f00010117346676-774588526",
+    "title" : "Designed mode button click",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.preview-bottom-designmodeicon').click();" ]
+  }, {
+    "uuid" : "1697366d7f0001015d0edaa1167843798",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "169775867f00010161bf7a1b-2074978326",
+    "title" : "Check close preivew",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "100" ]
+  }, {
+    "uuid" : "1698a6867f000101494e7ecf1982203999",
+    "title" : "Check opened design editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[role=\"tablist\"]", "100" ]
+  }, {
+    "uuid" : "169c0f7d7f00010131eb7f2b-95214792",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  } ],
+  "cleanUp" : [ ]
+}

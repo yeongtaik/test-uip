@@ -1,0 +1,57 @@
+{
+  "name" : "Rename RenameNewDirectory to NewDirectory by Shortcut",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1412035140871,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "c050c66aac156412023bb8211714688272",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "9000" ]
+  }, {
+    "uuid" : "c050d5fbac156412219187d12100940457",
+    "title" : "Workspac선택",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "c050e91eac15641236f669f9-1058161540",
+    "title" : "check that the renamed directory exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='RenameNewDirectory']", "100" ]
+  }, {
+    "uuid" : "c05144afac1564123d24b5b2-1624129010",
+    "title" : "F2 to rename",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='treeitem' and .='RenameNewDirectory']", "+F2" ]
+  }, {
+    "uuid" : "c0523a18ac15641270cfbadd-1112188520",
+    "title" : "waitFor RenameBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "100" ]
+  }, {
+    "uuid" : "c0524bf6ac1564122d02e750-1070520463",
+    "title" : "type Rename to make RenameNewDirectory",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "NewDirectory" ]
+  }, {
+    "uuid" : "c052a1fcac1564124c475219-743280386",
+    "title" : "Enter",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=renameInputTemp", "+ENTER" ]
+  }, {
+    "uuid" : "c052b7a5ac1564124144b6fb556133700",
+    "title" : "check that the directory exist",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewDirectory']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

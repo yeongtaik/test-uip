@@ -1,0 +1,27 @@
+{
+  "name" : "Palette View로 전환",
+  "target" : "",
+  "modified" : 1412056712297,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_RightSplitterOpen.selenese", "common/UIP_LeftSplitterOpen.selenese" ],
+  "commands" : [ {
+    "uuid" : "c5230b35ac15641230b040db-245260053",
+    "title" : "wait paletteview is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']", "100" ]
+  }, {
+    "uuid" : "1c3b4e98ac15653400adef97-1601634936",
+    "title" : "Click PaletteView",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+  }, {
+    "uuid" : "1c3baf10ac156534004cc83d2036881625",
+    "title" : "Check Palette-view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=paletteView", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

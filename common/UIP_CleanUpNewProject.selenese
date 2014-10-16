@@ -1,0 +1,33 @@
+{
+  "name" : "Test resource 디렉터리 Cleanup",
+  "target" : "",
+  "modified" : 1412123109700,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "0cb28b22ac15653401885ad8-514230527",
+    "title" : "clickTestProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-project=uip-sample]" ]
+  }, {
+    "uuid" : "0cb47387ac15653401d8ba1f1993204724",
+    "title" : "mouseMoveToSetting",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=li.active>.project-setting" ]
+  }, {
+    "uuid" : "0cb8909dac156534017b8baf-1366790814",
+    "title" : "clickDeleteProject",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=ul.project-setting-wrapper>#proj-delete" ]
+  }, {
+    "uuid" : "201a4226ac156534005d20c2-81339158",
+    "title" : "Click alert yes",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "alert=yes" ]
+  } ],
+  "cleanUp" : [ ]
+}

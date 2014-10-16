@@ -1,0 +1,87 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1412123687663,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "2feafdeeac1565490160c70e1761443730",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "2f8f1f6cac1565490066b4242011476377",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div + div" ]
+  }, {
+    "uuid" : "2fc55614ac1565490173b0381213148221",
+    "title" : "wait theme menu enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/&Create Theme\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "100" ]
+  }, {
+    "uuid" : "2f8fd4cdac15654900e113e6-404817668",
+    "title" : "Click create theme",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitMenuPopup .dijitMenuItem" ]
+  }, {
+    "uuid" : "2fc001c4ac156549006f0390162817735",
+    "title" : "wait for new theme dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialog", "100" ]
+  }, {
+    "uuid" : "2f90cd87ac15654901ac6cd8-2122646950",
+    "title" : "input theme name",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=nnNameInput", "sample_css" ]
+  }, {
+    "uuid" : "2f91ad8bac15654901719852145386053",
+    "title" : "Click Create button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=nnCreateBtn" ]
+  }, {
+    "uuid" : "2fb8e2a8ac15654901b52f2b-590638280",
+    "title" : "wait 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "4000" ]
+  }, {
+    "uuid" : "2f9a941eac15654901a057c8-182252420",
+    "title" : "Confirm opened editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"sample_css.css\"]", "100" ]
+  }, {
+    "uuid" : "30b9a15fac156549018de9e9-2107042664",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "30ba1349ac1565490004a8ce-1462872952",
+    "title" : "change border redius",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "css=.theme-left .dijitNumberTextBox .dijitInputField input + input", "100" ]
+  }, {
+    "uuid" : "30c71f1aac156549014c449d1248290812",
+    "title" : "click outside of textbox",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()=\"Border radius:\"]" ]
+  }, {
+    "uuid" : "30cb2e16ac1565490073845b396062208",
+    "title" : "save",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=uip-body", "ctrl+s" ]
+  } ],
+  "cleanUp" : [ ]
+}

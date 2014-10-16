@@ -1,9 +1,9 @@
 {
   "name" : "컴포넌트 탐색",
   "target" : "",
-  "modified" : 1409291545351,
-  "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_FocusPaletteView.selenese" ],
+  "modified" : 1412124186262,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPaletteView.selenese" ],
   "commands" : [ {
     "uuid" : "1c594962ac1565340009528c-1749604983",
     "title" : "Type filter",
@@ -21,49 +21,49 @@
     "title" : "Check display Link Button",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Repeat Button\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Repeat Button\"]", "100" ]
   }, {
     "uuid" : "204e8796ac1565340014ab021760793694",
     "title" : "Check display Toggle Button",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Toggle Button\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Toggle Button\"]", "100" ]
   }, {
     "uuid" : "204f17fbac1565340119bb6b-278913223",
     "title" : "Check display Button",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Button\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Button\"]", "100" ]
   }, {
     "uuid" : "204f3876ac15653400530346-639499128",
     "title" : "Check display Radio Button",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Radio Button\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Radio Button\"]", "100" ]
   }, {
     "uuid" : "204f746eac156534010fab172073887134",
     "title" : "Check display Button Group",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Button Group\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Button Group\"]", "100" ]
   }, {
     "uuid" : "204fc84bac15653400f616cd1609479054",
     "title" : "Check nodisplay Image",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Image\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Image\"]", "100" ]
   }, {
     "uuid" : "2050132eac156534016b533f-2107104415",
     "title" : "Check nodisplay Label",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Label\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Label\"]", "100" ]
   }, {
     "uuid" : "205048c0ac156534018b22a71552257475",
     "title" : "Check nodisplay Calendar",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Label\"]", "5" ]
+    "arguments" : [ "xpath=//div[contains(@class, \"pv-tilelabel\") and text() = \"Label\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }

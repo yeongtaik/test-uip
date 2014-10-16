@@ -1,0 +1,33 @@
+{
+  "name" : "Layout",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1412042791832,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "17710b02ac15653d00869b22-493282513",
+    "title" : "Search Workspace view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Workspace']", "100" ]
+  }, {
+    "uuid" : "17809391ac15653d00f8d354968041109",
+    "title" : "Search Palette view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=//span[@class='tabLabel' and @role='tab' and .='Palette']", "100" ]
+  }, {
+    "uuid" : "1a36db00ac15653d00f1fc84-1171228327",
+    "title" : "Search Properties view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
+  }, {
+    "uuid" : "1a36d928ac15653d01f7fbdb-1247631269",
+    "title" : "Search Event view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

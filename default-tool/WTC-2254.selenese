@@ -1,9 +1,9 @@
 {
   "name" : "메뉴 사용해 기능 실행",
   "target" : "https://uip.webida.net/",
-  "modified" : 1408965935204,
-  "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
+  "modified" : 1412123425401,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "c75fe82aac15653400503930-550736318",
     "title" : "Click Admin menu",
@@ -21,7 +21,7 @@
     "title" : "Find themeDialog",
     "keyword" : "store",
     "commands" : [ ],
-    "arguments" : [ "themeValue", "css=#dijit_Dialog_1_title.dijitDialogTitle" ]
+    "arguments" : [ "themeValue", "css=#dijit_Dialog_0_title.dijitDialogTitle" ]
   }, {
     "uuid" : "c7d5b0c9ac1565340175486b-1142784790",
     "title" : "Validation themeDialog",

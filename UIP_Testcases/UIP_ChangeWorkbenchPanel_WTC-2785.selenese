@@ -1,57 +1,9 @@
 {
   "name" : "개별 뷰 크기 변경",
   "target" : "",
-  "modified" : 1409293206743,
-  "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese" ],
-  "commands" : [ {
-    "uuid" : "206808a3ac1565340096fd21-128457148",
-    "title" : "Click close leftPanel",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen" ]
-  }, {
-    "uuid" : "20686f09ac1565340055faf71245900196",
-    "title" : "Check close leftPanel",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen", "5" ]
-  }, {
-    "uuid" : "2069c9c3ac15653401e88a78-1830690449",
-    "title" : "Click open leftPanel",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed" ]
-  }, {
-    "uuid" : "206a5e87ac15653400a16a5e1451491509",
-    "title" : "Check Open leftPanel",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed", "5" ]
-  }, {
-    "uuid" : "206a9b0bac15653400006195966377963",
-    "title" : "Click close rightPanel",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen" ]
-  }, {
-    "uuid" : "206b37afac156534000c3103-54432930",
-    "title" : "Check close rightPanel",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen", "5" ]
-  }, {
-    "uuid" : "206b7ad1ac15653401779f1d-1809767666",
-    "title" : "Click open rightPanel",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed" ]
-  }, {
-    "uuid" : "206ba972ac1565340077e98b-613462591",
-    "title" : "Check Open rightPanel",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "css=.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed", "5" ]
-  } ],
+  "modified" : 1412053621185,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterClose.selenese", "common/UIP_RightSplitterOpen.selenese" ],
+  "commands" : [ ],
   "cleanUp" : [ ]
 }

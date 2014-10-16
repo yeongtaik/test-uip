@@ -1,0 +1,63 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1412124510371,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "2a114d0aac15653701628ed8-968864169",
+    "title" : "selectWidget 'id3'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3');\r\n\r\n" ]
+  }, {
+    "uuid" : "2a1544d6ac15653700fffc6f-1955971325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "2a158976ac156537005b97b4208516721",
+    "title" : "append widget 'id13'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id13', true);" ]
+  }, {
+    "uuid" : "2a16a046ac1565370046a59e-1034955034",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "2a1724bdac156537013b4a75683376970",
+    "title" : "check select widget count = 2",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getSelectedEditParts().length !== 2) {\r\n\tthrow new Error('selected widget count is wrong');\r\n}" ]
+  }, {
+    "uuid" : "2a178066ac156537003a5e911190505458",
+    "title" : "deselectWidget 'id3'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.deselectWidgetById('id3');" ]
+  }, {
+    "uuid" : "3c64bc04ac1e011547dd7b9a512741777",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c64882dac1e0115782bbb5e1848838456",
+    "title" : "check select widget count = 1",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getSelectedEditParts().length !== 1) {\r\n\tthrow new Error('selected widget count is wrong');\r\n}" ]
+  }, {
+    "uuid" : "3e175ac8ac1565370051ffa3-1579674109",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

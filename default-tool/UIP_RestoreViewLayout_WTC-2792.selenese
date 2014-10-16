@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1409537996606,
-  "timeout" : 10,
-  "prerequisites" : [ "template/UIP_Login.selenese", "template/UIP_StartUIPTool.selenese", "template/UIP_OpenTestpage.selenese", "template/UIP_LeftSplitterClose.selenese", "template/UIP_LogOut.selenese" ],
+  "modified" : 1412582036317,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese", "common/UIP_LeftSplitterClose.selenese", "common/UIP_LogOut.selenese" ],
   "commands" : [ {
     "uuid" : "2060df307f0001010060209f-1417467066",
     "title" : "openUipWindow",
@@ -21,13 +21,13 @@
     "title" : "waitForLogInBox",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=email", "5" ]
+    "arguments" : [ "id=email", "100" ]
   }, {
     "uuid" : "204ce5fb7f000101004fcdc3-479723925",
     "title" : "typeEmailForID",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptest@webida.org" ]
+    "arguments" : [ "id=email", "uip_admin" ]
   }, {
     "uuid" : "204d4e097f00010101becf0b1215181621",
     "title" : "typePasswdForPwd",
@@ -45,7 +45,7 @@
     "title" : "waitForLogginedPage",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=project", "5" ]
+    "arguments" : [ "id=project", "100" ]
   }, {
     "uuid" : "204e2b907f000101015dc00e-397796935",
     "title" : "clickUIPProject",
@@ -63,7 +63,7 @@
     "title" : "waitUIPWindow",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=ekQYk8liye/uip-sample" ]
+    "arguments" : [ "UIPTestWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/uip-sample" ]
   }, {
     "uuid" : "2ef746327f000101003649f31348044260",
     "title" : "switchUIPWindow",
@@ -75,13 +75,13 @@
     "title" : "waitForEndingOfLoad",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "id=app-loadingscreen-elem", "20" ]
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
   }, {
     "uuid" : "20504a607f00010100ef75b8-133162526",
     "title" : "Check Left Splitter Close",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "id=dijit_layout_ContentPane_0", "5" ]
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "100" ]
   }, {
     "uuid" : "2efa01127f0001010158909a-71939710",
     "title" : "Click Left Splitter Open",
@@ -93,7 +93,7 @@
     "title" : "Check Open Left Splitter",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=dijit_layout_ContentPane_0", "5" ]
+    "arguments" : [ "id=dijit_layout_ContentPane_0", "100" ]
   } ],
   "cleanUp" : [ ]
 }
