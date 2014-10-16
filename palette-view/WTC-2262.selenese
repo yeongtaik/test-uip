@@ -1,15 +1,15 @@
 {
   "name" : "컴포넌트 목록 표시",
   "target" : "https://uip.webida.net/",
-  "modified" : 1412040999057,
+  "modified" : 1413446791886,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "f108e98fac1565443741da421011562699",
     "title" : "Click palette-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('palette')" ]
   }, {
     "uuid" : "a8a552d4ac156534010e5ead-1206711403",
     "title" : "Check palette-view",

@@ -1,7 +1,7 @@
 {
   "name" : "UI Prototyping Tool 실행 - uip-sample",
   "target" : "",
-  "modified" : 1412581484273,
+  "modified" : 1413447107273,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -53,11 +53,23 @@
     "commands" : [ ],
     "arguments" : [ "8000" ]
   }, {
+    "uuid" : "177bf9acac15653400a476eb1873657836",
+    "title" : "Load test plugin",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function(){});" ]
+  }, {
+    "uuid" : "18027736a9fe395500fcea241637853868",
+    "title" : "wait 3s until test plugin load",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
     "uuid" : "c4efbf99ac156412478f7762-1987766031",
     "title" : "open left splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+    "arguments" : [ "testerAdaptor.openSplitter('left')" ]
   }, {
     "uuid" : "c4efe7f1ac15641274d19f361862724751",
     "title" : "check that left splitter is opend",
@@ -69,7 +81,7 @@
     "title" : "open right splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+    "arguments" : [ "testerAdaptor.openSplitter('right')" ]
   }, {
     "uuid" : "c4f024a2ac156412505f1346358241118",
     "title" : "check that event-view is visible.",

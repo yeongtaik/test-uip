@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412123247990,
+  "modified" : 1413438448483,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "open left splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+    "arguments" : [ "testerAdaptor.openSplitter('left')" ]
   }, {
     "uuid" : "c4c61450ac1564120ed974d0-1904314590",
     "title" : "check that left splitter is opend",
