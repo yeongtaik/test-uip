@@ -1,7 +1,7 @@
 {
   "name" : "Layout",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413437622890,
+  "modified" : 1413446550580,
   "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -15,7 +15,7 @@
     "title" : "Search Palette view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=//span[@class='tabLabel' and @role='tab' and .='Palette']", "100" ]
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']", "100" ]
   }, {
     "uuid" : "1a36db00ac15653d00f1fc84-1171228327",
     "title" : "Search Properties view",

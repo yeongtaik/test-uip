@@ -1,0 +1,27 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413246752840,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "1a44e9a2ac15653d019a6fa3-1922455974",
+    "title" : "Click Palette view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+  }, {
+    "uuid" : "1a686db0ac15653d0146688d-739422469",
+    "title" : "Search Table component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.table\"]", "100" ]
+  }, {
+    "uuid" : "20526de8ac15653d01cbf4e4705039696",
+    "title" : "Search List component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"html.list\"]", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
