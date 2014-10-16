@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412123927771,
+  "modified" : 1413445966118,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
@@ -19,9 +19,9 @@
   }, {
     "uuid" : "2b1934c8a9fe395500e48599-97599535",
     "title" : "open testpage.html",
-    "keyword" : "doubleclick",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role='treeitem' and .='testpage.html']/../.." ]
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage.html')" ]
   }, {
     "uuid" : "2b4ab50ba9fe395500bca7ec1936377359",
     "title" : "wait",
@@ -31,9 +31,9 @@
   }, {
     "uuid" : "2b1a38e5a9fe395500c83c421233235964",
     "title" : "open testpage2.html",
-    "keyword" : "doubleclick",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role='treeitem' and .='testpage2.html']/../.." ]
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage2.html')" ]
   }, {
     "uuid" : "2b1a7af5a9fe395500390e6f-1510475554",
     "title" : "wait",
