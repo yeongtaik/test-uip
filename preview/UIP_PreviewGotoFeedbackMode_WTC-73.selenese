@@ -1,0 +1,27 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413426071847,
+  "timeout" : 100,
+  "prerequisites" : [ "preview/UIP_Preview_WTC-2749.selenese" ],
+  "commands" : [ {
+    "uuid" : "16bebc357f00010107558dac-839850529",
+    "title" : "Redpen button click",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.preview-bottom-redpenicon" ]
+  }, {
+    "uuid" : "16bf6b347f0001016d7a1667-974500420",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "16c030947f0001017170548a-986542601",
+    "title" : "Check opened feedback  mode",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=", "10" ]
+  } ],
+  "cleanUp" : [ ]
+}
