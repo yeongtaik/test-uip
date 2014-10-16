@@ -1,7 +1,7 @@
 {
   "name" : "화면 배치",
   "target" : "https://uip.webida.net/",
-  "modified" : 1412040910356,
+  "modified" : 1413439505271,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -25,9 +25,9 @@
   }, {
     "uuid" : "f0d51e6cac1565447dca9c94-1020343703",
     "title" : "Click Workspace-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Workspace']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('workspace')" ]
   }, {
     "uuid" : "ad90b408ac1565340057c39d-1601024932",
     "title" : "Search Workspace-view",
@@ -37,9 +37,9 @@
   }, {
     "uuid" : "f0d59b77ac1565442e6a6742-1723816991",
     "title" : "Click Palette-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('palette');" ]
   }, {
     "uuid" : "ad91bbb8ac15653400057a8d-1906188067",
     "title" : "Search Palette-view",
@@ -49,9 +49,9 @@
   }, {
     "uuid" : "f0e8097bac1565444704680c677832704",
     "title" : "Click Properties-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('properties');" ]
   }, {
     "uuid" : "ad926f95ac15653401c8d019-1129628231",
     "title" : "Search Properties-view",
@@ -61,9 +61,9 @@
   }, {
     "uuid" : "f0e9fc58ac1565442db9a8e91158084575",
     "title" : "Click Eventview",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('event');" ]
   }, {
     "uuid" : "ad9371e5ac156534015981f7-634049932",
     "title" : "Search Event-view",
