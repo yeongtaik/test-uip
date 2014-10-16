@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124096306,
+  "modified" : 1413424587019,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
+  "prerequisites" : [ "preview/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
     "uuid" : "1695b6787f00010117346676-774588526",
     "title" : "Designed mode button click",

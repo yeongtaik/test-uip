@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124075951,
+  "modified" : 1413423945698,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
+  "prerequisites" : [ "preview/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
     "uuid" : "1a2e3e637f00010152f4d0f8625253156",
     "title" : "click button1",
