@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413440448808,
+  "modified" : 1413447538252,
   "timeout" : 10,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -42,10 +42,10 @@
     "arguments" : [ "2000" ]
   }, {
     "uuid" : "1783bfee7f0001011daad8c2-1936620817",
-    "title" : "selecte prviewtest2.html",
+    "title" : "selecte prviewtest.html",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "window.testerAdaptor.treeItemExpand('/Project1/previewtest2.html');" ]
+    "arguments" : [ "window.testerAdaptor.treeItemExpand('/uip-sample/functional-test/previewtest.html');" ]
   }, {
     "uuid" : "1785e6667f00010172bd2fb5-1094287178",
     "title" : "wait 2s",
@@ -55,9 +55,9 @@
   }, {
     "uuid" : "17862a9d7f00010143be65ee-472737214",
     "title" : "open in editor",
-    "keyword" : "doubleclick",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest2.html\"]/../.." ]
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/functional-test/previewtest.html');" ]
   }, {
     "uuid" : "1786e4c57f000101475cf149-955557899",
     "title" : "wait 2s",
@@ -117,7 +117,7 @@
     "title" : "lock file check",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/Project1/previewtest2.html\"]", "5" ]
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]", "5" ]
   }, {
     "uuid" : "1796f53d7f0001010178ea481920238766",
     "title" : "wait 2s",
@@ -129,7 +129,7 @@
     "title" : "select lock file in list",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/Project1/previewtest2.html\"]" ]
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]" ]
   }, {
     "uuid" : "17993bdd7f0001013c8aa345-928179990",
     "title" : "wait 2s",
@@ -153,7 +153,7 @@
     "title" : "check lock file list",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/Project1/previewtest2.html\"]", "5" ]
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]", "5" ]
   }, {
     "uuid" : "179a79cd7f0001014010c1c3-2136054757",
     "title" : "wait 2s",

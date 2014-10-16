@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413440804340,
+  "modified" : 1413447873622,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "id3 위젯 선택",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id3')\r\n});\r\n" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3')\r\n\r\n" ]
   }, {
     "uuid" : "179497fbac1565352c0a9db11556808715",
     "title" : "1초 대기",
