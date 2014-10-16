@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413274266140,
+  "modified" : 1413446509863,
   "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -45,7 +45,7 @@
     "title" : "select previewtest.html",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "window.testerAdaptor.treeItemExpand('/Project1/previewtest2.html');" ]
+    "arguments" : [ "window.testerAdaptor.treeItemExpand('/uip-sample/functional-test/previewtest.html');" ]
   }, {
     "uuid" : "0c1e247a7f00010111073921-1183820542",
     "title" : "wait",
@@ -57,7 +57,7 @@
     "title" : "open context menu",
     "keyword" : "contextClick",
     "commands" : [ ],
-    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest2.html\"]/../.." ]
+    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest.html\"]/../.." ]
   }, {
     "uuid" : "15af90cd7f00010104c9eb48101892530",
     "title" : "wait",
@@ -127,9 +127,9 @@
   }, {
     "uuid" : "153873c97f000101799a061c-1025768340",
     "title" : "open preview test file in editor",
-    "keyword" : "doubleclick",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath= //span[@role = \"treeitem\" and .=\"previewtest2.html\"]/../.." ]
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/functional-test/previewtest.html');" ]
   }, {
     "uuid" : "15396f617f0001010feb0d19-1463403506",
     "title" : "wait",
