@@ -1,0 +1,33 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413439409037,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
+  "commands" : [ {
+    "uuid" : "2095f826ac1565350d428b62983838586",
+    "title" : "h1 위젯 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id1')\r\n});\r\n" ]
+  }, {
+    "uuid" : "20bcac89ac1565351a5ea1461354472783",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "20b5b45cac15653527dc6b67-805189267",
+    "title" : "프로퍼티 뷰의 text 프로퍼티 값을 변수에 저장",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "text_property_value", "css=.property-string-input@value" ]
+  }, {
+    "uuid" : "20ba0ff0ac1565356c02357b-1639915525",
+    "title" : "변수에 저장한 값 확인",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "A New Contents", "$(text_property_value)" ]
+  } ],
+  "cleanUp" : [ ]
+}

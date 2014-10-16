@@ -1,0 +1,63 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413440804340,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
+  "commands" : [ {
+    "uuid" : "17941a93ac15653552bd45b9-1840408390",
+    "title" : "id3 위젯 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id3')\r\n});\r\n" ]
+  }, {
+    "uuid" : "179497fbac1565352c0a9db11556808715",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "1794cf63ac1565350a5e9a8d-1595948487",
+    "title" : "f2키 누름",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+f2" ]
+  }, {
+    "uuid" : "1795926bac1565353a27f866-810808089",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "1795c14bac1565355d5ee06f-659374838",
+    "title" : "A New Contents 2 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=directedit", "A New Contents 2" ]
+  }, {
+    "uuid" : "1796edbaac1565352517114f-997978313",
+    "title" : "Tab 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+tab" ]
+  }, {
+    "uuid" : "179732b2ac15653532f7ec51-1126626517",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17976552ac156535767c69a7-768971380",
+    "title" : "프로퍼티 뷰에서 변경된 텍스트 값을 변수에 저장",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "text_property_value", "css=.property-string-input@value" ]
+  }, {
+    "uuid" : "1798e5f1ac1565353f3b99da-754564065",
+    "title" : "변수에 저장된 값 확인",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "A New Contents 2", "$(text_property_value)" ]
+  } ],
+  "cleanUp" : [ ]
+}
