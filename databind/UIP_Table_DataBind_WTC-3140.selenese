@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413442413685,
+  "modified" : 1413447973951,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "id4 위젯 선택",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id4')\r\n});\r\n" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id4')\r\n\r\n" ]
   }, {
     "uuid" : "179497fbac1565352c0a9db11556808715",
     "title" : "1초 대기",
@@ -51,7 +51,7 @@
     "title" : "databind 프로퍼티 값 확인",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    var databind = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id4').getModel().getPropertyValue('dataBinding');\r\n    databind = JSON.parse(databind);\r\n    var raw = databind.raw;\r\n    if (raw !== 'erson, eight, ge, Q, \\\\nJohn Snow, 178, 19, 123, [x]\\\\nPeter Petrelly, 175, 26, 105, [o]\\\\nJames Dean, 190, 32, 135, [o]\\\\nMatthew Rogan, 183, 19, 150, [o]') {\r\n        throw new Error();\r\n    }\r\n});" ]
+    "arguments" : [ "var databind = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id4').getModel().getPropertyValue('dataBinding');\r\ndatabind = JSON.parse(databind);\r\nvar raw = databind.raw;\r\nif (raw !== 'erson, eight, ge, Q, \\\\nJohn Snow, 178, 19, 123, [x]\\\\nPeter Petrelly, 175, 26, 105, [o]\\\\nJames Dean, 190, 32, 135, [o]\\\\nMatthew Rogan, 183, 19, 150, [o]') {\r\n    throw new Error();\r\n}\r\n" ]
   } ],
   "cleanUp" : [ ]
 }

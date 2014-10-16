@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413439086646,
+  "modified" : 1413447194925,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "위젯 2개 선택",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id1')\r\n    testerAdaptor.selectWidgetById('id2', true);\r\n});\r\n" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id1')\r\ntesterAdaptor.selectWidgetById('id2', true);\r\n\r\n" ]
   }, {
     "uuid" : "211cb89fac1565354de84ab51641483306",
     "title" : "1초 대기",
@@ -39,7 +39,7 @@
     "title" : "변경된 텍스트 확인",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getModel().getPropertyValue('text') !== 'A New Page 2' || testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id2').getModel().getPropertyValue('text') !== 'A New Page 2') {\r\n        throw new Error();\r\n    }\r\n});" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getModel().getPropertyValue('text') !== 'A New Page 2' || testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id2').getModel().getPropertyValue('text') !== 'A New Page 2') {\r\n    throw new Error();\r\n}" ]
   } ],
   "cleanUp" : [ ]
 }

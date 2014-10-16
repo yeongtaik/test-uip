@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413442188564,
+  "modified" : 1413447965083,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "id3 위젯 선택",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    testerAdaptor.selectWidgetById('id3')\r\n});\r\n" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3')\r\n" ]
   }, {
     "uuid" : "179497fbac1565352c0a9db11556808715",
     "title" : "1초 대기",
@@ -51,7 +51,7 @@
     "title" : "databind 프로퍼티 값 확인",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function () {\r\n    var databind = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id3').getModel().getPropertyValue('dataBinding');\r\n    databind = JSON.parse(databind);\r\n    var raw = databind.raw;\r\n    if (raw !== 'Item 1\\\\nItem 2\\\\nItem 3\\\\nItem 4') {\r\n        throw new Error();\r\n    }\r\n});" ]
+    "arguments" : [ "var databind = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id3').getModel().getPropertyValue('dataBinding');\r\ndatabind = JSON.parse(databind);\r\nvar raw = databind.raw;\r\nif (raw !== 'Item 1\\\\nItem 2\\\\nItem 3\\\\nItem 4') {\r\n    throw new Error();\r\n}" ]
   } ],
   "cleanUp" : [ ]
 }
