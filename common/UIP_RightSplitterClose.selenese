@@ -1,15 +1,15 @@
 {
   "name" : "close right splitter",
   "target" : "",
-  "modified" : 1412051601373,
+  "modified" : 1413438524432,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
     "uuid" : "c4cfb9b6ac15641257f708ef-729927805",
-    "title" : "close left splitter",
+    "title" : "close right splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+    "arguments" : [ "testerAdaptor.closeSplitter('right');" ]
   }, {
     "uuid" : "c4d108e8ac156412619f24c2-1100038251",
     "title" : "check that event-view is visible.",

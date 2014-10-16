@@ -1,7 +1,7 @@
 {
   "name" : "Properties view로 전환",
   "target" : "",
-  "modified" : 1412123202772,
+  "modified" : 1413438416589,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
@@ -13,9 +13,9 @@
   }, {
     "uuid" : "1c491af1ac1565340059aca3-370472708",
     "title" : "Click Properties-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('properties')" ]
   }, {
     "uuid" : "1c495042ac1565340005ec2e-597079250",
     "title" : "Check Proeprties-view",

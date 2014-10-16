@@ -1,7 +1,7 @@
 {
   "name" : "Left Splitter Close",
   "target" : "",
-  "modified" : 1412123226762,
+  "modified" : 1413438338850,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "close left splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+    "arguments" : [ "testerAdaptor.closeSplitter('left')" ]
   }, {
     "uuid" : "c4c4a0c8ac156412197cc9a1-1891439727",
     "title" : "check that left splitter is closed",

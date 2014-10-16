@@ -1,7 +1,7 @@
 {
   "name" : "Workspace view로 전환",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412056791098,
+  "modified" : 1413438430158,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
@@ -13,9 +13,9 @@
   }, {
     "uuid" : "1c46c57bac15653401467517-1145591137",
     "title" : "Click Workspace-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('workspace')" ]
   }, {
     "uuid" : "1c470072ac156534001ccb75773415278",
     "title" : "Check workspace-view",

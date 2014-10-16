@@ -1,7 +1,7 @@
 {
   "name" : "open right splitter",
   "target" : "",
-  "modified" : 1412051862735,
+  "modified" : 1413438549377,
   "timeout" : 10,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "open right splitter",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+    "arguments" : [ "testerAdaptor.openSplitter('right');" ]
   }, {
     "uuid" : "c4cda988ac156412076e6c441754234022",
     "title" : "check that event-view is visible.",

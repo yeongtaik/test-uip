@@ -1,7 +1,7 @@
 {
   "name" : "Event View로 전환",
   "target" : "",
-  "modified" : 1412056826575,
+  "modified" : 1413438399721,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
@@ -13,9 +13,9 @@
   }, {
     "uuid" : "1c49f199ac1565340012dc04-265356548",
     "title" : "Click Event-view",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('event')" ]
   }, {
     "uuid" : "1c4a2009ac1565340128e01f88617256",
     "title" : "Check Event-view",
