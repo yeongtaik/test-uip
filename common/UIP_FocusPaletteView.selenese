@@ -1,7 +1,7 @@
 {
   "name" : "Palette View로 전환",
   "target" : "",
-  "modified" : 1412056712297,
+  "modified" : 1413438379068,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_RightSplitterOpen.selenese", "common/UIP_LeftSplitterOpen.selenese" ],
   "commands" : [ {
@@ -13,9 +13,9 @@
   }, {
     "uuid" : "1c3b4e98ac15653400adef97-1601634936",
     "title" : "Click PaletteView",
-    "keyword" : "click",
+    "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+    "arguments" : [ "testerAdaptor.selectionTab('palette')" ]
   }, {
     "uuid" : "1c3baf10ac156534004cc83d2036881625",
     "title" : "Check Palette-view",
