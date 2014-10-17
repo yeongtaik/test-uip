@@ -1,7 +1,7 @@
 {
   "name" : "Properties view로 전환",
   "target" : "",
-  "modified" : 1413438416589,
+  "modified" : 1413450176286,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_LeftSplitterOpen.selenese", "common/UIP_RightSplitterOpen.selenese" ],
   "commands" : [ {
@@ -21,7 +21,7 @@
     "title" : "Check Proeprties-view",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=properties-view", "100" ]
+    "arguments" : [ "id=properties-view-1", "100" ]
   } ],
   "cleanUp" : [ ]
 }
