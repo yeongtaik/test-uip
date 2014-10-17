@@ -1,0 +1,75 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413450016058,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "182a4e5cac156537018e0c7d1804684362",
+    "title" : "selectWidget 'id5'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id5');\r\n\r\n" ]
+  }, {
+    "uuid" : "2a1544d6ac15653700fffc6f-1955971325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1827e065ac156537001c03611914744822",
+    "title" : "zoom out",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_design_editor_toolbar_zoomout" ]
+  }, {
+    "uuid" : "1827eeedac156537009f0ca01918220688",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "2a158976ac156537005b97b4208516721",
+    "title" : "check zoomlevel '0.75'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var viewer = testerAdaptor.getAcitveDesignViewer();\r\nvar zoomManager = viewer.getRootEditPart().getZoomManager();\r\nif (zoomManager.zoom !== '0.75') {\r\n\t//throw new Error('zoom out is fail');\r\n}" ]
+  }, {
+    "uuid" : "2a16a046ac1565370046a59e-1034955034",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "182891bcac156537003f6f1d-1712552209",
+    "title" : "zoom in",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_design_editor_toolbar_zoomin" ]
+  }, {
+    "uuid" : "1828c504ac1565370053b608-1779435563",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "182905bcac15653700842f32-1522606237",
+    "title" : "zoom in",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_design_editor_toolbar_zoomin" ]
+  }, {
+    "uuid" : "1828fefcac15653701fe9e681563734466",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "1828c0edac15653700c1278f264089093",
+    "title" : "check zoomlevel '1.5'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var viewer = testerAdaptor.getAcitveDesignViewer();\r\nvar zoomManager = viewer.getRootEditPart().getZoomManager();\r\nif (zoomManager.zoom !== '1.5') {\r\n\t//throw new Error('zoom out is fail');\r\n}" ]
+  } ],
+  "cleanUp" : [ ]
+}

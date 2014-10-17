@@ -1,0 +1,27 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413447431586,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "2a1544d6ac15653700fffc6f-1955971325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "2a158976ac156537005b97b4208516721",
+    "title" : "check handlers 'id5'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var viewer = testerAdaptor.getAcitveDesignViewer();\r\nvar handlers = viewer.getEventHandlerLayer().handlers;\r\nif (handlers['id5'].innerHTML !== '1') {\r\n\tthrow new Error('display event hander is fail');\r\n}" ]
+  }, {
+    "uuid" : "2a16a046ac1565370046a59e-1034955034",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  } ],
+  "cleanUp" : [ ]
+}

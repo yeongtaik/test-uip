@@ -1,15 +1,15 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124522437,
+  "modified" : 1413422910109,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
     "uuid" : "3e18272fac15653701c9c236984532358",
-    "title" : "select widget 'id3'",
+    "title" : "select widget 'id5'",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.selectWidgetById('id3');" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id5');" ]
   }, {
     "uuid" : "3e1833d8ac15653700897359-1044611877",
     "title" : "wait 1s",
@@ -18,7 +18,7 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c6dfa20ac1e01156d0d8da1-1020034703",
-    "title" : "delete widget 'id3'",
+    "title" : "delete widget 'id5'",
     "keyword" : "type",
     "commands" : [ ],
     "arguments" : [ "id=", "+delete" ]
@@ -30,10 +30,10 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c713295ac1e01150b382c22-26022039",
-    "title" : "check count of child('id1') = 4",
+    "title" : "check count of child('uip-layout-content1') = 4",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 4) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 4) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
   }, {
     "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
     "title" : "wait 1s",
@@ -48,10 +48,10 @@
     "arguments" : [ "id=", "+control+z" ]
   }, {
     "uuid" : "3c6fe0d8ac1e011508e7f66b-1939472224",
-    "title" : "check count of child('id1') = 5",
+    "title" : "check count of child('uip-layout-content1') = 5",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 5) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 5) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
   }, {
     "uuid" : "3c6f8b36ac1e0115574e3953-391824362",
     "title" : "wait 1s",
@@ -72,10 +72,10 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c70d6efac1e011517a7842f1356218035",
-    "title" : "check count of child('id1') = 4",
+    "title" : "check count of child('uip-layout-content1') = 4",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 4) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 4) {\r\n\tthrow new Error('undo action is fail...');\r\n}" ]
   }, {
     "uuid" : "3c71474aac1e0115002d35f2259190409",
     "title" : "wait 3s",

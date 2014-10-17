@@ -1,0 +1,51 @@
+{
+  "name" : "LogInAndOut",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413526075317,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "168d004bac1565370196d39f798561042",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "17651e64ac15653700c93bf5-188376249",
+    "title" : "selectWidget 'id5'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id5');\r\n\r\n" ]
+  }, {
+    "uuid" : "1764fb54ac15653700f8b90e-701277213",
+    "title" : "wait 10s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "10000" ]
+  }, {
+    "uuid" : "17602bd1ac156537015f47e5626805752",
+    "title" : "알 수 없는 명령",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+alt+shift+f" ]
+  }, {
+    "uuid" : "1760abafac15653700f1f21e1377026778",
+    "title" : "wait 12s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "12000" ]
+  }, {
+    "uuid" : "1767d034ac15653701376b39236012421",
+    "title" : "알 수 없는 명령",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer()._type !== 'DesignFeedbackViewer')\r\n{\r\n\tthrow new Error('prepare feedback test env is fail...');\r\n}" ]
+  }, {
+    "uuid" : "176f45a0ac1565370017a60c-825321490",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

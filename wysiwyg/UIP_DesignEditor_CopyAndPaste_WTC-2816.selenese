@@ -1,15 +1,15 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124468483,
+  "modified" : 1413422830455,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
     "uuid" : "3c6dfa20ac1e01156d0d8da1-1020034703",
-    "title" : "select widget 'id3'",
+    "title" : "select widget 'id5'",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.selectWidgetById('id3')" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id5')" ]
   }, {
     "uuid" : "3fb7057dac1565370118ba8b1399618249",
     "title" : "[copy]",
@@ -36,10 +36,10 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c67df92ac1e011530f71b301824125929",
-    "title" : "check count of child('id1') = 6",
+    "title" : "check count of child('uip-layout-content1') = 6",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id1').getChildren().length !== 6)\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 6)\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
   }, {
     "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
     "title" : "wait 3s",
