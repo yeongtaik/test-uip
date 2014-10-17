@@ -1,0 +1,63 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413441232383,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_OpenTestpage.selenese" ],
+  "commands" : [ {
+    "uuid" : "1797bc087f0001010135e68a-162437567",
+    "title" : "click page part",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var getElem = function(id) {\r\n\treturn document.querySelector('.uib_design_editor_iframe').contentDocument.getElementById(id);\r\n}\r\n\r\nvar getIframe = function() {\r\n\treturn document.querySelector('.uib_design_editor_iframe');\r\n}\r\n\r\nvar fireEvent = function(event) {\r\n\tdocument.querySelector('.uib_design_editor_layer_event').dispatchEvent(event);\r\n}\r\n\r\n\r\nvar selectWidget = function(id, bAppend) {\r\n\tvar x, y;\r\n\tvar elem = getElem(id);\r\n\tif (!elem) {\r\n\t\treturn;\r\n\t}\r\n\t\r\n\tvar widgetBound = getElem(id).getBoundingClientRect(); \r\n\tvar frameBound = getIframe().getBoundingClientRect();\r\n\tvar x = widgetBound.left + (widgetBound.width / 2) + frameBound.left\r\n\tvar y = widgetBound.top + (widgetBound.height / 2) + frameBound.top\r\n\tvar ctrl = false;\r\n\tif (bAppend) {\r\n\t\tctrl = true;\r\n\t}\r\n\tvar downEvent = document.createEvent(\"MouseEvents\");\r\n\t    downEvent .initMouseEvent(\"mousedown\", true, true, window, 0, \r\n\tx, y, x, y, \r\n\tctrl, false, false, false, 0, null);\r\n\tvar upEvent = document.createEvent(\"MouseEvents\");\r\n\t    upEvent.initMouseEvent(\"mouseup\", true, true, window, 0, \r\n\tx, y, x, y, \r\n\tctrl, false, false, false, 0, null);\r\n\tfireEvent(downEvent);\r\n\tfireEvent(upEvent);\t\t\r\n}\r\n\r\nvar getSelectedWidgetCount = function () {\r\n\tvar feedbackLayer = document.querySelector('.uib_design_editor_layer_feedback')\r\n\tif (feedbackLayer) \r\n\t{\r\n\t\treturn feedbackLayer.querySelectorAll('rect').length;\r\n\t}\r\n\treturn 0;\r\n}\r\n\r\nvar getChildren = function (id) {\r\n\tvar clildren = [];\r\n\tvar elem = getElem(id)\r\n\tif (elem) {\r\n\t\tchildren = elem.children;\r\n\t}\r\n\treturn children;\t\r\n}\r\n\r\nvar createWidget = function (widgetType, parentId, relX, relY) {\r\n    var x, y;\r\n    var elem = getElem(parentId);\r\n    if (!elem) {\r\n        return;\r\n    }\r\n    var widgetBound = getElem(parentId).getBoundingClientRect(); \r\n    var frameBound = getIframe().getBoundingClientRect();\r\n    var x = widgetBound.left + relX + frameBound.left\r\n    var y = widgetBound.top + relY + frameBound.top\r\n\r\n\r\n    var dragStartEvent = document.createEvent(\"UIEvents\");\r\n    dragStartEvent.initEvent('dragstart', true, false);\r\n    dragStartEvent.dataTransfer = {\r\n        getData : function () {\r\n            return 'uib_widgettype' + widgetType;\r\n        },                        \r\n    };    \r\n\r\n    var dropEvent = document.createEvent(\"UIEvents\");\r\n    dropEvent.initEvent('drop', true, false);\r\n\r\n    var dragEndEvent = document.createEvent(\"UIEvents\");\r\n    dragEndEvent.initEvent('dragend', true, false);\r\n\r\n    var moveEvent = document.createEvent(\"MouseEvents\");\r\n    moveEvent.initMouseEvent(\"mousemove\", true, true, window, 0, \r\n                             x, y, x, y, \r\n                             false, false, false, false, 0, null);\r\n\r\n    fireEvent(dragStartEvent);\r\n    fireEvent(moveEvent);\r\n    fireEvent(dropEvent);\r\n    fireEvent(dragEndEvent);\r\n}\r\n\nselectWidget('page01');" ]
+  }, {
+    "uuid" : "1798dd637f00010101e2cfe2-1960772281",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "179931ad7f0001010002f3e3-398752340",
+    "title" : "run storyboard",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_design_editor_toolbar_storyboard" ]
+  }, {
+    "uuid" : "179991bd7f00010101d4c2c3814870843",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17a2e1e87f000101007223641661310058",
+    "title" : "click main node",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.mainNode+image" ]
+  }, {
+    "uuid" : "17a331367f0001010079fbe6-886893955",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17a35da97f0001010167f927-919818163",
+    "title" : "click ",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=editorIcon" ]
+  }, {
+    "uuid" : "17a5a16e7f0001010030f3ec227943716",
+    "title" : "pause 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17a5c87e7f00010100c82c96-1429669851",
+    "title" : "check close storyboard",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=story-board", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
