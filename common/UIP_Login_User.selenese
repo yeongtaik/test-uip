@@ -1,0 +1,51 @@
+{
+  "name" : "Login",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413519516160,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "fbe78585ac15641223521591443304572",
+    "title" : "openUipWindow",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "http://uipsite.webida.net", "css=.login-bar" ]
+  }, {
+    "uuid" : "fbe79241ac156412106a5019-68271290",
+    "title" : "clickLogInBar",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.login" ]
+  }, {
+    "uuid" : "fbe79bd8ac1564124ef02e3f168010422",
+    "title" : "waitForLogInBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "100" ]
+  }, {
+    "uuid" : "fbe7a3ceac1564124876945a1760469371",
+    "title" : "typeEmailForID",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "uiptester2" ]
+  }, {
+    "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
+    "title" : "typePasswdForPwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "uipuip" ]
+  }, {
+    "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
+    "title" : "clickLoginButton",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "fbe7d34eac1564121f1131aa579415395",
+    "title" : "waitForLogginedPage",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=project", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
