@@ -1,0 +1,69 @@
+{
+  "name" : "Login",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413519771940,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "fbe78585ac15641223521591443304572",
+    "title" : "openUipWindow",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "http://uipsite.webida.net", "css=.login-bar" ]
+  }, {
+    "uuid" : "fbe79241ac156412106a5019-68271290",
+    "title" : "clickNewAccount",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.signup" ]
+  }, {
+    "uuid" : "fbe79bd8ac1564124ef02e3f168010422",
+    "title" : "waitForSignupBox",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "100" ]
+  }, {
+    "uuid" : "fbe7a3ceac1564124876945a1760469371",
+    "title" : "typeEmailForID",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "jgjgpark@score.org" ]
+  }, {
+    "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
+    "title" : "typePasswdForPwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "password" ]
+  }, {
+    "uuid" : "1c50f717ac156549004f2d27-463045649",
+    "title" : "typeName",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=name", "John Doe" ]
+  }, {
+    "uuid" : "1c515972ac1565490024027f-845313882",
+    "title" : "typeCompany",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=company", "FutureTech" ]
+  }, {
+    "uuid" : "1c523456ac15654900bbb1fe-995536757",
+    "title" : "typeTelephone",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=tel", "010-111-1111" ]
+  }, {
+    "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
+    "title" : "clickRequestButton",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.submit" ]
+  }, {
+    "uuid" : "1c57dbdbac1565490195ca8b1884213691",
+    "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}
