@@ -1,0 +1,87 @@
+{
+  "name" : "FeedbackHistoryDetailViewBalloonTest",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413519268956,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "1bb2d8750a00020f00f70ee9-1088817603",
+    "title" : "open feedback view ",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+  }, {
+    "uuid" : "1bb69e910a00020f012a70a1-411012360",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1bb529690a00020f001120c8-1270055476",
+    "title" : "check feedback view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@role='tab' and .=\\\"Feedback\\\"]", "5" ]
+  }, {
+    "uuid" : "1bb94db50a00020f0016cf7a1415499862",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1bb9774c0a00020f00766162478833522",
+    "title" : "check list item",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role='gridcell' and .=\\\"/uip-sample/NewTestPage.html\\\"]", "5" ]
+  }, {
+    "uuid" : "1bc24bdc0a00020f0190b5361835483227",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1bc261080a00020f00c81922691297844",
+    "title" : "open detail view",
+    "keyword" : "doubleclick",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role='gridcell' and .=\\\"/uip-sample/NewTestPage.html\\\"]" ]
+  }, {
+    "uuid" : "1bc3280f0a00020f00abf909-122125364",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "1bc3752c0a00020f0175dc88747453862",
+    "title" : "check detail view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.uip-screen-contentpane", "5" ]
+  }, {
+    "uuid" : "1bcd14c60a00020f0066b2b6-415670081",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1bcd493f0a00020f000f87911709364033",
+    "title" : "click title1",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role='gridcell' and .=\\\"title1\\\"]" ]
+  }, {
+    "uuid" : "1bcef6930a00020f0065d805-487230062",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1bcf193b0a00020f001a47d81906098573",
+    "title" : "check detail view",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='feedback-history-dialog-balloon-detail' and .=\\\"content1\\\"]", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
