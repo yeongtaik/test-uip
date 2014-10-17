@@ -1,0 +1,117 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413447053450,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "fbe78585ac15641223521591443304572",
+    "title" : "Open UIP window",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "http://uipsite.webida.net", "css=.login-bar" ]
+  }, {
+    "uuid" : "fbe79241ac156412106a5019-68271290",
+    "title" : "Click LogIn bar",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.login" ]
+  }, {
+    "uuid" : "fbe79bd8ac1564124ef02e3f168010422",
+    "title" : "Wait for LogIn box",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "100" ]
+  }, {
+    "uuid" : "fbe7a3ceac1564124876945a1760469371",
+    "title" : "Type email for ID",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "uiptest-user@webida.org" ]
+  }, {
+    "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
+    "title" : "Type passwd for Pwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "uipuip" ]
+  }, {
+    "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
+    "title" : "Click Login button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "fbe7d34eac1564121f1131aa579415395",
+    "title" : "Wait for loggined page",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=project", "100" ]
+  }, {
+    "uuid" : "17ca9adbac15653d00076172-1123181635",
+    "title" : "Wait until project is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]", "100" ]
+  }, {
+    "uuid" : "17caa0faac15653d00ba157c1404171941",
+    "title" : "Click project",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=div[data-workspacename=uip-sample]" ]
+  }, {
+    "uuid" : "17caa6daac15653d00a2cb1e-1718349973",
+    "title" : "Wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "17caac43ac15653d01139278162686475",
+    "title" : "Wait UIP window",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=ekyGNE_yVg/uip-sample" ]
+  }, {
+    "uuid" : "17cab356ac15653d0184f546152443604",
+    "title" : "Switch UIP window",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow" ]
+  }, {
+    "uuid" : "17cb08f4ac15653d000546eb1129386386",
+    "title" : "Wait for loading screen",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
+  }, {
+    "uuid" : "17cb1424ac15653d009fefa81363443995",
+    "title" : "Wait for ending of load",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
+  }, {
+    "uuid" : "17cb1f13ac15653d018f89f8884728623",
+    "title" : "Wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "17cb30adac15653d01662746798619469",
+    "title" : "Open left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+  }, {
+    "uuid" : "17ce64b7ac15653d0132a7a4176397539",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div + div" ]
+  }, {
+    "uuid" : "17d14f39ac15653d017a4513786785200",
+    "title" : "Wait disabled Create Template menu",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Create &Template\" and @class=\"dijitMenuItemDisabled\"]", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

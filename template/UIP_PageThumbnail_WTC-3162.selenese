@@ -1,0 +1,93 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413449103491,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "179dece9ac15653d012d1f162076590148",
+    "title" : "Click Workspace view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
+  }, {
+    "uuid" : "179e116bac15653d016c095d-635683489",
+    "title" : "Click first directory in Workspace view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='wv-tree']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[2]" ]
+  }, {
+    "uuid" : "179e17b2ac15653d00f09a89-427538994",
+    "title" : "Wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "179e1fe4ac15653d00bda347-1602670282",
+    "title" : "Click File from Menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File" ]
+  }, {
+    "uuid" : "179e26a2ac15653d007f203a256290508",
+    "title" : "Wait for New from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New", "100" ]
+  }, {
+    "uuid" : "179e2c7bac15653d0158f1ec813561968",
+    "title" : "Click New from File menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New" ]
+  }, {
+    "uuid" : "179e3301ac15653d015ff8c1347434693",
+    "title" : "Wait for New Page from menu bar",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page_text", "100" ]
+  }, {
+    "uuid" : "179e3e11ac15653d01b750ed32034279",
+    "title" : "click Page for New Page",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File/&New/Page_text" ]
+  }, {
+    "uuid" : "179e7510ac15653d01efb934-1005297008",
+    "title" : "Check that a pop-up dialog is the dialog of Page Wizard",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
+  }, {
+    "uuid" : "179eb629ac15653d01668dd4-694448035",
+    "title" : "Click Pages tab",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=tmplLeftPaneWrapper_tablist_tmplLeftPagesContent" ]
+  }, {
+    "uuid" : "181ff2f7ac15653d01864a942104913677",
+    "title" : "Click directory",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='FileSelectionTreeInWidget-2s-1']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[1]" ]
+  }, {
+    "uuid" : "1821a94cac15653d01b4279f461472477",
+    "title" : "Wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "180b02fdac15653d01817df5-702588351",
+    "title" : "Search thumbnail",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//img[@class='page-image']", "100" ]
+  }, {
+    "uuid" : "1821af65ac15653d01575dd21454460389",
+    "title" : "Wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}

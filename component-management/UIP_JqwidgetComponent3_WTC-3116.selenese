@@ -1,0 +1,51 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413264568102,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "20935366ac15653d01b9a7491681759069",
+    "title" : "Click Palette view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+  }, {
+    "uuid" : "1a686db0ac15653d0146688d-739422469",
+    "title" : "Search Tree component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxTree\"]", "100" ]
+  }, {
+    "uuid" : "207186c0ac15653d01d495f8166757831",
+    "title" : "Search Tree Grid component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxTreeGrid\"]", "100" ]
+  }, {
+    "uuid" : "20718526ac15653d01cb9ab71955909118",
+    "title" : "Search Tree Map component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxTreeMap\"]", "100" ]
+  }, {
+    "uuid" : "20718377ac15653d00d8a6e2900411932",
+    "title" : "Search Menu component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxMenu\"]", "100" ]
+  }, {
+    "uuid" : "207181d8ac15653d018378e3-1298677119",
+    "title" : "Search List Menu component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxListMenu\"]", "100" ]
+  }, {
+    "uuid" : "2071884dac15653d01d05f85-1791237087",
+    "title" : "Search Progress Bar component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxProgressBar\"]", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

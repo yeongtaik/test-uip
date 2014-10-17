@@ -1,0 +1,81 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413424755858,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "20935366ac15653d01b9a7491681759069",
+    "title" : "Click Palette view",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Palette']" ]
+  }, {
+    "uuid" : "1a686db0ac15653d0146688d-739422469",
+    "title" : "Search Chart component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxChart\"]", "100" ]
+  }, {
+    "uuid" : "207186c0ac15653d01d495f8166757831",
+    "title" : "Search Data Table component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxDataTable\"]", "100" ]
+  }, {
+    "uuid" : "20718526ac15653d01cb9ab71955909118",
+    "title" : "Search Drop Down Button component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxDropDownButton", "100" ]
+  }, {
+    "uuid" : "20718377ac15653d00d8a6e2900411932",
+    "title" : "Search Drop Down List component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxDropDownList\"]", "100" ]
+  }, {
+    "uuid" : "16ad7763ac15653d019cbc87199563496",
+    "title" : "Search Expander component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxExpander\"]", "100" ]
+  }, {
+    "uuid" : "2071884dac15653d01d05f85-1791237087",
+    "title" : "Search Gauge component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxGauge\"]", "100" ]
+  }, {
+    "uuid" : "20718040ac15653d01b93037574686181",
+    "title" : "Search List Box component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxListBox\"]", "100" ]
+  }, {
+    "uuid" : "20717eb0ac15653d0074cd82-876038834",
+    "title" : "Search Navigation Bar component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxNavigationBar\"]", "100" ]
+  }, {
+    "uuid" : "207189f1ac15653d00f496ee-1309560804",
+    "title" : "Search Range Selector component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxRangeSelector\"]", "100" ]
+  }, {
+    "uuid" : "20717d35ac15653d014dedf6166510895",
+    "title" : "Search Splitter component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxSplitter\"]", "100" ]
+  }, {
+    "uuid" : "20717630ac15653d0026a69a-551563427",
+    "title" : "Search Tabs component",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=li[data-name=\"jqx.jqxTabs\"]", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}
