@@ -1,0 +1,45 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413527533436,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_Feedback_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "1778b123ac15653700187b051911226216",
+    "title" : "create 2 line widget on 'id2' container",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.createWidgetByRelativePoint('svg.line', 'id2', 100, 100);\r\ntesterAdaptor.createWidgetByRelativePoint('svg.line', 'id2', 300, 300);" ]
+  }, {
+    "uuid" : "2eece780ac15653701c515361589473896",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "1ccccbcfac1565370033691e1962856905",
+    "title" : "select widget 'id3'",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3');" ]
+  }, {
+    "uuid" : "1ccdc42eac15653701fbcf9c155054188",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c67df92ac1e011530f71b301824125929",
+    "title" : "check selected widget count = 1",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getSelectedEditParts().length !== 1) {\r\n\tthrow new Error('select feedback is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}
