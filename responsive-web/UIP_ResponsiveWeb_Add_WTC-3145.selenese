@@ -1,0 +1,111 @@
+{
+  "name" : "ResponsiveWebAddTest",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413507075729,
+  "timeout" : 100,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "1b6d3a780a00020f006c07d8-512044158",
+    "title" : "Load test util",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function () {});" ]
+  }, {
+    "uuid" : "1b6d4fa20a00020f010cb83579057484",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1b6d61090a00020f014acaa8701107554",
+    "title" : "Tree all collapse",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.treeAllCollapse();" ]
+  }, {
+    "uuid" : "1b6d6ee70a00020f00eb9649986304472",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1b6cff6a0a00020f00298d2e1411496871",
+    "title" : "close previous editor tabs",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "1b6ed56d0a00020f0122d2ad-211062528",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1b7449870a00020f01290a571945989350",
+    "title" : "open test file in editor",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/NewTestPage.html');" ]
+  }, {
+    "uuid" : "1b6ef6810a00020f0036a83b-512999645",
+    "title" : "wait 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "176080fc0a00020f01b1b1321820180088",
+    "title" : "right click responsive item",
+    "keyword" : "contextClick",
+    "commands" : [ ],
+    "arguments" : [ "css=.responsiveBar-item-normal.desktop" ]
+  }, {
+    "uuid" : "1763fcb20a00020f01aa48061286738457",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "176f6ed70a00020f00c347af1836306143",
+    "title" : "click split item",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role='presentation' and .=\\\"Split Responsive Size\\\"]" ]
+  }, {
+    "uuid" : "177d34150a00020f0080ddca7737257",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "17b2ad4c0a00020f0089dae9-978314352",
+    "title" : "click custom",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=span[title=\"custom\"]" ]
+  }, {
+    "uuid" : "17b603ce0a00020f01d8ad8e-1489530400",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "17b78aed0a00020f00974fc1-383330338",
+    "title" : "clcik ok",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=responsiveBar-splitDialog-button-ok" ]
+  }, {
+    "uuid" : "17b7d2110a00020f010e092d2066990017",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "17bc0f1f0a00020f01fa9a85-1289182371",
+    "title" : "check split responsive item",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.responsiveBar-item-normal.custom", "5" ]
+  } ],
+  "cleanUp" : [ ]
+}
