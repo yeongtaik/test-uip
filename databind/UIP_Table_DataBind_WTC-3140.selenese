@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413520330051,
+  "modified" : 1413527351133,
   "timeout" : 10,
-  "prerequisites" : [ "common/UIP_Login_Admin.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
   "commands" : [ {
     "uuid" : "17941a93ac15653552bd45b9-1840408390",
     "title" : "id4 위젯 선택",
