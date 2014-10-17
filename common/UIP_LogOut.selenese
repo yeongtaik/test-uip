@@ -1,7 +1,7 @@
 {
   "name" : "Logout",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412048688709,
+  "modified" : 1413526280271,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "clickUserInfo",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=#dropDownUserinfo > span > span" ]
+    "arguments" : [ "css=#dropDownUserinfo > span" ]
   }, {
     "uuid" : "fbea6139ac15641256508c22-935537161",
     "title" : "clickLogout",
