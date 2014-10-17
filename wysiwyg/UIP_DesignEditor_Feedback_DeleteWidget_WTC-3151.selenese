@@ -1,15 +1,15 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413422725701,
+  "modified" : 1413441029463,
   "timeout" : 100,
-  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "prerequisites" : [ "wysiwyg/UIP_DesignEditor_Feedback_CreateLine_WTC-3148.selenese" ],
   "commands" : [ {
     "uuid" : "3e163618ac15653700af9732-967661461",
-    "title" : "select widget 'id5'",
+    "title" : "select widget 'id3'",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.selectWidgetById('id5');" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id3');" ]
   }, {
     "uuid" : "3e1691c0ac156537013c4c4b702076038",
     "title" : "wait 1s",
@@ -18,7 +18,7 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c6dfa20ac1e01156d0d8da1-1020034703",
-    "title" : "delete widget 'id5'",
+    "title" : "delete widget 'id3'",
     "keyword" : "type",
     "commands" : [ ],
     "arguments" : [ "id=", "+delete" ]
@@ -30,10 +30,10 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c67df92ac1e011530f71b301824125929",
-    "title" : "check count of child('uip-layout-content1') = 4",
+    "title" : "check count of child('id2') = 1",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 4) {\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id2').getChildren().length !== 1) {\r\n\tthrow new Error('delete feedback is fail...');\r\n}" ]
   }, {
     "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
     "title" : "wait 1s",
