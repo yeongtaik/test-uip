@@ -1,15 +1,15 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124410784,
+  "modified" : 1413423147782,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
     "uuid" : "3dd6c8b3ac1565370134fedc-1441120234",
-    "title" : "select widget (id3, id13, id21)",
+    "title" : "select widget (id1, id3, id5)",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.selectWidgetById('id3')\r\ntesterAdaptor.selectWidgetById('id13', true);\r\ntesterAdaptor.selectWidgetById('id21', true);" ]
+    "arguments" : [ "testerAdaptor.selectWidgetById('id1')\r\ntesterAdaptor.selectWidgetById('id3', true);\r\ntesterAdaptor.selectWidgetById('id5', true);" ]
   }, {
     "uuid" : "3dd77040ac15653700bfebdf1403626314",
     "title" : "wait 1s",
@@ -33,7 +33,7 @@
     "title" : "check widget bound (left)",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif ((firstBound.left === secondBound.left) && (firstBound.left === thirdBound.left)) {\r\n} else  {\r\n\t\tthrow new Error('align left action is fail...');\r\n}" ]
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id1');\r\nvar secondBound = testerAdaptor.getWidgetBound('id3');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id5');\r\nif ((firstBound.left === secondBound.left) && (firstBound.left === thirdBound.left)) {\r\n} else  {\r\n\t\tthrow new Error('align left action is fail...');\r\n}" ]
   }, {
     "uuid" : "3ddb8debac15653700faf5f0-2126969764",
     "title" : "wait 2s",
@@ -69,7 +69,7 @@
     "title" : "check widget bound (top)",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif ((firstBound.top === secondBound.top) && (firstBound.top === thirdBound.top)) {\r\n} else  {\r\n\t\tthrow new Error('align top action is fail...');\r\n}" ]
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id1');\r\nvar secondBound = testerAdaptor.getWidgetBound('id3');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id5');\r\nif ((firstBound.top === secondBound.top) && (firstBound.top === thirdBound.top)) {\r\n} else  {\r\n\t\tthrow new Error('align top action is fail...');\r\n}" ]
   }, {
     "uuid" : "3ddd3b83ac15653701160487-957686861",
     "title" : "wait 2s",
@@ -105,7 +105,7 @@
     "title" : "check widget bound (right)",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif (((firstBound.left+firstBound.width) === (secondBound.left+secondBound.width)) && ((firstBound.left+firstBound.width) === (thirdBound.left+thirdBound.width))) {\r\n} else  {\r\n\t\tthrow new Error('align right action is fail...');\r\n}" ]
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id1');\r\nvar secondBound = testerAdaptor.getWidgetBound('id3');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id5');\r\nif (((firstBound.left+firstBound.width) === (secondBound.left+secondBound.width)) && ((firstBound.left+firstBound.width) === (thirdBound.left+thirdBound.width))) {\r\n} else  {\r\n\t\tthrow new Error('align right action is fail...');\r\n}" ]
   }, {
     "uuid" : "3ddf3922ac15653700f8f705-482663656",
     "title" : "wait 2s",
@@ -141,7 +141,7 @@
     "title" : "check widget bound (bottom)",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id3');\r\nvar secondBound = testerAdaptor.getWidgetBound('id13');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id21');\r\nif (((firstBound.top+firstBound.height) === (secondBound.top+secondBound.height)) && ((firstBound.top+firstBound.height) === (thirdBound.top+thirdBound.height))) {\r\n} else  {\r\n\t\tthrow new Error('align bottom action is fail...');\r\n}" ]
+    "arguments" : [ "var firstBound = testerAdaptor.getWidgetBound('id1');\r\nvar secondBound = testerAdaptor.getWidgetBound('id3');\r\nvar thirdBound = testerAdaptor.getWidgetBound('id5');\r\nif (((firstBound.top+firstBound.height) === (secondBound.top+secondBound.height)) && ((firstBound.top+firstBound.height) === (thirdBound.top+thirdBound.height))) {\r\n} else  {\r\n\t\tthrow new Error('align bottom action is fail...');\r\n}" ]
   }, {
     "uuid" : "3de180b1ac1565370148e42a-30715451",
     "title" : "wait 1s",

@@ -1,0 +1,33 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413443818252,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "17b733b9ac156537011442ec-599668354",
+    "title" : "change parent ('uip-layout-content2', 50, 50);",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.moveWidgetByTargetRelativePos('id5', 'uip-layout-content2', {x:50, y:50});" ]
+  }, {
+    "uuid" : "2a1544d6ac15653700fffc6f-1955971325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "2a114d0aac15653701628ed8-968864169",
+    "title" : "check parent",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var part = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id5');\r\nif (part.getParent().getModel().getId() !== 'uip-layout-content2') {\r\n\tthrow new Error('reparent widget is fail...');\r\n}" ]
+  }, {
+    "uuid" : "3e175ac8ac1565370051ffa3-1579674109",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}

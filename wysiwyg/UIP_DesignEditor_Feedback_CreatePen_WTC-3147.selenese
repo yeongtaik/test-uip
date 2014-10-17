@@ -1,15 +1,15 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413422795709,
+  "modified" : 1413438542815,
   "timeout" : 100,
-  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_Feedback_TestEnv.selenese" ],
   "commands" : [ {
     "uuid" : "3c6ddffcac1e01151269cebf-958178679",
-    "title" : "create 2 button widget on 'uip-layout-content2' container",
+    "title" : "draw rect",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.createWidgetByRelativePoint('html.button', 'uip-layout-content2', 100, 100);\r\ntesterAdaptor.createWidgetByRelativePoint('html.button', 'uip-layout-content2', 150, 150);" ]
+    "arguments" : [ "testerAdaptor.drawFeedback([{x:100, y:100},{x:100, y:200},{x:200, y:200}, {x:200, y:100}, {x:100, y:100}]);" ]
   }, {
     "uuid" : "2eece780ac15653701c515361589473896",
     "title" : "wait 2s",
@@ -18,10 +18,10 @@
     "arguments" : [ "1000" ]
   }, {
     "uuid" : "3c67df92ac1e011530f71b301824125929",
-    "title" : "check count of child('uip-layout-content2') = 2",
+    "title" : "check count of child('id2') = 2 'id2' is pageEditPart",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content2').getChildren().length !== 2) {\r\n\tthrow new Error('create widget is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id2').getChildren().length !== 1) {\r\n\tthrow new Error('drawing free pen is fail...');\r\n}" ]
   }, {
     "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
     "title" : "wait 3s",

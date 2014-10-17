@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412581385790,
+  "modified" : 1413519591558,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -27,7 +27,7 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uip_admin" ]
+    "arguments" : [ "id=email", "uiptester1" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
@@ -51,7 +51,7 @@
     "title" : "select workspace and start UIP",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]" ]
+    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]" ]
   }, {
     "uuid" : "0fcdc2f9ac15641252f106e71228686933",
     "title" : "wait until new window is opend",
@@ -63,7 +63,7 @@
     "title" : "give name to New window",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/Project1" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=eyOhsd2X8e/uip-sample" ]
   }, {
     "uuid" : "0d5d8d82ac156412248241bf1844418440",
     "title" : "switch to new Window",
@@ -95,12 +95,6 @@
     "commands" : [ ],
     "arguments" : [ "id=workspace-view", "100" ]
   }, {
-    "uuid" : "3c55b5a9ac1e0115580882fb948566285",
-    "title" : "open design editor test page",
-    "keyword" : "doubleclick",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[@role = \"treeitem\" and .=\\\"DesignEditorTestSample.html\\\"]/../.." ]
-  }, {
     "uuid" : "3c56a177ac1e011546bb0567-579122855",
     "title" : "wait 3s",
     "keyword" : "pause",
@@ -114,6 +108,18 @@
     "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function(){});" ]
   }, {
     "uuid" : "3c5dabf1ac1e0115772f022b1414729814",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "3c55b5a9ac1e0115580882fb948566285",
+    "title" : "open design editor test page",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.openSplitter('left');\r\ntesterAdaptor.fileOpen('/uip-sample/functional-test/designEditorLayoutTestSample.html');" ]
+  }, {
+    "uuid" : "168d004bac1565370196d39f798561042",
     "title" : "wait 2s",
     "keyword" : "pause",
     "commands" : [ ],

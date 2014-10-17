@@ -1,0 +1,39 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413444733373,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
+  "commands" : [ {
+    "uuid" : "17ddcd42ac15653700a49383920890745",
+    "title" : "save bound",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var bound = testerAdaptor.getWidgetBound('id5');\r\ntesterAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id5').getElement().setAttribute('testbound-width', bound.width);\r\ntesterAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id5').getElement().setAttribute('testbound-height', bound.height);" ]
+  }, {
+    "uuid" : "2a114d0aac15653701628ed8-968864169",
+    "title" : "resizeWidget 'id5' (100, 100)",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.resizeWidget('id5', 100, 100);\r\n\r\n" ]
+  }, {
+    "uuid" : "2a1544d6ac15653700fffc6f-1955971325",
+    "title" : "wait 1s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "17ba73d6ac15653701547d76-217523173",
+    "title" : "check bound",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var bound = testerAdaptor.getWidgetBound('id5');\r\nvar elem  = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id5').getElement();\r\nif (parseInt(elem.getAttribute('testbound-width'), 10)+100 !== bound.width) {\r\n\tthrow new Error('resize widget is fail...');\r\n}\r\nif (parseInt(elem.getAttribute('testbound-height'), 10)+100 !== bound.height) {\r\n\tthrow new Error('resize widget is fail...');\r\n}\r\n" ]
+  }, {
+    "uuid" : "3e175ac8ac1565370051ffa3-1579674109",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  } ],
+  "cleanUp" : [ ]
+}
