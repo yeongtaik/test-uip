@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413449123708,
+  "modified" : 1413447334725,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_FocusWorkspaceView.selenese" ],
   "commands" : [ {
@@ -9,13 +9,13 @@
     "title" : "Expand tree",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.treeItemExpand('/uip-sample/functional-test/testpage.html');" ]
+    "arguments" : [ "testerAdaptor.treeItemExpand('/uip-sample/forTest/testpage.html');" ]
   }, {
     "uuid" : "178bc0e6ac15653401ed3b51-1985481471",
     "title" : "open testpage",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage.html')" ]
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/propertiesViewTestPage.html')" ]
   }, {
     "uuid" : "1b89fc64ac156534002df750-192958390",
     "title" : "wait 5s",

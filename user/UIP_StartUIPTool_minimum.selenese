@@ -1,7 +1,7 @@
 {
   "name" : "UI Prototyping Tool 실행 - uip-sample",
   "target" : "",
-  "modified" : 1413447107273,
+  "modified" : 1413460971775,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -52,48 +52,6 @@
     "keyword" : "pause",
     "commands" : [ ],
     "arguments" : [ "8000" ]
-  }, {
-    "uuid" : "177bf9acac15653400a476eb1873657836",
-    "title" : "Load test plugin",
-    "keyword" : "executeScript",
-    "commands" : [ ],
-    "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function(){});" ]
-  }, {
-    "uuid" : "18027736a9fe395500fcea241637853868",
-    "title" : "wait 3s until test plugin load",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "3000" ]
-  }, {
-    "uuid" : "c4efbf99ac156412478f7762-1987766031",
-    "title" : "open left splitter",
-    "keyword" : "executeScript",
-    "commands" : [ ],
-    "arguments" : [ "testerAdaptor.openSplitter('left')" ]
-  }, {
-    "uuid" : "c4efe7f1ac15641274d19f361862724751",
-    "title" : "check that left splitter is opend",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=wv-tree", "100" ]
-  }, {
-    "uuid" : "c4f00b4aac1564122c8e756f177171094",
-    "title" : "open right splitter",
-    "keyword" : "executeScript",
-    "commands" : [ ],
-    "arguments" : [ "testerAdaptor.openSplitter('right')" ]
-  }, {
-    "uuid" : "c4f024a2ac156412505f1346358241118",
-    "title" : "check that event-view is visible.",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
-  }, {
-    "uuid" : "c4f06b31ac1564124d067701991930007",
-    "title" : "check that property is visible",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
   } ],
   "cleanUp" : [ ]
 }

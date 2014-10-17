@@ -1,0 +1,51 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413512361197,
+  "timeout" : 100,
+  "prerequisites" : [ "common/UIP_Login.selenese", "user/UIP_StartUIPTool_minimum.selenese" ],
+  "commands" : [ {
+    "uuid" : "2feafdeeac1565490160c70e1761443730",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "2f8f1f6cac1565490066b4242011476377",
+    "title" : "Click Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=#webidaMenuBarMainMenu > div + div + div + div" ]
+  }, {
+    "uuid" : "2fc55614ac1565490173b0381213148221",
+    "title" : "wait role assign menu enabled",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//tr[@widgetid=\"/&Admin/Assign Role\" and not(contains(@class, \"dijitMenuItemDisabled\"))]", "100" ]
+  }, {
+    "uuid" : "2f8fd4cdac15654900e113e6-404817668",
+    "title" : "Click assign role",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&Admin/Assign Role" ]
+  }, {
+    "uuid" : "2fc001c4ac156549006f0390162817735",
+    "title" : "wait for assign role dialog",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialog", "100" ]
+  }, {
+    "uuid" : "1be5c233ac156549011a21ec-448764973",
+    "title" : "input filter",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=searchInput", "jg" ]
+  }, {
+    "uuid" : "1be62e13ac15654900838ba9111029709",
+    "title" : "wait 5s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  } ],
+  "cleanUp" : [ ]
+}

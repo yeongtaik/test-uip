@@ -1,0 +1,27 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413436926268,
+  "timeout" : 10,
+  "prerequisites" : [ "preview/UIP_PreviewGotoFeedbackMode_WTC-73.selenese" ],
+  "commands" : [ {
+    "uuid" : "17642d2c7f0001012923beb4-154018802",
+    "title" : "select red pen",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.uib_feedback_editor_toolentry_pen" ]
+  }, {
+    "uuid" : "1764f13c7f00010113fbe5e3-202054236",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "17668a3b7f00010158b104c5967558843",
+    "title" : "check selected redpen",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var penEl = $('.uib_feedback_editor_toolentry_pen').attr('class');\nif (penEl.indexOf('uib_feedback_editor_toolbar_item_selected') < 0) {\n    throw new Error('feedback redpen not selected...');\n}\n" ]
+  } ],
+  "cleanUp" : [ ]
+}

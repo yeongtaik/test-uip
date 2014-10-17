@@ -1,0 +1,201 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413452523552,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "commands" : [ {
+    "uuid" : "183d05d4a9fe3955005af94d-134612853",
+    "title" : "파일 오픈",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage.html')" ]
+  }, {
+    "uuid" : "183d4adba9fe395501f6b0921350466559",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "181a738aa9fe39550168c4e8857564822",
+    "title" : "component (id1) 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id1')" ]
+  }, {
+    "uuid" : "181bc72da9fe395501eeafcb-1119882141",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "181ca696a9fe3955007c2e07-91817292",
+    "title" : "direct edit 실행",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+f2" ]
+  }, {
+    "uuid" : "181d3b14a9fe395501cee667-1080692292",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "181d6be4a9fe39550042da3e-1450631245",
+    "title" : "초기값 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=directedit", "old value" ]
+  }, {
+    "uuid" : "182ead14a9fe395500bf95e6109844013",
+    "title" : "탭으로 마무리",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+tab" ]
+  }, {
+    "uuid" : "1825d310a9fe39550112a155878102932",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "182616a8a9fe3955018ab506884871374",
+    "title" : "저장",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "CONTROL+s" ]
+  }, {
+    "uuid" : "182857bfa9fe3955012680a91149505435",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "1827e947a9fe3955010ba805-1213820645",
+    "title" : "모든 에디터 닫기",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "18288937a9fe3955009ffe001605579250",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "1828221fa9fe395500a47f60314773337",
+    "title" : "파일 재 오픈",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage.html')" ]
+  }, {
+    "uuid" : "1829099fa9fe395500fc5cdd-1710828266",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "1829327fa9fe3955019803cc-421789287",
+    "title" : "component 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id1')" ]
+  }, {
+    "uuid" : "182ac035a9fe3955018903dc386435226",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "182af366a9fe395500c406941878962738",
+    "title" : "direct edit 실행",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+f2" ]
+  }, {
+    "uuid" : "182b3ccea9fe39550025f2a01184934209",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "182b6615a9fe395500d6e3dc-1688883282",
+    "title" : "값 변경",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=directedit", "new value" ]
+  }, {
+    "uuid" : "182ef4aca9fe395501963273-74226242",
+    "title" : "tab 으로 마무리",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+tab" ]
+  }, {
+    "uuid" : "182bc23da9fe39550078e83391534209",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "18555a10a9fe3955009d77a51174723656",
+    "title" : "저장",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "CONTROL+s" ]
+  }, {
+    "uuid" : "18559677a9fe395501ec97051649341703",
+    "title" : "3s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
+    "uuid" : "182bdccda9fe395500db3949764843911",
+    "title" : "모든 에디터 닫기",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "182c7eb5a9fe395500a259ea18833702",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "182cb1cda9fe3955006f5f59-402188115",
+    "title" : "파일 재 오픈",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.fileOpen('/uip-sample/functional-test/testpage.html')" ]
+  }, {
+    "uuid" : "182cdedda9fe395500f8e55a600465056",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "182d090da9fe395500ec28811807757555",
+    "title" : "component 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id1')" ]
+  }, {
+    "uuid" : "1830a253a9fe39550190212e512200819",
+    "title" : "1s 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "183008d3a9fe39550100cdf5968592292",
+    "title" : "component 의 content 를 변수에 저장",
+    "keyword" : "store",
+    "commands" : [ ],
+    "arguments" : [ "text_property_value", "css=.property-string-input@value" ]
+  }, {
+    "uuid" : "1830ced3a9fe395500f929d8-810711488",
+    "title" : "저장된 값과 비교",
+    "keyword" : "equals",
+    "commands" : [ ],
+    "arguments" : [ "new value", "$(text_property_value)" ]
+  } ],
+  "cleanUp" : [ ]
+}

@@ -1,7 +1,7 @@
 {
   "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412581446505,
+  "modified" : 1413448996746,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -45,7 +45,7 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uip_admin" ]
+    "arguments" : [ "id=email", "uiptester" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
@@ -69,13 +69,13 @@
     "title" : "wait untile Project1 is shown",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]", "100" ]
+    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]", "100" ]
   }, {
     "uuid" : "fbe8769cac1564122efad4c6-967296551",
     "title" : "select workspace and start UIP",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//div[@data-workspacename=\"Project1\"]" ]
+    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]" ]
   }, {
     "uuid" : "0fcdc2f9ac15641252f106e71228686933",
     "title" : "wait until new window is opend",
@@ -87,7 +87,7 @@
     "title" : "give name to New window",
     "keyword" : "waitForWindow",
     "commands" : [ ],
-    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=lyJ-O4vire/Project1" ]
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=eyOhsd2X8e/uip-sample" ]
   }, {
     "uuid" : "0d5d8d82ac156412248241bf1844418440",
     "title" : "switch to new Window",

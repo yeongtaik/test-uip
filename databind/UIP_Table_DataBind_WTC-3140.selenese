@@ -1,0 +1,57 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413447973951,
+  "timeout" : 10,
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese", "common/UIP_OpenPropertiesViewTestpage.selenese" ],
+  "commands" : [ {
+    "uuid" : "17941a93ac15653552bd45b9-1840408390",
+    "title" : "id4 위젯 선택",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "testerAdaptor.selectWidgetById('id4')\r\n\r\n" ]
+  }, {
+    "uuid" : "179497fbac1565352c0a9db11556808715",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "1000" ]
+  }, {
+    "uuid" : "1794cf63ac1565350a5e9a8d-1595948487",
+    "title" : "f2키 누름",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+f2" ]
+  }, {
+    "uuid" : "1795926bac1565353a27f866-810808089",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "1795c14bac1565355d5ee06f-659374838",
+    "title" : "databind text 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=directedit", "erson, eight, ge, Q, \\\\nJohn Snow, 178, 19, 123, [x]\\\\nPeter Petrelly, 175, 26, 105, [o]\\\\nJames Dean, 190, 32, 135, [o]\\\\nMatthew Rogan, 183, 19, 150, [o]" ]
+  }, {
+    "uuid" : "1796edbaac1565352517114f-997978313",
+    "title" : "Tab 입력",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=", "+tab" ]
+  }, {
+    "uuid" : "179732b2ac15653532f7ec51-1126626517",
+    "title" : "1초 대기",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "5000" ]
+  }, {
+    "uuid" : "1798e5f1ac1565353f3b99da-754564065",
+    "title" : "databind 프로퍼티 값 확인",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var databind = testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('id4').getModel().getPropertyValue('dataBinding');\r\ndatabind = JSON.parse(databind);\r\nvar raw = databind.raw;\r\nif (raw !== 'erson, eight, ge, Q, \\\\nJohn Snow, 178, 19, 123, [x]\\\\nPeter Petrelly, 175, 26, 105, [o]\\\\nJames Dean, 190, 32, 135, [o]\\\\nMatthew Rogan, 183, 19, 150, [o]') {\r\n    throw new Error();\r\n}\r\n" ]
+  } ],
+  "cleanUp" : [ ]
+}

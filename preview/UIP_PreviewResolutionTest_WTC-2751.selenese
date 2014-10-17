@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412124106498,
+  "modified" : 1413425045440,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Preview_WTC-2749.selenese" ],
+  "prerequisites" : [ "preview/UIP_Preview_WTC-2749.selenese" ],
   "commands" : [ {
     "uuid" : "1657224d7f0001017644104a-320038918",
     "title" : "select resolution inputbox",
@@ -61,6 +61,18 @@
   }, {
     "uuid" : "167310b77f0001013af189a61655516974",
     "title" : "wait",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "16b1526b7f00010115bcc4e8-1076362683",
+    "title" : "open side bar",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.preview-side-pane-onoff" ]
+  }, {
+    "uuid" : "16b15d5b7f0001014d937a98769020542",
+    "title" : "wait 2s",
     "keyword" : "pause",
     "commands" : [ ],
     "arguments" : [ "2000" ]

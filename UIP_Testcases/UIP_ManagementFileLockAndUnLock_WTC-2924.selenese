@@ -1,0 +1,177 @@
+{
+  "name" : "",
+  "target" : "",
+  "modified" : 1413447538252,
+  "timeout" : 10,
+  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "commands" : [ {
+    "uuid" : "178009dd7f0001012fb72d431779305269",
+    "title" : "Load test util",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function () {});" ]
+  }, {
+    "uuid" : "17806bc17f0001016ec0f6eb1956016434",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "178229987f00010100fbcdac-878540114",
+    "title" : "Tree all collapse",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.treeAllCollapse();" ]
+  }, {
+    "uuid" : "17827e987f00010176231ebd-1719424843",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1782cfbf7f0001010a517f18-1655188855",
+    "title" : "close previous editor tabs",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "$('.dijitTabCloseButton').click();" ]
+  }, {
+    "uuid" : "178336307f000101718b22a71368235320",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1783bfee7f0001011daad8c2-1936620817",
+    "title" : "selecte prviewtest.html",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.treeItemExpand('/uip-sample/functional-test/previewtest.html');" ]
+  }, {
+    "uuid" : "1785e6667f00010172bd2fb5-1094287178",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "17862a9d7f00010143be65ee-472737214",
+    "title" : "open in editor",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/functional-test/previewtest.html');" ]
+  }, {
+    "uuid" : "1786e4c57f000101475cf149-955557899",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "178bb5797f0001013ddaa1181329069648",
+    "title" : "move widget",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.moveWidget('id55', 10, 10);" ]
+  }, {
+    "uuid" : "178c07147f000101757663b8-197425987",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "178c5a6b7f0001010257141d2138395287",
+    "title" : "check file locked in tab icon",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.wvLockFileIcon", "5" ]
+  }, {
+    "uuid" : "178db0687f00010112e6db46-1743768865",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "178e796a7f000101052af8821479258255",
+    "title" : "select Admin menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&Admin" ]
+  }, {
+    "uuid" : "178ed46b7f000101679fe94f-1227181552",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "17910eb97f0001013114d8d4-1664522818",
+    "title" : "select List Locked files menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&Admin/List Locked Files" ]
+  }, {
+    "uuid" : "179178e07f00010123dcf889-1700611558",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1796819e7f00010128fdcbaa1606000680",
+    "title" : "lock file check",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]", "5" ]
+  }, {
+    "uuid" : "1796f53d7f0001010178ea481920238766",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1798c6f67f000101031ff3dd-924855406",
+    "title" : "select lock file in list",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]" ]
+  }, {
+    "uuid" : "17993bdd7f0001013c8aa345-928179990",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "1799719e7f00010145c052da1257845105",
+    "title" : "unlock",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=lockedFileSaveButton_label" ]
+  }, {
+    "uuid" : "179cd9b47f000101370b405f1141897314",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "179ce1e47f0001012a3cf4a9-1561289833",
+    "title" : "check lock file list",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//td[@role = \"gridcell\" and .=\"/uip-sample/functional-test/previewtest.html\"]", "5" ]
+  }, {
+    "uuid" : "179a79cd7f0001014010c1c3-2136054757",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "179ad3c47f0001012f5c2bae-816644870",
+    "title" : "close dialog",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=shortcutsDlgCancelButton_label" ]
+  }, {
+    "uuid" : "179b5a8c7f000101377736981992162169",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  } ],
+  "cleanUp" : [ ]
+}
