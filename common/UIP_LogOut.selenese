@@ -1,7 +1,7 @@
 {
   "name" : "Logout",
-  "target" : "http://uipsite.webida.net",
-  "modified" : 1413526280271,
+  "target" : "https://uipsite.webida.net",
+  "modified" : 1413768556819,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
