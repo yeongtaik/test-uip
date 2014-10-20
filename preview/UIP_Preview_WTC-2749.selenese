@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413446509863,
+  "modified" : 1413768944171,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "0cf3ba047f000101036ec0c31872379580",
     "title" : "Load test util",
