@@ -1,7 +1,7 @@
 {
   "name" : "LoginTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413448996746,
+  "modified" : 1413780449672,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -45,7 +45,7 @@
     "title" : "type valid ID value",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=email", "uiptester" ]
+    "arguments" : [ "id=email", "uiptester1" ]
   }, {
     "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
     "title" : "type valid Passwd",
@@ -66,7 +66,7 @@
     "arguments" : [ "id=project", "100" ]
   }, {
     "uuid" : "ca077f15ac15641260230df2384214735",
-    "title" : "wait untile Project1 is shown",
+    "title" : "wait untile uip-sample is shown",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
     "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]", "100" ]
