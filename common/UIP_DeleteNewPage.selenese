@@ -1,7 +1,7 @@
 {
   "name" : "Delete NewPage",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1412035232245,
+  "modified" : 1413789129939,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -33,7 +33,7 @@
     "title" : "deletePage",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']" ]
   }, {
     "uuid" : "c0b3167fac156412616fb2761607104274",
     "title" : "wait for delete dialog",

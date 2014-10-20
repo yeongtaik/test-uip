@@ -1,7 +1,7 @@
 {
   "name" : "Check Active or Inactive Menu",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1411460512453,
+  "modified" : 1413788853168,
   "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
@@ -132,6 +132,12 @@
     "arguments" : [ "xpath=//span[text()='NewTestPage.html']", "100" ]
   } ],
   "cleanUp" : [ {
+    "uuid" : "2c40f500ac15641221d561c9-689353245",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
     "uuid" : "a10bd26eac1564122c0b29cf-1531255768",
     "title" : "contextClick",
     "keyword" : "contextClick",
@@ -142,13 +148,13 @@
     "title" : "wait for delete in context menu",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]", "100" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']", "100" ]
   }, {
     "uuid" : "769e1deeac1564127768ffae-1474599953",
     "title" : "deletePage",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr/td[2]" ]
+    "arguments" : [ "xpath=//table[@id=\"webidaContextMenuDa\"]/tbody/tr[@aria-label='Delete ']" ]
   }, {
     "uuid" : "769e28ccac1564126aa27145-913734418",
     "title" : "wait for delete dialog",

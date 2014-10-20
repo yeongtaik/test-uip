@@ -1,8 +1,8 @@
 {
   "name" : "ShortCut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1409290725917,
-  "timeout" : 10,
+  "modified" : 1413792088391,
+  "timeout" : 100,
   "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
   "commands" : [ {
     "uuid" : "1ff94d1bac156412203b98cf1548450530",
@@ -12,76 +12,28 @@
     "arguments" : [ "id=uip-body", "5" ]
   }, {
     "uuid" : "1fe62a14ac1564123d9e8100-1244704421",
-    "title" : "Preferences - ALT+P",
+    "title" : "full screen - ALT+f11",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=uip-body", "alt+p" ]
+    "arguments" : [ "id=app-workbench-center-panel", "alt+f11" ]
   }, {
-    "uuid" : "1ff8368dac15641216baf8d01270910614",
-    "title" : "Check Preference popup",
+    "uuid" : "2c838013ac1564122c6ee031-52269676",
+    "title" : "check it's full screen",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=prefDlgContent", "10" ]
+    "arguments" : [ "xpath=//div[@id='app-workbench' and @class='workbenchMenubarHide workbenchToolbarHide']", "100" ]
   }, {
-    "uuid" : "202f710dac1564120ecb8b3e1806714612",
-    "title" : "click Save Preference",
-    "keyword" : "click",
+    "uuid" : "2c837680ac1564122be0ea4a-1943785103",
+    "title" : "full screen - ALT+f11",
+    "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@widgetid=\"prefSaveButton\"]/span" ]
+    "arguments" : [ "id=app-workbench-center-panel", "alt+f11" ]
   }, {
-    "uuid" : "2030ddb5ac1564123f267e1b-1061118050",
-    "title" : "wait until preference is disapeared",
+    "uuid" : "2c83b809ac1564123473e1bb1221840559",
+    "title" : "check the full screen is closed",
     "keyword" : "waitForInvisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[@widgetid=\"prefSaveButton\"]", "5" ]
-  }, {
-    "uuid" : "20389bc8ac156412344eaf7e1603196338",
-    "title" : "Toggle Toolbar - shift+alt+t",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=uip-body", "shift+alt+t" ]
-  }, {
-    "uuid" : "203b01d8ac1564123ff83cc81647926194",
-    "title" : "Check that toolbar is disapeared",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=app-workbench-toolbar", "5" ]
-  }, {
-    "uuid" : "203c6f51ac1564126354a50a-1830027104",
-    "title" : "Toggle Toolbar - shift+alt+t",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=uip-body", "shift+alt+t" ]
-  }, {
-    "uuid" : "203c9599ac1564123f51436442533789",
-    "title" : "Check that toolbar is shown up",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=app-workbench-toolbar", "5" ]
-  }, {
-    "uuid" : "203e736fac156412341c8f671966564885",
-    "title" : "Toggle Menu - shift+alt+m",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=uip-body", "shift+alt+m" ]
-  }, {
-    "uuid" : "203f2b5bac15641222edca96-1219176018",
-    "title" : "Check that menu bar is disapeared",
-    "keyword" : "waitForInvisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=webidaMenuBarMainMenu", "5" ]
-  }, {
-    "uuid" : "203faf0fac156412590182a61316798124",
-    "title" : "Toggle Menu - shift+alt+m",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=uip-body", "shift+alt+m" ]
-  }, {
-    "uuid" : "203fc48aac15641216ea56ab192858089",
-    "title" : "Check that menu bar is show up",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "id=webidaMenuBarMainMenu", "5" ]
+    "arguments" : [ "xpath=//div[@id='app-workbench' and @class='workbenchMenubarHide workbenchToolbarHide']", "100" ]
   } ],
   "cleanUp" : [ ]
 }
