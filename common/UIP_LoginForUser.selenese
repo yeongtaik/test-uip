@@ -1,7 +1,7 @@
 {
   "name" : "Login",
-  "target" : "http://uipsite.webida.net",
-  "modified" : 1413526450698,
+  "target" : "https://uipsite.webida.net",
+  "modified" : 1413768549454,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
