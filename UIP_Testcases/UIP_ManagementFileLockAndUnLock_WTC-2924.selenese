@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413765401680,
+  "modified" : 1413768953893,
   "timeout" : 10,
-  "prerequisites" : [ "common/UIP_Login.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
     "uuid" : "178009dd7f0001012fb72d431779305269",
     "title" : "Load test util",
