@@ -1,7 +1,7 @@
 {
   "name" : "Login",
   "target" : "https://uipsite.webida.net",
-  "modified" : 1413768549454,
+  "modified" : 1413942122827,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -9,7 +9,7 @@
     "title" : "openUipWindow",
     "keyword" : "open",
     "commands" : [ ],
-    "arguments" : [ "http://uipsite.webida.net", "css=.login-bar" ]
+    "arguments" : [ "https://uipsite.webida.net", "css=.login-bar" ]
   }, {
     "uuid" : "fbe79241ac156412106a5019-68271290",
     "title" : "clickLogInBar",
