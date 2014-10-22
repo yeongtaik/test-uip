@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413976787576,
+  "modified" : 1413979278409,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese", "common/UIP_FocusPropertiesView.selenese" ],
   "commands" : [ {
@@ -13,9 +13,9 @@
   }, {
     "uuid" : "37955e96ac15654900c762a1-1262340343",
     "title" : "click bootstrap theme",
-    "keyword" : "",
+    "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ ]
+    "arguments" : [ "xpath=//option[text()=\"bootstrap\"]" ]
   } ],
   "cleanUp" : [ ]
 }
