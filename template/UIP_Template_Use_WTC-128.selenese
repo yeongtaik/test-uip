@@ -1,147 +1,105 @@
 {
-  "name" : "",
-  "target" : "",
-  "modified" : 1412123631985,
+  "name" : "template use",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413976246295,
   "timeout" : 100,
-  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
+  "prerequisites" : [ ],
   "commands" : [ {
-    "uuid" : "31520071ac156549018bcbe2-789207590",
-    "title" : "select workspace",
+    "uuid" : "c0ad6be5ac15641268dc8f7f1222126232",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "7000" ]
+  }, {
+    "uuid" : "c0ad740dac1564126726245e-1554867185",
+    "title" : "Workspac선택",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=dijit_layout_TabContainer_0_tablist_workspaceView" ]
+    "arguments" : [ "xpath=//div[@role='tablist']/div/span[2][.='Workspace']" ]
   }, {
-    "uuid" : "3152ab2aac15654900b5fb55445013557",
-    "title" : "check workspace opened",
+    "uuid" : "c0ad7f05ac1564124de621e3-1730250131",
+    "title" : "click first directory in workspace",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@id='wv-tree']/div[@role='presentation']/div/div/span[@data-dojo-attach-point='contentNode']/span[2]" ]
+  }, {
+    "uuid" : "c0ada4ddac156412144aaab11200673122",
+    "title" : "Pause",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "8000" ]
+  }, {
+    "uuid" : "c0adaf21ac15641270095341-80429556",
+    "title" : "click File from Menu",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=/&File" ]
+  }, {
+    "uuid" : "c0adc16fac1564122200d281-1531280338",
+    "title" : "wait for new from menu bar",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "id=workspace-view", "100" ]
+    "arguments" : [ "id=/&File/&New", "100" ]
   }, {
-    "uuid" : "3153b1f5ac1565490022d357-1321015177",
-    "title" : "collapseAll",
+    "uuid" : "c0ade734ac15641213d19273565840943",
+    "title" : "click New from File menu",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "css=#wv-toolbar>.wvIconCollapseAll" ]
+    "arguments" : [ "id=/&File/&New" ]
   }, {
-    "uuid" : "3154189cac15654901a0bd23-2074612775",
-    "title" : "wait",
-    "keyword" : "pause",
+    "uuid" : "c0ae85a9ac1564123fa875831512589956",
+    "title" : "wait for new page from menu bar",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "id=/&File/&New/Page_text", "100" ]
   }, {
-    "uuid" : "31544fa0ac15654900c2b8fb-1438658506",
-    "title" : "open root folder",
-    "keyword" : "doubleclick",
-    "commands" : [ ],
-    "arguments" : [ "css=.dijitTreeContainer" ]
-  }, {
-    "uuid" : "315589a2ac156549009b6572-1417994129",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "3154c52aac1565490148226f-139716154",
-    "title" : "select sample",
+    "uuid" : "c0ae94b5ac1564121cf5a1a71280356438",
+    "title" : "click page for new page",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"sample\"]" ]
+    "arguments" : [ "id=/&File/&New/Page_text" ]
   }, {
-    "uuid" : "34086894ac15654900bed794-864180760",
-    "title" : "wait",
-    "keyword" : "pause",
+    "uuid" : "c0aeac8cac1564122e0884521426850019",
+    "title" : "Check that a pop-up dialog is the dialog of \"Page Wizard\"",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "5000" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Page Wizard']", "100" ]
   }, {
-    "uuid" : "31447a6eac15654900ab6ce41260813751",
-    "title" : "Click Insert shortcut menu",
+    "uuid" : "c0afe57cac1564126d2197f71203514127",
+    "title" : "type Name of Page",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=uip-body", "+INSERT" ]
+    "arguments" : [ "id=tmplName", "NewPage" ]
   }, {
-    "uuid" : "33f7d90dac156549018b61c3-1077088732",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "1000" ]
-  }, {
-    "uuid" : "33f80045ac1565490059a25e-1602046891",
-    "title" : "input page name",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "css=#template-name", "test_page" ]
-  }, {
-    "uuid" : "33f99f71ac15654901bba3fc2002279980",
-    "title" : "input description",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=template-newdescription", "test description" ]
-  }, {
-    "uuid" : "344a76d1ac15654900200d4e-1252052912",
+    "uuid" : "c0b0a41bac1564121e2cf7f91229356546",
     "title" : "click location button",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=template-location-button" ]
+    "arguments" : [ "id=tmplLocBtn_label" ]
   }, {
-    "uuid" : "344b6c8fac1565490012e2fc-169189106",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "344b90b1ac1565490151c88f1464080161",
-    "title" : "click dialog",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"Choose location for a page or template\"]" ]
-  }, {
-    "uuid" : "344c00cdac15654901e352e3-872409476",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "344c54fcac15654901969be3-1672166177",
-    "title" : "select path to save",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "css=.dijitDialogFocused .dijitTreeIsRoot>.dijitTreeRow" ]
-  }, {
-    "uuid" : "344d6421ac156549006ba3f2-1812999242",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "1000" ]
-  }, {
-    "uuid" : "344d970eac156549019395d9273189400",
-    "title" : "click ok",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"OK\"]" ]
-  }, {
-    "uuid" : "344df16fac156549007ae2d21223397134",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "33fa84a5ac1565490104e9cb1204525295",
-    "title" : "click Finish button",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "id=shortcutsDlgCloseButton_label" ]
-  }, {
-    "uuid" : "3403ffbdac15654900b8f5d2345665224",
-    "title" : "wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "33ff6e1cac156549017c4ac91459012729",
-    "title" : "Confirm opened editor",
+    "uuid" : "c0b0b367ac15641247cd8d7c924389814",
+    "title" : "wait for dialog of \"Choose location for a page or template\"",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"test_page.html\"]", "100" ]
+    "arguments" : [ "xpath=//div[@role='dialog']/div/span[.='Choose location for a page or template']", "100" ]
+  }, {
+    "uuid" : "c0b0c58dac1564125ac26d56-972341306",
+    "title" : "click workspace to select workspace as location for new page",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "css=.dijitDialogFocused .dijitTreeIsRoot>.dijitTreeRow", "+ENTER" ]
+  }, {
+    "uuid" : "c0b0e041ac15641230417948-104629030",
+    "title" : "Ok button after selecting location",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='Create']" ]
+  }, {
+    "uuid" : "c0b0ff1aac1564125caf0976-689307967",
+    "title" : "confirm opend editor",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[text()='NewPage.html']", "100" ]
   } ],
   "cleanUp" : [ ]
 }

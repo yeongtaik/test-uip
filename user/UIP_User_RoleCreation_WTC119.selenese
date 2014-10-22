@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413511737362,
+  "modified" : 1413973554984,
   "timeout" : 100,
-  "prerequisites" : [ "common/UIP_Login.selenese", "user/UIP_StartUIPTool_minimum.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool_minimum.selenese" ],
   "commands" : [ {
     "uuid" : "2feafdeeac1565490160c70e1761443730",
     "title" : "wait 3s",
@@ -103,9 +103,9 @@
   }, {
     "uuid" : "1bd8d802ac156549003c063d-1178289200",
     "title" : "wait 5s",
-    "keyword" : "",
+    "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ ]
+    "arguments" : [ "4000" ]
   } ],
   "cleanUp" : [ ]
 }

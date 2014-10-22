@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412123687663,
+  "modified" : 1413977690610,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -45,43 +45,13 @@
     "title" : "Click Create button",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=nnCreateBtn" ]
+    "arguments" : [ "xpath=//span[@widgetid=\"nnCreateBtn\"]" ]
   }, {
     "uuid" : "2fb8e2a8ac15654901b52f2b-590638280",
     "title" : "wait 5s",
     "keyword" : "pause",
     "commands" : [ ],
     "arguments" : [ "4000" ]
-  }, {
-    "uuid" : "2f9a941eac15654901a057c8-182252420",
-    "title" : "Confirm opened editor",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"sample_css.css\"]", "100" ]
-  }, {
-    "uuid" : "30b9a15fac156549018de9e9-2107042664",
-    "title" : "wait 3s",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
-  }, {
-    "uuid" : "30ba1349ac1565490004a8ce-1462872952",
-    "title" : "change border redius",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "css=.theme-left .dijitNumberTextBox .dijitInputField input + input", "100" ]
-  }, {
-    "uuid" : "30c71f1aac156549014c449d1248290812",
-    "title" : "click outside of textbox",
-    "keyword" : "click",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"Border radius:\"]" ]
-  }, {
-    "uuid" : "30cb2e16ac1565490073845b396062208",
-    "title" : "save",
-    "keyword" : "type",
-    "commands" : [ ],
-    "arguments" : [ "id=uip-body", "ctrl+s" ]
   } ],
   "cleanUp" : [ ]
 }
