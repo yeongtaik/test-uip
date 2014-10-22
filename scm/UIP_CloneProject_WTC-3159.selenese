@@ -1,7 +1,7 @@
 {
   "name" : "서버에서 프로젝트 가져오기(Clone)",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413445729923,
+  "modified" : 1413942339403,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese" ],
   "commands" : [ {
@@ -70,6 +70,12 @@
     "keyword" : "click",
     "commands" : [ ],
     "arguments" : [ "alert=yes" ]
+  }, {
+    "uuid" : "3587765aac15653400223d2c1207832659",
+    "title" : "waitForDeletedProject",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=div[title=\"uip-sample_$(randomProjectName)\"]", "30" ]
   } ],
   "cleanUp" : [ ]
 }
