@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1412123597479,
+  "modified" : 1413976153414,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -27,19 +27,19 @@
     "title" : "input page name",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=template-name", "test_template" ]
+    "arguments" : [ "id=tmplName", "test_template" ]
   }, {
     "uuid" : "34010d89ac1565490154c3a31825921197",
     "title" : "input description",
     "keyword" : "type",
     "commands" : [ ],
-    "arguments" : [ "id=template-newdescription", "new template" ]
+    "arguments" : [ "id=tmplDesc", "new template" ]
   }, {
     "uuid" : "340d3d24ac15654901c1a6891430891884",
     "title" : "click location button",
     "keyword" : "click",
     "commands" : [ ],
-    "arguments" : [ "id=template-location-button" ]
+    "arguments" : [ "id=tmplLocBtn_label" ]
   }, {
     "uuid" : "34164065ac1565490175ef94848265378",
     "title" : "wait",
@@ -94,12 +94,6 @@
     "keyword" : "pause",
     "commands" : [ ],
     "arguments" : [ "1000" ]
-  }, {
-    "uuid" : "3403247fac15654901659c87-992206178",
-    "title" : "Confirm opened editor",
-    "keyword" : "waitForVisibility",
-    "commands" : [ ],
-    "arguments" : [ "xpath=//span[text()=\"test_template.html\"]", "100" ]
   } ],
   "cleanUp" : [ ]
 }

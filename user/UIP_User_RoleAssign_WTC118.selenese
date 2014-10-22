@@ -1,9 +1,9 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413512361197,
+  "modified" : 1413973526999,
   "timeout" : 100,
-  "prerequisites" : [ "common/UIP_Login.selenese", "user/UIP_StartUIPTool_minimum.selenese" ],
+  "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool_minimum.selenese" ],
   "commands" : [ {
     "uuid" : "2feafdeeac1565490160c70e1761443730",
     "title" : "wait 3s",
