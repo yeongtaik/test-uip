@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413768944171,
+  "modified" : 1413962176303,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -12,6 +12,18 @@
     "arguments" : [ "require(['plugins/webida-tester-util/plugin'], function () {});" ]
   }, {
     "uuid" : "0cf3c30b7f00010138ce2f12-391177487",
+    "title" : "wait 2s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "2000" ]
+  }, {
+    "uuid" : "36b347967f00010121fcd1b5792820613",
+    "title" : "resize left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "window.testerAdaptor.resizeSplitter('left', 200);" ]
+  }, {
+    "uuid" : "36b3ae8c7f0001013f7ac890-1863071411",
     "title" : "wait 2s",
     "keyword" : "pause",
     "commands" : [ ],
