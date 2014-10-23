@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413804541989,
+  "modified" : 1414028916721,
   "timeout" : 100,
   "prerequisites" : [ ],
   "commands" : [ {
@@ -83,6 +83,12 @@
     "commands" : [ ],
     "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "100" ]
   }, {
+    "uuid" : "3ab0f2baac15653701e54f98-181659808",
+    "title" : "wait 3s",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "3000" ]
+  }, {
     "uuid" : "2d50f890ac1564122853c588-808451314",
     "title" : "open left splitter",
     "keyword" : "executeScript",
@@ -138,10 +144,10 @@
     "arguments" : [ "require(['./plugins/webida-tester-util/plugin.js'], function(){});" ]
   }, {
     "uuid" : "3c5dabf1ac1e0115772f022b1414729814",
-    "title" : "wait 1s",
+    "title" : "wait 3s",
     "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "3000" ]
   }, {
     "uuid" : "3c55b5a9ac1e0115580882fb948566285",
     "title" : "open design editor test page",
@@ -150,10 +156,10 @@
     "arguments" : [ "testerAdaptor.openSplitter('left');\r\ntesterAdaptor.fileOpen('/uip-sample/functional-test/designEditorLayoutTestSample.html');" ]
   }, {
     "uuid" : "168d004bac1565370196d39f798561042",
-    "title" : "wait 2s",
+    "title" : "wait 5s",
     "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ "2000" ]
+    "arguments" : [ "5000" ]
   } ],
   "cleanUp" : [ ]
 }
