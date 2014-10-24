@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413422830455,
+  "modified" : 1414028582253,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
@@ -30,16 +30,16 @@
     "arguments" : [ "id=", "+control+v" ]
   }, {
     "uuid" : "3fb9f44aac15653700e8dce6970187513",
-    "title" : "wait 1s",
+    "title" : "wait 2s",
     "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "2000" ]
   }, {
     "uuid" : "3c67df92ac1e011530f71b301824125929",
     "title" : "check count of child('uip-layout-content1') = 6",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 6)\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
+    "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer().getEditPartRegistry().get('uip-layout-content1').getChildren().length !== 6) {\r\n\tthrow new Error('delete action is fail...');\r\n}" ]
   }, {
     "uuid" : "3c67d9fdac1e01150bd9c79e-971144636",
     "title" : "wait 3s",
