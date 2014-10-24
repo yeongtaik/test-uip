@@ -1,7 +1,7 @@
 {
   "name" : "LogInAndOut",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413526075317,
+  "modified" : 1414029208135,
   "timeout" : 100,
   "prerequisites" : [ "common/UIP_DesignEditor_Prepare_TestEnv.selenese" ],
   "commands" : [ {
@@ -42,10 +42,10 @@
     "arguments" : [ "if (testerAdaptor.getAcitveDesignViewer()._type !== 'DesignFeedbackViewer')\r\n{\r\n\tthrow new Error('prepare feedback test env is fail...');\r\n}" ]
   }, {
     "uuid" : "176f45a0ac1565370017a60c-825321490",
-    "title" : "wait 3s",
+    "title" : "wait 10s",
     "keyword" : "pause",
     "commands" : [ ],
-    "arguments" : [ "3000" ]
+    "arguments" : [ "10000" ]
   } ],
   "cleanUp" : [ ]
 }

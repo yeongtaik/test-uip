@@ -1,7 +1,7 @@
 {
   "name" : "",
   "target" : "",
-  "modified" : 1413449103491,
+  "modified" : 1414049476958,
   "timeout" : 10,
   "prerequisites" : [ "common/UIP_Login.selenese", "common/UIP_StartUIPTool.selenese" ],
   "commands" : [ {
@@ -81,13 +81,7 @@
     "title" : "Search thumbnail",
     "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "xpath=//img[@class='page-image']", "100" ]
-  }, {
-    "uuid" : "1821af65ac15653d01575dd21454460389",
-    "title" : "Wait",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "5000" ]
+    "arguments" : [ "xpath=//img[@class='page-image']", "500" ]
   } ],
   "cleanUp" : [ ]
 }
