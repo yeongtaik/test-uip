@@ -1,0 +1,141 @@
+{
+  "name" : "LoginTest",
+  "target" : "http://uipsite.webida.net",
+  "modified" : 1413780449672,
+  "timeout" : 100,
+  "prerequisites" : [ ],
+  "commands" : [ {
+    "uuid" : "fbe78585ac15641223521591443304572",
+    "title" : "open UIPSite main page",
+    "keyword" : "open",
+    "commands" : [ ],
+    "arguments" : [ "", "css=.login-bar" ]
+  }, {
+    "uuid" : "fbe79241ac156412106a5019-68271290",
+    "title" : "click Log-in button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "css=.login" ]
+  }, {
+    "uuid" : "fbe79bd8ac1564124ef02e3f168010422",
+    "title" : "wait For auth page",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "100" ]
+  }, {
+    "uuid" : "0fa256d9ac1564124ab1693b-719323021",
+    "title" : "type wrong ID value",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "wrongEmailID" ]
+  }, {
+    "uuid" : "0fa98057ac1564125f2788f21519017181",
+    "title" : "click Login Button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "0fa311eeac15641238f1f6c9-1215055346",
+    "title" : "check invalid message",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "css=.login_label", "100" ]
+  }, {
+    "uuid" : "fbe7a3ceac1564124876945a1760469371",
+    "title" : "type valid ID value",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=email", "uiptester1" ]
+  }, {
+    "uuid" : "fbe7ae03ac15641222fdf241-1895614963",
+    "title" : "type valid Passwd",
+    "keyword" : "type",
+    "commands" : [ ],
+    "arguments" : [ "id=password", "uipuip" ]
+  }, {
+    "uuid" : "fbe7c9d5ac1564124704d6c6889531394",
+    "title" : "click Login Button",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "id=loginbutton" ]
+  }, {
+    "uuid" : "fbe7d34eac1564121f1131aa579415395",
+    "title" : "wait for logged-in page",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=project", "100" ]
+  }, {
+    "uuid" : "ca077f15ac15641260230df2384214735",
+    "title" : "wait untile uip-sample is shown",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]", "100" ]
+  }, {
+    "uuid" : "fbe8769cac1564122efad4c6-967296551",
+    "title" : "select workspace and start UIP",
+    "keyword" : "click",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//div[@data-workspacename=\"uip-sample\"]" ]
+  }, {
+    "uuid" : "0fcdc2f9ac15641252f106e71228686933",
+    "title" : "wait until new window is opend",
+    "keyword" : "pause",
+    "commands" : [ ],
+    "arguments" : [ "6000" ]
+  }, {
+    "uuid" : "0d5b70d2ac15641254b983ad-2031959118",
+    "title" : "give name to New window",
+    "keyword" : "waitForWindow",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow", "url=https://uip.webida.net/?workspace=eyOhsd2X8e/uip-sample" ]
+  }, {
+    "uuid" : "0d5d8d82ac156412248241bf1844418440",
+    "title" : "switch to new Window",
+    "keyword" : "switchWindowTo",
+    "commands" : [ ],
+    "arguments" : [ "UIPWindow" ]
+  }, {
+    "uuid" : "0fc5db59ac15641274ea5db2-41312117",
+    "title" : "wait untile the loading screen is disapear",
+    "keyword" : "waitForInvisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=app-loadingscreen-elem", "100" ]
+  }, {
+    "uuid" : "fbe95fd9ac1564120ec821b32146649699",
+    "title" : "click UserInfo - email address above",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@id=\"userinfoButton_label\"]", "100" ]
+  }, {
+    "uuid" : "c4f0ee9dac1564120c6546921203599907",
+    "title" : "open left splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed');\n\nif (!!elm) {\nelm.click();\n}" ]
+  }, {
+    "uuid" : "c4f10c32ac15641205439ee01000476119",
+    "title" : "check that left splitter is opend",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "id=wv-tree", "100" ]
+  }, {
+    "uuid" : "c4f122bbac1564126dafac6e826091834",
+    "title" : "open right splitter",
+    "keyword" : "executeScript",
+    "commands" : [ ],
+    "arguments" : [ "var elm = document.querySelector('.dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed');\r\n\r\nif (!!elm) {\r\nelm.click();\r\n}" ]
+  }, {
+    "uuid" : "c4f136a9ac156412251e4f641781051464",
+    "title" : "check that event-view is visible.",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Event']", "100" ]
+  }, {
+    "uuid" : "c4f15143ac15641205f7a96f-1739883614",
+    "title" : "check that property is visible",
+    "keyword" : "waitForVisibility",
+    "commands" : [ ],
+    "arguments" : [ "xpath=//span[@class='tabLabel' and @role='tab' and .='Properties']", "100" ]
+  } ],
+  "cleanUp" : [ ]
+}

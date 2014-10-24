@@ -1,9 +1,9 @@
 {
   "name" : "ResponsiveWebEditTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413507093363,
+  "modified" : 1414115315132,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "prerequisites" : [ "UIP_ResponsiveWeb_Login.selenese" ],
   "commands" : [ {
     "uuid" : "1b7e4bae0a00020f0131eedf1317127523",
     "title" : "Load test util",
@@ -45,13 +45,13 @@
     "title" : "open test file in editor",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/NewTestPage.html');" ]
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/functional-test/responsiveWebTestPage.html');" ]
   }, {
-    "uuid" : "1b7f190f0a00020f01b7573f-1045798299",
-    "title" : "wait 5s",
-    "keyword" : "pause",
+    "uuid" : "3fb11f8f0a00020f014c950441483280",
+    "title" : "wait responsive item",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "5000" ]
+    "arguments" : [ "css=.responsiveBar-item-normal.phone", "5" ]
   }, {
     "uuid" : "17e731900a00020f011e8239-1289955422",
     "title" : "right click responsive item",
@@ -59,11 +59,11 @@
     "commands" : [ ],
     "arguments" : [ "css=.responsiveBar-item-normal.phone" ]
   }, {
-    "uuid" : "17e75b360a00020f002b9111945299521",
-    "title" : "wait 2s",
-    "keyword" : "pause",
+    "uuid" : "3fbcb7460a00020f002ff4e3115346507",
+    "title" : "wait edit item",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "2000" ]
+    "arguments" : [ "xpath=//td[@role='presentation' and .=\\\"Edit Responsive Size\\\"]", "5" ]
   }, {
     "uuid" : "17e76f8b0a00020f01890b19-960050068",
     "title" : "click edit item",
@@ -71,11 +71,11 @@
     "commands" : [ ],
     "arguments" : [ "xpath=//td[@role='presentation' and .=\\\"Edit Responsive Size\\\"]" ]
   }, {
-    "uuid" : "17e795730a00020f00ec49ae1264790196",
-    "title" : "wait 1s",
-    "keyword" : "pause",
+    "uuid" : "3fd694d00a00020f00eff955471887758",
+    "title" : "wait tablet",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "css=span[title=\"tablet\"]", "5" ]
   }, {
     "uuid" : "17ea55920a00020f01d26306-774592372",
     "title" : "click tablet",
@@ -83,23 +83,17 @@
     "commands" : [ ],
     "arguments" : [ "css=span[title=\"tablet\"]" ]
   }, {
-    "uuid" : "17ea88a10a00020f01d84765633137911",
-    "title" : "wait 1s",
-    "keyword" : "pause",
+    "uuid" : "3fd702520a00020f007eb103163464344",
+    "title" : "check ok",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "id=responsiveBar-editDialog-button-ok", "5" ]
   }, {
     "uuid" : "17ea9abf0a00020f010e946a947559191",
     "title" : "clcik ok",
     "keyword" : "click",
     "commands" : [ ],
     "arguments" : [ "id=responsiveBar-editDialog-button-ok" ]
-  }, {
-    "uuid" : "17eab9b10a00020f013cdf6d-1158552104",
-    "title" : "wait 2s",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "2000" ]
   }, {
     "uuid" : "17eac8bb0a00020f00090b13-1961406560",
     "title" : "check split responsive item",

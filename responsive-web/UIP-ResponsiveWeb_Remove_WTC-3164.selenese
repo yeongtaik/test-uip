@@ -1,9 +1,9 @@
 {
   "name" : "ResponsiveWebRemoveTest",
   "target" : "http://uipsite.webida.net",
-  "modified" : 1413507115741,
+  "modified" : 1414125208205,
   "timeout" : 100,
-  "prerequisites" : [ "UIP_Testcases/UIP_Login_WTC-2743.selenese" ],
+  "prerequisites" : [ "UIP_ResponsiveWeb_Login.selenese" ],
   "commands" : [ {
     "uuid" : "1b84f3ad0a00020f01df49651971587664",
     "title" : "Load test util",
@@ -45,13 +45,13 @@
     "title" : "open test file in editor",
     "keyword" : "executeScript",
     "commands" : [ ],
-    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/NewTestPage.html');" ]
+    "arguments" : [ "window.testerAdaptor.fileOpen('/uip-sample/functional-test/responsiveWebTestPage.html');" ]
   }, {
-    "uuid" : "1b8547a90a00020f01d2500c2011428122",
-    "title" : "wait 5s",
-    "keyword" : "pause",
+    "uuid" : "3fd8f39b0a00020f0032aa3f573953472",
+    "title" : "wait responsive item",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "5000" ]
+    "arguments" : [ "css=.responsiveBar-item-normal.phone", "5" ]
   }, {
     "uuid" : "17eb3edb0a00020f000192b1-788888116",
     "title" : "right click responsive item",
@@ -59,11 +59,11 @@
     "commands" : [ ],
     "arguments" : [ "css=.responsiveBar-item-normal.phone" ]
   }, {
-    "uuid" : "17eb89890a00020f006d8163780053933",
-    "title" : "pause 2s",
-    "keyword" : "pause",
+    "uuid" : "406d00600a00020f017fdb94-394207923",
+    "title" : "wait remove item",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "2000" ]
+    "arguments" : [ "xpath=//td[@role='presentation' and .=\\\"Delete Responsive Size\\\"]", "5" ]
   }, {
     "uuid" : "17eb98520a00020f012108c2981399551",
     "title" : "click remove item",
@@ -71,23 +71,17 @@
     "commands" : [ ],
     "arguments" : [ "xpath=//td[@role='presentation' and .=\\\"Delete Responsive Size\\\"]" ]
   }, {
-    "uuid" : "17ec16560a00020f00f8ec02929758537",
-    "title" : "pause 1s",
-    "keyword" : "pause",
+    "uuid" : "406debaa0a00020f000a5481-487449876",
+    "title" : "wait yes",
+    "keyword" : "waitForVisibility",
     "commands" : [ ],
-    "arguments" : [ "1000" ]
+    "arguments" : [ "xpath=//span[@data-dojo-attach-point='containerNode' and .=\\\"Yes\\\"]", "5" ]
   }, {
     "uuid" : "17ec34530a00020f012f4d8b865721384",
     "title" : "clcik yes",
     "keyword" : "click",
     "commands" : [ ],
     "arguments" : [ "xpath=//span[@data-dojo-attach-point='containerNode' and .=\\\"Yes\\\"]" ]
-  }, {
-    "uuid" : "17ec6cbb0a00020f004ec6d3-1947985799",
-    "title" : "pause 2s",
-    "keyword" : "pause",
-    "commands" : [ ],
-    "arguments" : [ "2000" ]
   }, {
     "uuid" : "17ec76cf0a00020f01217974706415816",
     "title" : "check split responsive item",
